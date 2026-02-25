@@ -1,5 +1,5 @@
 streamlit
-nhlpy
+nhl-api-py
 plotly
 pandas
 datetime
