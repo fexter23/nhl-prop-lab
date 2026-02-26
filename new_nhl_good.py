@@ -72,39 +72,47 @@ with st.sidebar:
     stat = st.selectbox("Stat", ["points", "goals", "assists", "shots", "hits", "pim", "powerPlayPoints"])
     threshold = st.number_input("Threshold", value=0.5, step=0.5)
     
-    # NEW: Market Odds Dropdown (-300 to +300)
-    # Generate range: -300 to +300 skipping 0
     neg_odds = [str(x) for x in range(-300, -95, 5)]
     pos_odds = [f"+{x}" for x in range(100, 305, 5)]
     odds_options = neg_odds + pos_odds
     
-    # Default to -110 as it's a common standard
     default_idx = odds_options.index("-110") if "-110" in odds_options else 0
     market_odds = st.selectbox("Market Odds (American)", options=odds_options, index=default_idx)
     
     games_back = st.select_slider("Last X Games", options=[5, 10, 15, 20, 30, 50], value=10)
 
+    # --- Grouped Dashboard ---
     st.header("📋 My Dashboard")
     if not st.session_state.my_dashboard:
         st.info("No items saved yet.")
     else:
-        st.session_state.my_dashboard.sort(key=lambda x: x['over'], reverse=True)
-        for i, entry in enumerate(st.session_state.my_dashboard):
-            over_c, under_c = get_color(entry['over']), get_color(entry['under'])
-            col_text, col_btn = st.columns([0.85, 0.15])
-            with col_text:
-                loc_icon = "🏠" if entry.get('location') == "Home" else "✈️"
-                st.markdown(
-                    f"**{entry['player']}** {loc_icon}<br>"
-                    f"> {entry['stat']} {entry['threshold']} @ **{entry.get('odds', 'N/A')}**<br>"
-                    f"O: :{over_c}[**{entry['over']:.0f}%**] | U: :{under_c}[**{entry['under']:.0f}%**]<br>"
-                    f"<small>Avg TOI: {entry.get('avg_toi', 'N/A')} | Shifts: {entry.get('avg_shifts', 0):.1f} | PP: {entry.get('pp_influence', 0):.0f}%</small>", 
-                    unsafe_allow_html=True
-                )
-            with col_btn:
-                if st.button("×", key=f"del_{i}"):
-                    st.session_state.my_dashboard.pop(i)
-                    st.rerun()
+        # Convert to DF for easy grouping
+        dash_df = pd.DataFrame(st.session_state.my_dashboard)
+        
+        # Group by Opponent to cluster games together
+        for opponent, group in dash_df.groupby("opponent"):
+            with st.expander(f"🆚 vs {opponent}", expanded=True):
+                # Sort players within the game by hit rate
+                group = group.sort_values(by="over", ascending=False)
+                
+                for idx, entry in group.iterrows():
+                    over_c, under_c = get_color(entry['over']), get_color(entry['under'])
+                    col_text, col_btn = st.columns([0.85, 0.15])
+                    
+                    with col_text:
+                        loc_icon = "🏠" if entry.get('location') == "Home" else "✈️"
+                        st.markdown(
+                            f"**{entry['player']}** {loc_icon}<br>"
+                            f"> {entry['stat']} {entry['threshold']} @ **{entry.get('odds', 'N/A')}**<br>"
+                            f"O: :{over_c}[**{entry['over']:.0f}%**] | U: :{under_c}[**{entry['under']:.0f}%**]<br>"
+                            f"<small>Avg TOI: {entry.get('avg_toi', 'N/A')} | PP: {entry.get('pp_influence', 0):.0f}%</small>", 
+                            unsafe_allow_html=True
+                        )
+                    with col_btn:
+                        # Use the original index (idx) for correct deletion
+                        if st.button("×", key=f"del_{idx}"):
+                            st.session_state.my_dashboard.pop(idx)
+                            st.rerun()
 
 # --- Main Analysis ---
 if sel_player['id']:
@@ -170,7 +178,9 @@ if sel_player['id']:
                         "avg_toi": formatted_avg_toi, 
                         "avg_shifts": avg_shifts, 
                         "pp_influence": pp_influence,
-                        "odds": market_odds, "location": next_game_info["location"]
+                        "odds": market_odds, 
+                        "location": next_game_info["location"],
+                        "opponent": next_game_info["opponent"] # Added for grouping
                     })
                     st.rerun()
 
@@ -199,13 +209,13 @@ if sel_player['id']:
                 st.plotly_chart(fig, use_container_width=True)
 
             with c4:
-                st.markdown(f"**PP % ({pp_influence:.0f}%)**", help="Power Play Influence: % of production that occurred during Power Plays.")
+                st.markdown(f"**PP % ({pp_influence:.0f}%)**")
                 fig = go.Figure(go.Bar(x=df['gameDateFormatted'], y=df['pp_pct'], marker_color='#f1c40f'))
                 fig.update_layout(template="plotly_dark", xaxis={'type': 'category'}, yaxis_range=[0, 105], margin=dict(t=5, b=5, l=5, r=5))
                 st.plotly_chart(fig, use_container_width=True)
 
             with c5:
-                st.markdown("**Eff / 20m**", help="(Stat / TOI) * 20. Estimated production per period.")
+                st.markdown("**Eff / 20m**")
                 fig = go.Figure(go.Bar(x=df['gameDateFormatted'], y=df['efficiency'], marker_color='#9b59b6', text=df['efficiency']))
                 fig.add_hline(y=avg_eff, line_dash="dot")
                 fig.update_layout(template="plotly_dark", xaxis={'type': 'category'}, margin=dict(t=5, b=5, l=5, r=5))
