@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
-from datetime import datetime
+from datetime import datetime, timezone
 from nhlpy import NHLClient
 
 # Initialize the NHL Client
@@ -9,6 +9,7 @@ client = NHLClient()
 
 # --- Helper Functions ---
 def get_color(rate):
+    """Returns green/orange/red based on hit percentage."""
     if rate >= 70: return "green"
     if rate >= 50: return "orange"
     return "red"
@@ -33,7 +34,6 @@ if 'my_dashboard' not in st.session_state:
 
 def get_current_season_string():
     now = datetime.now()
-    # Assuming season starts in September
     start_year = now.year if now.month >= 9 else now.year - 1
     return f"{start_year}{start_year + 1}"
 
@@ -71,141 +71,156 @@ with st.sidebar:
     
     stat = st.selectbox("Stat", ["points", "goals", "assists", "shots", "hits", "pim", "powerPlayPoints"])
     threshold = st.number_input("Threshold", value=0.5, step=0.5)
+    
+    # NEW: Market Odds Dropdown (-300 to +300)
+    # Generate range: -300 to +300 skipping 0
+    neg_odds = [str(x) for x in range(-300, -95, 5)]
+    pos_odds = [f"+{x}" for x in range(100, 305, 5)]
+    odds_options = neg_odds + pos_odds
+    
+    # Default to -110 as it's a common standard
+    default_idx = odds_options.index("-110") if "-110" in odds_options else 0
+    market_odds = st.selectbox("Market Odds (American)", options=odds_options, index=default_idx)
+    
     games_back = st.select_slider("Last X Games", options=[5, 10, 15, 20, 30, 50], value=10)
 
     st.header("📋 My Dashboard")
     if not st.session_state.my_dashboard:
         st.info("No items saved yet.")
     else:
-        st.session_state.my_dashboard.sort(key=lambda x: max(x['over'], x['under']), reverse=True)
+        st.session_state.my_dashboard.sort(key=lambda x: x['over'], reverse=True)
         for i, entry in enumerate(st.session_state.my_dashboard):
             over_c, under_c = get_color(entry['over']), get_color(entry['under'])
-            col_text, col_btn = st.columns([0.90, 0.10])
+            col_text, col_btn = st.columns([0.85, 0.15])
             with col_text:
+                loc_icon = "🏠" if entry.get('location') == "Home" else "✈️"
                 st.markdown(
-                    f"**{entry['player']}** | > {entry['stat']} {entry['threshold']}<br>"
+                    f"**{entry['player']}** {loc_icon}<br>"
+                    f"> {entry['stat']} {entry['threshold']} @ **{entry.get('odds', 'N/A')}**<br>"
                     f"O: :{over_c}[**{entry['over']:.0f}%**] | U: :{under_c}[**{entry['under']:.0f}%**]<br>"
-                    f"<small>Avg TOI: {entry.get('avg_toi', 'N/A')} | Shifts: {entry.get('avg_shifts', 0):.1f} | PP: {entry.get('pp_influence', 0):.1f}%</small>", 
+                    f"<small>Avg TOI: {entry.get('avg_toi', 'N/A')} | Shifts: {entry.get('avg_shifts', 0):.1f} | PP: {entry.get('pp_influence', 0):.0f}%</small>", 
                     unsafe_allow_html=True
                 )
             with col_btn:
-                if st.button("×", key=f"del_{i}", help="Remove"):
+                if st.button("×", key=f"del_{i}"):
                     st.session_state.my_dashboard.pop(i)
                     st.rerun()
 
 # --- Main Analysis ---
 if sel_player['id']:
     try:
-        log_data = client.stats.player_game_log(player_id=sel_player['id'], season_id=CURRENT_SEASON, game_type=2)
-        games = log_data if isinstance(log_data, list) else log_data.get('gameLog', [])
+        # Next Game Logic
+        team_sched_data = client.schedule.team_weekly_schedule(team_abbr=sel_player['team'])
+        games_list = team_sched_data if isinstance(team_sched_data, list) else team_sched_data.get('games', [])
         
-        if games:
-            full_df = pd.DataFrame(games)
-            df = full_df.head(games_back).copy()
+        now = datetime.now(timezone.utc)
+        next_game_info = {"opponent": "N/A", "location": "N/A", "venue": "N/A"}
+        
+        for g in games_list:
+            start_str = g['startTimeUTC'].replace('Z', '+00:00')
+            if datetime.fromisoformat(start_str) > now:
+                is_home = g['homeTeam']['abbrev'] == sel_player['team']
+                next_game_info = {
+                    "opponent": g['awayTeam']['abbrev'] if is_home else g['homeTeam']['abbrev'],
+                    "location": "Home" if is_home else "Road",
+                    "venue": g.get('venue', {}).get('default', 'Unknown')
+                }
+                break
+
+        if next_game_info["opponent"] != "N/A":
+            loc_label = "🏠 Home" if next_game_info["location"] == "Home" else "✈️ Road"
+            st.info(f"**Next Matchup:** {sel_player['team']} vs **{next_game_info['opponent']}** | {loc_label} | Venue: {next_game_info['venue']}")
+
+        # Stat Processing
+        log_data = client.stats.player_game_log(player_id=sel_player['id'], season_id=CURRENT_SEASON, game_type=2)
+        games_log = log_data if isinstance(log_data, list) else log_data.get('gameLog', [])
+        
+        if games_log:
+            df = pd.DataFrame(games_log).head(games_back).copy()
             df['gameDateFormatted'] = pd.to_datetime(df['gameDate']).dt.strftime('%b %d')
+            df['toi_min'] = df['toi'].apply(toi_to_minutes)
             
-            # Stat Logic
             def get_pp_val(row, current_stat):
                 if current_stat == 'goals': return row.get('powerPlayGoals', 0)
                 if current_stat == 'points': return row.get('powerPlayPoints', 0)
-                if current_stat == 'assists':
-                    return max(0, row.get('powerPlayPoints', 0) - row.get('powerPlayGoals', 0))
+                if current_stat == 'assists': return max(0, row.get('powerPlayPoints', 0) - row.get('powerPlayGoals', 0))
                 if current_stat == 'powerPlayPoints': return row.get('powerPlayPoints', 0)
-                return row.get('powerPlayShots', 0) if current_stat == 'shots' else 0
+                return 0
 
             df['pp_val'] = df.apply(lambda r: get_pp_val(r, stat), axis=1)
             df['pp_pct'] = (df['pp_val'] / df[stat].replace(0, 1)) * 100
-            df['toi_min'] = df['toi'].apply(toi_to_minutes)
             df['efficiency'] = (df[stat] / df['toi_min'] * 20).round(2)
-            avg_eff = df['efficiency'].mean()
             
-            # Shifts Logic
             avg_shifts = df['shifts'].mean() if 'shifts' in df.columns else 0
-
-            # Hit Rate Summary
-            over_hits = (df[stat] > threshold).sum()
-            over_rate = (over_hits / len(df)) * 100
+            avg_eff = df['efficiency'].mean()
+            over_rate = ((df[stat] > threshold).sum() / len(df)) * 100
             under_rate = 100 - over_rate
-            avg_toi_min = df['toi_min'].mean()
-            formatted_avg_toi = minutes_to_toi(avg_toi_min)
-            
-            total_stat = df[stat].sum()
-            total_pp_stat = df['pp_val'].sum()
-            overall_pp_influence = (total_pp_stat / total_stat * 100) if total_stat > 0 else 0
+            formatted_avg_toi = minutes_to_toi(df['toi_min'].mean())
+            pp_influence = (df['pp_val'].sum() / df[stat].sum() * 100) if df[stat].sum() > 0 else 0
 
+            # --- Header & Save Button ---
             header_col, btn_col = st.columns([4, 1])
             with header_col:
-                st.markdown(
-                    f"### Stat: **{stat.capitalize()}** | Threshold: **{threshold}** | "
-                    f"Over: :{get_color(over_rate)}[**{over_rate:.1f}%**] | "
-                    f"Under: :{get_color(under_rate)}[**{under_rate:.1f}%**]"
-                )
+                st.markdown(f"### {stat.capitalize()} > {threshold} | O: :{get_color(over_rate)}[{over_rate:.0f}%] U: :{get_color(under_rate)}[{under_rate:.0f}%]")
             with btn_col:
-                if st.button("➕ Save to Dashboard"):
+                if st.button("➕ Save to Board"):
                     st.session_state.my_dashboard.append({
                         "player": choice, "stat": stat.capitalize(), "threshold": threshold,
-                        "over": over_rate, "under": under_rate,
+                        "over": over_rate, "under": under_rate, 
                         "avg_toi": formatted_avg_toi, 
-                        "avg_shifts": avg_shifts, # Saved to dashboard
-                        "pp_influence": overall_pp_influence
+                        "avg_shifts": avg_shifts, 
+                        "pp_influence": pp_influence,
+                        "odds": market_odds, "location": next_game_info["location"]
                     })
                     st.rerun()
-            
-            # --- Visualizations Section ---
+
+            # --- Visualizations ---
             st.markdown("---")
-            # Using 6 columns to fit Shifts
-            col1, col2, col3, col4, col5, col6 = st.columns(6)
+            c1, c2, c3, c4, c5, c6 = st.columns(6)
+            
+            with c1:
+                st.write("**Performance**")
+                fig = go.Figure(go.Bar(x=df['gameDateFormatted'], y=df[stat], marker_color=['#2ecc71' if v > threshold else '#e74c3c' for v in df[stat]], text=df[stat]))
+                fig.add_hline(y=threshold, line_dash="dash", line_color="white")
+                fig.update_layout(template="plotly_dark", xaxis={'type': 'category'}, margin=dict(t=5, b=5, l=5, r=5))
+                st.plotly_chart(fig, use_container_width=True)
 
-            with col1:
-                fig_main = go.Figure(go.Bar(
-                    x=df['gameDateFormatted'], y=df[stat],
-                    marker_color=['#2ecc71' if val > threshold else '#e74c3c' for val in df[stat]],
-                    text=df[stat], textposition='inside'
-                ))
-                fig_main.add_hline(y=threshold, line_dash="dash", line_color="#FFFFFF")
-                fig_main.update_layout(title="Performance", template="plotly_dark", xaxis={'type': 'category'})
-                st.plotly_chart(fig_main, use_container_width=True)
+            with c2:
+                st.write(f"**TOI ({formatted_avg_toi})**")
+                fig = go.Figure(go.Bar(x=df['gameDateFormatted'], y=df['toi_min'], marker_color='#3498db', text=df['toi']))
+                fig.update_layout(template="plotly_dark", xaxis={'type': 'category'}, margin=dict(t=5, b=5, l=5, r=5))
+                st.plotly_chart(fig, use_container_width=True)
 
-            with col2:
-                fig_toi = go.Figure(go.Bar(x=df['gameDateFormatted'], y=df['toi_min'], text=df['toi'], textposition='inside', marker_color='#3498db'))
-                fig_toi.update_layout(title=f"TOI (Avg: {formatted_avg_toi})", template="plotly_dark", xaxis={'type': 'category'})
-                st.plotly_chart(fig_toi, use_container_width=True)
+            with c3:
+                st.write(f"**Shifts (Avg: {avg_shifts:.1f})**")
+                fig = go.Figure(go.Bar(x=df['gameDateFormatted'], y=df['shifts'], marker_color='#1abc9c', text=df['shifts']))
+                fig.add_hline(y=avg_shifts, line_dash="dot", line_color="#ecf0f1")
+                fig.update_layout(template="plotly_dark", xaxis={'type': 'category'}, margin=dict(t=5, b=5, l=5, r=5))
+                st.plotly_chart(fig, use_container_width=True)
 
-            with col3:
-                # Shifts Graph with Average Line
-                fig_shifts = go.Figure(go.Bar(
-                    x=df['gameDateFormatted'], y=df['shifts'], 
-                    text=df['shifts'], textposition='inside', marker_color='#1abc9c'
-                ))
-                fig_shifts.add_hline(y=avg_shifts, line_dash="dot", line_color="#ecf0f1", 
-                                     annotation_text=f"Avg: {avg_shifts:.1f}", annotation_position="top right")
-                fig_shifts.update_layout(title=f"Shifts (Avg: {avg_shifts:.1f})", template="plotly_dark", xaxis={'type': 'category'})
-                st.plotly_chart(fig_shifts, use_container_width=True)
+            with c4:
+                st.markdown(f"**PP % ({pp_influence:.0f}%)**", help="Power Play Influence: % of production that occurred during Power Plays.")
+                fig = go.Figure(go.Bar(x=df['gameDateFormatted'], y=df['pp_pct'], marker_color='#f1c40f'))
+                fig.update_layout(template="plotly_dark", xaxis={'type': 'category'}, yaxis_range=[0, 105], margin=dict(t=5, b=5, l=5, r=5))
+                st.plotly_chart(fig, use_container_width=True)
 
-            with col4:
-                fig_pp = go.Figure(go.Bar(x=df['gameDateFormatted'], y=df['pp_pct'], text=df['pp_pct'].apply(lambda x: f"{x:.0f}%" if x > 0 else ""), marker_color='#f1c40f'))
-                fig_pp.update_layout(title=f"PP % ({overall_pp_influence:.1f}%)", template="plotly_dark", xaxis={'type': 'category'}, yaxis_range=[0, 105])
-                st.plotly_chart(fig_pp, use_container_width=True)
+            with c5:
+                st.markdown("**Eff / 20m**", help="(Stat / TOI) * 20. Estimated production per period.")
+                fig = go.Figure(go.Bar(x=df['gameDateFormatted'], y=df['efficiency'], marker_color='#9b59b6', text=df['efficiency']))
+                fig.add_hline(y=avg_eff, line_dash="dot")
+                fig.update_layout(template="plotly_dark", xaxis={'type': 'category'}, margin=dict(t=5, b=5, l=5, r=5))
+                st.plotly_chart(fig, use_container_width=True)
 
-            with col5:
-                fig_eff = go.Figure(go.Bar(x=df['gameDateFormatted'], y=df['efficiency'], text=df['efficiency'], marker_color='#9b59b6'))
-                fig_eff.add_hline(y=avg_eff, line_dash="dot", line_color="#E0E0E0")
-                fig_eff.update_layout(title="Efficiency/20m", template="plotly_dark", xaxis={'type': 'category'})
-                st.plotly_chart(fig_eff, use_container_width=True)
+            with c6:
+                st.write("**PP Points**")
+                fig = go.Figure(go.Bar(x=df['gameDateFormatted'], y=df['powerPlayPoints'], marker_color='#e67e22', text=df['powerPlayPoints']))
+                fig.update_layout(template="plotly_dark", xaxis={'type': 'category'}, margin=dict(t=5, b=5, l=5, r=5))
+                st.plotly_chart(fig, use_container_width=True)
 
-            with col6:
-                fig_ppp = go.Figure(go.Bar(x=df['gameDateFormatted'], y=df['powerPlayPoints'], text=df['powerPlayPoints'], marker_color='#e67e22'))
-                fig_ppp.update_layout(title="PP Points", template="plotly_dark", xaxis={'type': 'category'})
-                st.plotly_chart(fig_ppp, use_container_width=True)
-
-            # --- Complete Game Log Section ---
             st.markdown("---")
-            st.subheader(f"📊 Detailed Game Log (Last {len(df)} Games)")
-            
-            columns_to_exclude = ['gameId', 'commonName', 'opponentCommonName', 'gameDateFormatted', 'pp_val', 'pp_pct', 'toi_min', 'efficiency']
-            st.dataframe(df.drop(columns=columns_to_exclude, errors='ignore'), use_container_width=True, hide_index=True)
-            
-        else:
-            st.info("No game logs found for this player.")
+            st.subheader("📊 Detailed Game Log")
+            cols_ex = ['gameId', 'commonName', 'opponentCommonName', 'gameDateFormatted', 'pp_val', 'pp_pct', 'toi_min', 'efficiency']
+            st.dataframe(df.drop(columns=cols_ex, errors='ignore'), use_container_width=True, hide_index=True)
+
     except Exception as e:
         st.error(f"Error fetching data: {e}")
