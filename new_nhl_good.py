@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
+import uuid
 from datetime import datetime, timezone
 from nhlpy import NHLClient
 
@@ -86,38 +87,41 @@ with st.sidebar:
     if not st.session_state.my_dashboard:
         st.info("No items saved yet.")
     else:
-        # Convert to DF for easy grouping
         dash_df = pd.DataFrame(st.session_state.my_dashboard)
         
-        # Group by Opponent to cluster games together
-        for opponent, group in dash_df.groupby("opponent"):
-            with st.expander(f"🆚 vs {opponent}", expanded=True):
-                # Sort players within the game by hit rate
+        # Logic to group by matchup regardless of perspective
+        def get_match_key(row):
+            teams = sorted([row['team'], row['opponent']])
+            return f"{teams[0]} vs {teams[1]}"
+        
+        dash_df['match_key'] = dash_df.apply(get_match_key, axis=1)
+        
+        for match, group in dash_df.groupby("match_key"):
+            with st.expander(f"🆚 {match}", expanded=True):
                 group = group.sort_values(by="over", ascending=False)
                 
-                for idx, entry in group.iterrows():
+                for _, entry in group.iterrows():
                     over_c, under_c = get_color(entry['over']), get_color(entry['under'])
                     col_text, col_btn = st.columns([0.85, 0.15])
                     
                     with col_text:
                         loc_icon = "🏠" if entry.get('location') == "Home" else "✈️"
                         st.markdown(
-                            f"**{entry['player']}** {loc_icon}<br>"
+                            f"**{entry['player']}** ({entry['team']}) {loc_icon}<br>"
                             f"> {entry['stat']} {entry['threshold']} @ **{entry.get('odds', 'N/A')}**<br>"
                             f"O: :{over_c}[**{entry['over']:.0f}%**] | U: :{under_c}[**{entry['under']:.0f}%**]<br>"
                             f"<small>Avg TOI: {entry.get('avg_toi', 'N/A')} | PP: {entry.get('pp_influence', 0):.0f}%</small>", 
                             unsafe_allow_html=True
                         )
                     with col_btn:
-                        # Use the original index (idx) for correct deletion
-                        if st.button("×", key=f"del_{idx}"):
-                            st.session_state.my_dashboard.pop(idx)
+                        # Use unique ID for safe deletion
+                        if st.button("×", key=f"del_{entry['unique_id']}"):
+                            st.session_state.my_dashboard = [d for d in st.session_state.my_dashboard if d['unique_id'] != entry['unique_id']]
                             st.rerun()
 
 # --- Main Analysis ---
 if sel_player['id']:
     try:
-        # Next Game Logic
         team_sched_data = client.schedule.team_weekly_schedule(team_abbr=sel_player['team'])
         games_list = team_sched_data if isinstance(team_sched_data, list) else team_sched_data.get('games', [])
         
@@ -166,21 +170,25 @@ if sel_player['id']:
             formatted_avg_toi = minutes_to_toi(df['toi_min'].mean())
             pp_influence = (df['pp_val'].sum() / df[stat].sum() * 100) if df[stat].sum() > 0 else 0
 
-            # --- Header & Save Button ---
             header_col, btn_col = st.columns([4, 1])
             with header_col:
                 st.markdown(f"### {stat.capitalize()} > {threshold} | O: :{get_color(over_rate)}[{over_rate:.0f}%] U: :{get_color(under_rate)}[{under_rate:.0f}%]")
             with btn_col:
                 if st.button("➕ Save to Board"):
                     st.session_state.my_dashboard.append({
-                        "player": choice, "stat": stat.capitalize(), "threshold": threshold,
-                        "over": over_rate, "under": under_rate, 
+                        "unique_id": str(uuid.uuid4()), # Added unique ID for deletion
+                        "player": choice, 
+                        "team": sel_player['team'],     # Included team for grouping
+                        "stat": stat.capitalize(), 
+                        "threshold": threshold,
+                        "over": over_rate, 
+                        "under": under_rate, 
                         "avg_toi": formatted_avg_toi, 
                         "avg_shifts": avg_shifts, 
                         "pp_influence": pp_influence,
                         "odds": market_odds, 
                         "location": next_game_info["location"],
-                        "opponent": next_game_info["opponent"] # Added for grouping
+                        "opponent": next_game_info["opponent"]
                     })
                     st.rerun()
 
