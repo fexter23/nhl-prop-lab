@@ -113,7 +113,14 @@ if selected_game_label:
 # --- Analysis ---
 if sel_player is not None:
     log_data = client.stats.player_game_log(player_id=sel_player['id'], season_id=CURRENT_SEASON, game_type=2)
-    games_log = log_data.get('gameLog', [])
+    
+    # Handle both dict and list return types
+    if isinstance(log_data, dict):
+        games_log = log_data.get('gameLog', [])
+    else:
+        # If it's a list, it's likely the list of games already
+        games_log = log_data
+
     if games_log:
         df = pd.DataFrame(games_log).head(games_back)
         df['gameDateFormatted'] = pd.to_datetime(df['gameDate']).dt.strftime('%b %d')
