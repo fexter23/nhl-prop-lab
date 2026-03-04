@@ -7,6 +7,8 @@ on:
 jobs:
   generate-data:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # This grants the GITHUB_TOKEN write access
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
