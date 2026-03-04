@@ -3,3 +3,4 @@ nhl-api-py
 plotly
 pandas
 datetime
+pyarrow
