@@ -111,7 +111,7 @@ if selected_game_label:
         st.warning("Matrix data not found. Please ensure the generation script has run.")
 
 # --- Analysis ---
-if sel_player:
+if sel_player is not None:
     log_data = client.stats.player_game_log(player_id=sel_player['id'], season_id=CURRENT_SEASON, game_type=2)
     games_log = log_data.get('gameLog', [])
     if games_log:
