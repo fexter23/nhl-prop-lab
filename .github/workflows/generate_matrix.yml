@@ -2,25 +2,44 @@ name: Generate Hit Rate Matrix
 on:
   schedule:
     - cron: '0 4 * * *' # Runs at 4:00 AM UTC daily
-  workflow_dispatch:     # Allows you to run it manually for testing
+  workflow_dispatch:     # Allows manual testing in the Actions tab
 
 jobs:
-  build:
+  generate-data:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+
       - name: Install dependencies
-        run: pip install pandas nhlpy pyarrow
+        run: |
+          pip install pandas pyarrow
+          # Force remove potential conflicting package
+          pip uninstall -y nhlpy 
+          # Install the correct library that provides NHLClient
+          pip install nhl-api-py
+
       - name: Run generation script
         run: python scripts/generate_matrix.py
-      - name: Commit and push file
+        env:
+          # If your script requires authentication or specific environment variables, add them here
+          PYTHONPATH: ${{ github.workspace }}
+
+      - name: Commit and push changes
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
-          git add data/hit_rate_matrix.parquet
-          git commit -m "Update hit rate matrix [skip ci]"
-          git push
+          # Add the parquet file if it exists
+          if [ -f data/hit_rate_matrix.parquet ]; then
+            git add data/hit_rate_matrix.parquet
+            git commit -m "chore: update hit rate matrix [skip ci]"
+            git push
+          else
+            echo "File not found, skipping commit."
+            exit 1
+          fi
