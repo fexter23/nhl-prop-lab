@@ -1,3 +1,4 @@
+import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
 import uuid
@@ -53,7 +54,12 @@ def get_all_active_players(season_str):
             roster = client.teams.team_roster(team_abbr=abbr, season=season_str)
             for group in ['forwards', 'defensemen', 'goalies']:
                 for p in roster.get(group, []):
-                    all_players.append({"id": p['id'], "name": f"{p['firstName']['default']} {p['lastName']['default']}", "team": abbr})
+                    all_players.append({
+                        "id": p['id'], 
+                        "name": f"{p['firstName']['default']} {p['lastName']['default']}", 
+                        "team": abbr,
+                        "pos": p.get('positionCode', group[0].upper()) # Added position tracking
+                    })
     except: pass
     return pd.DataFrame(all_players).sort_values("name")
 
@@ -91,7 +97,8 @@ with st.sidebar:
     else: 
         filtered_df = players_df
 
-    labels = filtered_df.apply(lambda x: f"{x['name']} ({x['team']})", axis=1).tolist()
+    # Differentiation logic for duplicate names
+    labels = filtered_df.apply(lambda x: f"{x['name']} ({x['team']} - {x['pos']})", axis=1).tolist()
     choice = st.selectbox("Select Player", options=labels)
     sel_player = filtered_df.iloc[labels.index(choice)]
     
@@ -108,7 +115,6 @@ with st.sidebar:
         for match, group in dash_df.groupby("match_key"):
             total_ret = get_parlay_return(group['odds'].tolist())
             with st.expander(f"🆚 {match} | :green[Return ${total_ret:.2f}]", expanded=True):
-                # Order props by highest value of either over or under
                 group['max_rate'] = group[['over', 'under']].max(axis=1)
                 sorted_group = group.sort_values(by='max_rate', ascending=False)
                 
@@ -128,13 +134,11 @@ with st.sidebar:
                             st.session_state.my_dashboard = [d for d in st.session_state.my_dashboard if d['unique_id'] != entry['unique_id']]
                             st.rerun()
 
-    # --- JSON Save/Load Logic ---
     st.divider()
     st.subheader("💾 Backup & Restore")
     
     if st.session_state.my_dashboard:
         json_data = json.dumps(st.session_state.my_dashboard, indent=4)
-        # Added timestamp to filename
         timestamp = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
         st.download_button(
             label="Download Dashboard (JSON)",
@@ -201,11 +205,11 @@ if sel_player['id']:
                 else: break
             streak_label = f"{'O' if is_over else 'U'}{streak_count}"
 
-            st.markdown(f"### {sel_player['name']} | {stat.capitalize()} > {threshold} | **Hit Rate (last {games_back}):** Over: :{get_color(over_rate)}[**{over_rate:.0f}%**] | Under: :{get_color(under_rate)}[**{under_rate:.0f}%**]")
+            st.markdown(f"### {sel_player['name']} ({sel_player['pos']}) | {stat.capitalize()} > {threshold} | **Hit Rate (last {games_back}):** Over: :{get_color(over_rate)}[**{over_rate:.0f}%**] | Under: :{get_color(under_rate)}[**{under_rate:.0f}%**]")
 
             if st.button("➕ Save Prop"):
                 st.session_state.my_dashboard.append({
-                    "unique_id": str(uuid.uuid4()), "player": sel_player['name'], "team": sel_player['team'], 
+                    "unique_id": str(uuid.uuid4()), "player": f"{sel_player['name']} ({sel_player['pos']})", "team": sel_player['team'], 
                     "opponent": next_game['opponent'], "stat": stat.capitalize(), "threshold": threshold, 
                     "over": over_rate, "under": under_rate, "avg_shifts": avg_shifts, "avg_toi": avg_toi, 
                     "odds": market_odds, "streak": streak_label, "location": next_game["location"]
