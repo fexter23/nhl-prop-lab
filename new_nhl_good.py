@@ -96,7 +96,7 @@ with st.sidebar:
     choice = st.selectbox("Select Player", options=labels)
     sel_player = filtered_df.iloc[labels.index(choice)]
     
-    stat = st.selectbox("Stat", ["points", "shots","goals", "assists", "hits", "pim", "powerPlayPoints"])
+    stat = st.selectbox("Stat", ["points", "goals", "assists", "shots", "hits", "pim", "powerPlayPoints"])
     threshold = st.number_input("Threshold", value=0.5, step=0.5)
     market_odds = st.selectbox("Market Odds", options=[str(x) for x in range(-300, -95, 5)] + [f"+{x}" for x in range(100, 305, 5)], index=41)
     games_back = st.select_slider("Last X Games", options=[5, 10, 15, 20, 30, 50], value=10)
@@ -109,7 +109,11 @@ with st.sidebar:
         for match, group in dash_df.groupby("match_key"):
             total_ret = get_parlay_return(group['odds'].tolist())
             with st.expander(f"🆚 {match} | :green[Return ${total_ret:.2f}]", expanded=True):
-                for _, entry in group.iterrows():
+                # Order props by highest value of either over or under
+                group['max_rate'] = group[['over', 'under']].max(axis=1)
+                sorted_group = group.sort_values(by='max_rate', ascending=False)
+                
+                for _, entry in sorted_group.iterrows():
                     over_c, under_c = get_color(entry['over']), get_color(entry['under'])
                     col_t, col_d = st.columns([0.8, 0.2])
                     with col_t:
@@ -129,18 +133,18 @@ with st.sidebar:
     st.divider()
     st.subheader("💾 Backup & Restore")
     
-    # Download Button
     if st.session_state.my_dashboard:
         json_data = json.dumps(st.session_state.my_dashboard, indent=4)
+        # Added timestamp to filename
+        timestamp = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
         st.download_button(
             label="Download Dashboard (JSON)",
             data=json_data,
-            file_name=f"nhl_dashboard_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json",
+            file_name=f"nhl_props_{timestamp}.json",
             mime="application/json",
             use_container_width=True
         )
 
-    # Upload Functionality
     uploaded_file = st.file_uploader("Upload Saved Dashboard", type=["json"])
     if uploaded_file is not None:
         try:
@@ -150,7 +154,7 @@ with st.sidebar:
                     st.session_state.my_dashboard = new_data
                     st.rerun()
             else:
-                st.error("Invalid JSON format. Expected a list of entries.")
+                st.error("Invalid JSON format.")
         except Exception as e:
             st.error(f"Error loading file: {e}")
 
