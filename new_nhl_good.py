@@ -96,7 +96,7 @@ with st.sidebar:
     choice = st.selectbox("Select Player", options=labels)
     sel_player = filtered_df.iloc[labels.index(choice)]
     
-    stat = st.selectbox("Stat", ["points", "goals", "assists", "shots", "hits", "pim", "powerPlayPoints"])
+    stat = st.selectbox("Stat", ["points", "shots", "assists", "goals", "hits", "pim", "PPPoints"])
     threshold = st.number_input("Threshold", value=0.5, step=0.5)
     market_odds = st.selectbox("Market Odds", options=[str(x) for x in range(-300, -95, 5)] + [f"+{x}" for x in range(100, 305, 5)], index=41)
     games_back = st.select_slider("Last X Games", options=[5, 10, 15, 20, 30, 50], value=10)
