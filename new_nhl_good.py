@@ -123,9 +123,11 @@ with st.sidebar:
         for match, group in dash_df.groupby("match_key"):
             total_ret = get_parlay_return(group['odds'].tolist())
             prop_count = len(group)
-            h_col1, h_col2 = st.columns([0.85, 0.15])
+            h_col1, h_col2, h_col3 = st.columns([0.1, 0.8, 0.1])
             with h_col1:
-                with st.expander(f"🆚 {match} | :green[Return ${total_ret:.2f}] | ({prop_count})", expanded=True):
+                st.checkbox("", key=f"check_{match}", label_visibility="collapsed")
+            with h_col2:
+                with st.expander(f"🆚 {match} | :green[Return ${total_ret:.2f}] | ({prop_count} props)", expanded=True):
                     #st.divider()
 
                     group['max_rate'] = group[['over', 'under']].max(axis=1)
@@ -146,14 +148,10 @@ with st.sidebar:
                             if st.button("🗑️", key=f"del_{entry['unique_id']}"):
                                 st.session_state.my_dashboard = [d for d in st.session_state.my_dashboard if d['unique_id'] != entry['unique_id']]
                                 st.rerun()
-            with h_col2:
-                subcol1, subcol2 = st.columns(2)
-                with subcol1:
-                    st.checkbox("", key=f"check_{match}", label_visibility="collapsed")
-                with subcol2:
-                    if st.button("x", key=f"del_group_{match}", help="Delete entire group"):
-                        st.session_state.my_dashboard = [d for d in st.session_state.my_dashboard if " vs ".join(sorted([d['team'], d['opponent']])) != match]
-                        st.rerun()
+            with h_col3:
+                if st.button("x", key=f"del_group_{match}", help="Delete entire group"):
+                    st.session_state.my_dashboard = [d for d in st.session_state.my_dashboard if " vs ".join(sorted([d['team'], d['opponent']])) != match]
+                    st.rerun()
 
     st.divider()
     st.subheader("💾 Backup & Restore")
