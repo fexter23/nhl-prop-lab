@@ -153,8 +153,7 @@ with st.sidebar:
                     st.session_state.my_dashboard = [d for d in st.session_state.my_dashboard if " vs ".join(sorted([d['team'], d['opponent']])) != match]
                     st.rerun()
 
-    st.divider()
-    st.subheader("💾 Backup & Restore")
+   
     
     if st.session_state.my_dashboard:
         json_data = json.dumps(st.session_state.my_dashboard, indent=4)
