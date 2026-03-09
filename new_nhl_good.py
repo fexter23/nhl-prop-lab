@@ -58,7 +58,7 @@ def get_all_active_players(season_str):
                         "id": p['id'], 
                         "name": f"{p['firstName']['default']} {p['lastName']['default']}", 
                         "team": abbr,
-                        "pos": p.get('positionCode', group[0].upper()) # Added position tracking
+                        "pos": p.get('positionCode', group[0].upper())
                     })
     except: pass
     return pd.DataFrame(all_players).sort_values("name")
@@ -79,11 +79,16 @@ st.markdown("""
     [data-testid="stMetricLabel"] { font-size: 0.9rem !important; margin-bottom: -10px !important; }
     [data-testid="column"] { padding: 0px 5px !important; }
     .stMetric { padding: 5px !important; }
+    /* Tighten up the small header row in the expander */
+    .stCheckbox { margin-bottom: -15px; }
     </style>
     """, unsafe_allow_html=True)
 
 CURRENT_SEASON = get_current_season_string()
 players_df = get_all_active_players(CURRENT_SEASON)
+
+# Calculation placeholders for sidebar button logic
+over_rate, under_rate, avg_shifts, avg_toi, streak_label, next_game = 0, 0, "N/A", "0:00", "N/A", {"opponent": "N/A", "location": "N/A"}
 
 with st.sidebar:
     st.header("Settings")
@@ -97,7 +102,6 @@ with st.sidebar:
     else: 
         filtered_df = players_df
 
-    # Differentiation logic for duplicate names
     labels = filtered_df.apply(lambda x: f"{x['name']} ({x['team']} - {x['pos']})", axis=1).tolist()
     choice = st.selectbox("Select Player", options=labels)
     sel_player = filtered_df.iloc[labels.index(choice)]
@@ -105,6 +109,10 @@ with st.sidebar:
     stat = st.selectbox("Stat", ["points", "shots", "assists", "goals", "hits", "pim", "PPPoints"])
     threshold = st.number_input("Threshold", value=0.5, step=0.5)
     market_odds = st.selectbox("Market Odds", options=[str(x) for x in range(-300, -95, 5)] + [f"+{x}" for x in range(100, 305, 5)], index=41)
+    
+    # Save Prop Button located right under Market Odds
+    save_trigger = st.button("➕ Save Prop", use_container_width=True)
+    
     games_back = st.select_slider("Last X Games", options=[5, 10, 15, 20, 30, 50], value=10)
 
     st.header("📋 My Dashboard")
@@ -114,25 +122,38 @@ with st.sidebar:
         
         for match, group in dash_df.groupby("match_key"):
             total_ret = get_parlay_return(group['odds'].tolist())
-            with st.expander(f"🆚 {match} | :green[Return ${total_ret:.2f}]", expanded=True):
-                group['max_rate'] = group[['over', 'under']].max(axis=1)
-                sorted_group = group.sort_values(by='max_rate', ascending=False)
-                
-                for _, entry in sorted_group.iterrows():
-                    over_c, under_c = get_color(entry['over']), get_color(entry['under'])
-                    col_t, col_d = st.columns([0.8, 0.2])
-                    with col_t:
-                        st.markdown(
-                            f"**{entry['player']}** {'🏠' if entry.get('location') == 'Home' else '✈️'}<br>"
-                            f"> {entry['stat']} {entry['threshold']} @ **{entry['odds']}**<br>"
-                            f"O: :{over_c}[**{entry['over']:.0f}%**] | U: :{under_c}[**{entry['under']:.0f}%**]<br>"
-                            f"<small>Streak: {entry['streak']} | Shifts: {entry['avg_shifts']} | TOI: {entry['avg_toi']}</small>", 
-                            unsafe_allow_html=True
-                        )
-                    with col_d:
-                        if st.button("🗑️", key=f"del_{entry['unique_id']}"):
-                            st.session_state.my_dashboard = [d for d in st.session_state.my_dashboard if d['unique_id'] != entry['unique_id']]
-                            st.rerun()
+            prop_count = len(group)
+            h_col1, h_col2 = st.columns([0.85, 0.15])
+            with h_col1:
+                with st.expander(f"🆚 {match} | :green[Return ${total_ret:.2f}] | ({prop_count})", expanded=True):
+                    #st.divider()
+
+                    group['max_rate'] = group[['over', 'under']].max(axis=1)
+                    sorted_group = group.sort_values(by='max_rate', ascending=False)
+                    
+                    for _, entry in sorted_group.iterrows():
+                        over_c, under_c = get_color(entry['over']), get_color(entry['under'])
+                        col_t, col_d = st.columns([0.8, 0.2])
+                        with col_t:
+                            st.markdown(
+                                f"**{entry['player']}** {'🏠' if entry.get('location') == 'Home' else '✈️'}<br>"
+                                f"> {entry['stat']} {entry['threshold']} @ **{entry['odds']}**<br>"
+                                f"O: :{over_c}[**{entry['over']:.0f}%**] | U: :{under_c}[**{entry['under']:.0f}%**]<br>"
+                                f"<small>Streak: {entry['streak']} | Shifts: {entry['avg_shifts']} | TOI: {entry['avg_toi']}</small>", 
+                                unsafe_allow_html=True
+                            )
+                        with col_d:
+                            if st.button("🗑️", key=f"del_{entry['unique_id']}"):
+                                st.session_state.my_dashboard = [d for d in st.session_state.my_dashboard if d['unique_id'] != entry['unique_id']]
+                                st.rerun()
+            with h_col2:
+                subcol1, subcol2 = st.columns(2)
+                with subcol1:
+                    st.checkbox("", key=f"check_{match}", label_visibility="collapsed")
+                with subcol2:
+                    if st.button("x", key=f"del_group_{match}", help="Delete entire group"):
+                        st.session_state.my_dashboard = [d for d in st.session_state.my_dashboard if " vs ".join(sorted([d['team'], d['opponent']])) != match]
+                        st.rerun()
 
     st.divider()
     st.subheader("💾 Backup & Restore")
@@ -205,40 +226,56 @@ if sel_player['id']:
                 else: break
             streak_label = f"{'O' if is_over else 'U'}{streak_count}"
 
-            st.markdown(f"### {sel_player['name']} ({sel_player['pos']}) | {stat.capitalize()} > {threshold} | **Hit Rate (last {games_back}):** Over: :{get_color(over_rate)}[**{over_rate:.0f}%**] | Under: :{get_color(under_rate)}[**{under_rate:.0f}%**]")
-
-            if st.button("➕ Save Prop"):
-                st.session_state.my_dashboard.append({
+            # Sidebar Save Logic
+            if save_trigger:
+                new_prop = {
                     "unique_id": str(uuid.uuid4()), "player": f"{sel_player['name']} ({sel_player['pos']})", "team": sel_player['team'], 
                     "opponent": next_game['opponent'], "stat": stat.capitalize(), "threshold": threshold, 
                     "over": over_rate, "under": under_rate, "avg_shifts": avg_shifts, "avg_toi": avg_toi, 
                     "odds": market_odds, "streak": streak_label, "location": next_game["location"]
-                })
-                st.rerun()
+                }
+                # Check for duplicate: same player, stat, threshold
+                is_duplicate = any(
+                    d['player'] == new_prop['player'] and 
+                    d['stat'] == new_prop['stat'] and 
+                    d['threshold'] == new_prop['threshold']
+                    for d in st.session_state.my_dashboard
+                )
+                if not is_duplicate:
+                    st.session_state.my_dashboard.append(new_prop)
+                    st.rerun()
+                else:
+                    st.warning("This prop is already saved.")
 
-            c1, c2, c3, c4, c5, c6 = st.columns(6)
-            with c1:
+            st.markdown(f"### {sel_player['name']} ({sel_player['pos']}) | {stat.capitalize()} > {threshold} | **Hit Rate (last {games_back}):** Over: :{get_color(over_rate)}[**{over_rate:.0f}%**] | Under: :{get_color(under_rate)}[**{under_rate:.0f}%**]")
+
+            # Graph Layout: Row 1 (Stat, TOI, Shifts)
+            r1c1, r1c2, r1c3 = st.columns(3)
+            with r1c1:
                 st.write(f"**Stat ({streak_label})**")
                 fig = go.Figure(go.Bar(x=df['gameDateFormatted'], y=df[stat], text=df[stat], textposition='auto', marker_color=['#2ecc71' if v > threshold else '#e74c3c' for v in df[stat]]))
                 fig.add_hline(y=threshold, line_dash="dash", line_color="white")
                 fig.update_layout(template="plotly_dark", xaxis={'type': 'category'}, margin=dict(t=5, b=5, l=5, r=5), height=160); st.plotly_chart(fig, use_container_width=True)
-            with c2:
+            with r1c2:
                 st.write(f"**TOI ({avg_toi})**")
                 fig = go.Figure(go.Bar(x=df['gameDateFormatted'], y=df['toi_min'], text=df['toi'], textposition='auto', marker_color='#3498db'))
                 fig.update_layout(template="plotly_dark", xaxis={'type': 'category'}, margin=dict(t=5, b=5, l=5, r=5), height=160); st.plotly_chart(fig, use_container_width=True)
-            with c3:
+            with r1c3:
                 st.write(f"**Shifts ({avg_shifts})**")
                 fig = go.Figure(go.Bar(x=df['gameDateFormatted'], y=df['shifts'], text=df['shifts'], textposition='auto', marker_color='#1abc9c'))
                 fig.update_layout(template="plotly_dark", xaxis={'type': 'category'}, margin=dict(t=5, b=5, l=5, r=5), height=160); st.plotly_chart(fig, use_container_width=True)
-            with c4:
+
+            # Graph Layout: Row 2 (PP%, Efficiency, PP Pts)
+            r2c1, r2c2, r2c3 = st.columns(3)
+            with r2c1:
                 st.write(f"**PP % ({pp_influence:.0f}%)**")
                 fig = go.Figure(go.Bar(x=df['gameDateFormatted'], y=df['pp_pct'], text=df['pp_pct'].astype(str) + '%', textposition='auto', marker_color='#f1c40f'))
                 fig.update_layout(template="plotly_dark", xaxis={'type': 'category'}, yaxis_range=[0, 105], margin=dict(t=5, b=5, l=5, r=5), height=160); st.plotly_chart(fig, use_container_width=True)
-            with c5:
+            with r2c2:
                 st.write("**Eff/20m**")
                 fig = go.Figure(go.Bar(x=df['gameDateFormatted'], y=df['efficiency'], text=df['efficiency'], textposition='auto', marker_color='#9b59b6'))
                 fig.update_layout(template="plotly_dark", xaxis={'type': 'category'}, margin=dict(t=5, b=5, l=5, r=5), height=160); st.plotly_chart(fig, use_container_width=True)
-            with c6:
+            with r2c3:
                 st.write("**PP Pts**")
                 fig = go.Figure(go.Bar(x=df['gameDateFormatted'], y=df['powerPlayPoints'], text=df['powerPlayPoints'], textposition='auto', marker_color='#e67e22'))
                 fig.update_layout(template="plotly_dark", xaxis={'type': 'category'}, margin=dict(t=5, b=5, l=5, r=5), height=160); st.plotly_chart(fig, use_container_width=True)
