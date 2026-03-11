@@ -1,0 +1,37 @@
+name: Daily NHL Trends Update
+
+on:
+  schedule:
+    - cron: '0 13 * * *' 
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      # This forces the runner to use the newer engine for all actions
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    steps:
+      # Using v4 for checkout (Node 20+)
+      - name: Checkout code
+        uses: actions/checkout@v4 
+
+      # Using v5 for setup-python (Node 20+)
+      - name: Set up Python
+        uses: actions/setup-python@v5 
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: pip install pandas nhlpy
+
+      - name: Run calculation
+        run: python daily_trends.py
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add daily_trends.json
+          git commit -m "Update daily trends $(date)" || exit 0
+          git push
