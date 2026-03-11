@@ -1,47 +1,33 @@
-name: Generate Hit Rate Matrix
+name: Daily NHL Trends Update
+
 on:
   schedule:
-    - cron: '0 4 * * *' # Runs at 4:00 AM UTC daily
-  workflow_dispatch:     # Allows manual testing in the Actions tab
+    - cron: '0 13 * * *' # 8:00 AM EST (13:00 UTC)
+  workflow_dispatch: # Allows manual trigger
 
 jobs:
-  generate-data:
+  build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write  # This grants the GITHUB_TOKEN write access
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v3
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v4
         with:
-          python-version: '3.11'
+          python-version: '3.9'
 
       - name: Install dependencies
         run: |
-          pip install pandas pyarrow
-          # Force remove potential conflicting package
-          pip uninstall -y nhlpy 
-          # Install the correct library that provides NHLClient
-          pip install nhl-api-py
+          pip install pandas nhlpy
 
-      - name: Run generation script
-        run: python scripts/generate_matrix.py
-        env:
-          # If your script requires authentication or specific environment variables, add them here
-          PYTHONPATH: ${{ github.workspace }}
+      - name: Run calculation
+        run: python daily_trends.py
 
       - name: Commit and push changes
         run: |
-          git config --local user.email "actions@github.com"
-          git config --local user.name "GitHub Actions"
-          # Add the parquet file if it exists
-          if [ -f data/hit_rate_matrix.parquet ]; then
-            git add data/hit_rate_matrix.parquet
-            git commit -m "chore: update hit rate matrix [skip ci]"
-            git push
-          else
-            echo "File not found, skipping commit."
-            exit 1
-          fi
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add daily_trends.json
+          git commit -m "Update daily trends $(date)" || exit 0
+          git push
