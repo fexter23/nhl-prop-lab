@@ -26,7 +26,7 @@ jobs:
         run: pip install pandas nhlpy
 
       - name: Run calculation
-        run: python daily_trends.py
+        run: python scripts/daily_trends.py
 
       - name: Commit and push changes
         run: |
