@@ -5,27 +5,29 @@ on:
     - cron: '0 13 * * *' 
   workflow_dispatch:
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      # This forces the runner to use the newer engine for all actions
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
-      # Using v4 for checkout (Node 20+)
       - name: Checkout code
-        uses: actions/checkout@v4 
+        uses: actions/checkout@v6
 
-      # Using v5 for setup-python (Node 20+)
+      - name: List files (DEBUG)
+        run: ls -R  # This will show you exactly where your files are in the runner logs
+
       - name: Set up Python
-        uses: actions/setup-python@v5 
+        uses: actions/setup-python@v6
         with:
-          python-version: '3.9'
+          python-version: '3.11'
 
       - name: Install dependencies
         run: pip install pandas nhlpy
 
       - name: Run calculation
+        # If 'ls -R' shows the file is in a folder, change the path here
         run: python scripts/daily_trends.py
 
       - name: Commit and push changes
