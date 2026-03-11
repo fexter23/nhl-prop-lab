@@ -3,19 +3,24 @@ name: Daily NHL Trends Update
 on:
   schedule:
     - cron: '0 13 * * *' # 8:00 AM EST (13:00 UTC)
-  workflow_dispatch: # Allows manual trigger
+  workflow_dispatch:
+
+# Opt into Node.js 24 runtime immediately as recommended
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6 # Updated from v3 to v6 (Supports Node 24)
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v6 # Updated from v4 to v6 (Supports Node 24)
         with:
           python-version: '3.9'
+          cache: 'pip' # Optional: enables caching for faster runs
 
       - name: Install dependencies
         run: |
