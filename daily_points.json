@@ -1,0 +1,65 @@
+[
+    {
+        "player": "Charlie McAvoy",
+        "team": "BOS",
+        "opponent": "NJD",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Adrian Kempe",
+        "team": "LAK",
+        "opponent": "NYR",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Nathan MacKinnon",
+        "team": "COL",
+        "opponent": "PIT",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Martin Necas",
+        "team": "COL",
+        "opponent": "PIT",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Jesper Bratt",
+        "team": "NJD",
+        "opponent": "BOS",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Vincent Trocheck",
+        "team": "NYR",
+        "opponent": "LAK",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Mavrik Bourque",
+        "team": "DAL",
+        "opponent": "UTA",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Bryan Rust",
+        "team": "PIT",
+        "opponent": "COL",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Gabriel Landeskog",
+        "team": "COL",
+        "opponent": "PIT",
+        "hit_rate": 80,
+        "last_10": 8
+    }
+]
