@@ -2,63 +2,98 @@
     {
         "player": "Charlie McAvoy",
         "team": "BOS",
-        "opponent": "NJD",
+        "opponent": "MTL",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Adrian Kempe",
-        "team": "LAK",
-        "opponent": "NYR",
+        "player": "Macklin Celebrini",
+        "team": "SJS",
+        "opponent": "EDM",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Nathan MacKinnon",
-        "team": "COL",
-        "opponent": "PIT",
+        "player": "Leon Draisaitl",
+        "team": "EDM",
+        "opponent": "SJS",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Martin Necas",
-        "team": "COL",
-        "opponent": "PIT",
+        "player": "Connor McDavid",
+        "team": "EDM",
+        "opponent": "SJS",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Jesper Bratt",
-        "team": "NJD",
+        "player": "Evan Bouchard",
+        "team": "EDM",
+        "opponent": "SJS",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "William Nylander",
+        "team": "TOR",
+        "opponent": "NYI",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Juraj Slafkovsk\u00fd",
+        "team": "MTL",
         "opponent": "BOS",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Vincent Trocheck",
-        "team": "NYR",
-        "opponent": "LAK",
+        "player": "Lane Hutson",
+        "team": "MTL",
+        "opponent": "BOS",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Mavrik Bourque",
-        "team": "DAL",
-        "opponent": "UTA",
+        "player": "Adam Fantilli",
+        "team": "CBJ",
+        "opponent": "CAR",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Bryan Rust",
-        "team": "PIT",
-        "opponent": "COL",
+        "player": "Kirill Marchenko",
+        "team": "CBJ",
+        "opponent": "CAR",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Gabriel Landeskog",
-        "team": "COL",
-        "opponent": "PIT",
+        "player": "Quinn Hughes",
+        "team": "MIN",
+        "opponent": "CHI",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Kyle Connor",
+        "team": "WPG",
+        "opponent": "NSH",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Mattias Ekholm",
+        "team": "EDM",
+        "opponent": "SJS",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Brayden Point",
+        "team": "TBL",
+        "opponent": "SEA",
         "hit_rate": 80,
         "last_10": 8
     }
