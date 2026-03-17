@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-03-17 12:06:25",
+    "last_updated": "2026-03-17 14:19:38",
     "matchups": [
         {
             "label": "NYI @ TOR",
@@ -887,6 +887,12 @@
             "name": "Nick Foligno",
             "team": "MIN",
             "pos": "L"
+        },
+        {
+            "id": 8483452,
+            "name": "Hunter Haight",
+            "team": "MIN",
+            "pos": "C"
         },
         {
             "id": 8477451,
