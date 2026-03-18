@@ -1,99 +1,85 @@
 [
     {
-        "player": "Charlie McAvoy",
-        "team": "BOS",
-        "opponent": "MTL",
+        "player": "Bryan Rust",
+        "team": "PIT",
+        "opponent": "CAR",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Macklin Celebrini",
-        "team": "SJS",
-        "opponent": "EDM",
+        "player": "Brady Tkachuk",
+        "team": "OTT",
+        "opponent": "WSH",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Leon Draisaitl",
-        "team": "EDM",
-        "opponent": "SJS",
+        "player": "Nathan MacKinnon",
+        "team": "COL",
+        "opponent": "DAL",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Connor McDavid",
-        "team": "EDM",
-        "opponent": "SJS",
+        "player": "Martin Necas",
+        "team": "COL",
+        "opponent": "DAL",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Evan Bouchard",
-        "team": "EDM",
-        "opponent": "SJS",
+        "player": "Robert Thomas",
+        "team": "STL",
+        "opponent": "CGY",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "William Nylander",
-        "team": "TOR",
-        "opponent": "NYI",
+        "player": "Jesper Bratt",
+        "team": "NJD",
+        "opponent": "NYR",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Juraj Slafkovsk\u00fd",
-        "team": "MTL",
-        "opponent": "BOS",
+        "player": "Jack Hughes",
+        "team": "NJD",
+        "opponent": "NYR",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Lane Hutson",
-        "team": "MTL",
-        "opponent": "BOS",
+        "player": "Vincent Trocheck",
+        "team": "NYR",
+        "opponent": "NJD",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Adam Fantilli",
-        "team": "CBJ",
+        "player": "Erik Karlsson",
+        "team": "PIT",
         "opponent": "CAR",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Kirill Marchenko",
-        "team": "CBJ",
-        "opponent": "CAR",
+        "player": "Tim St\u00fctzle",
+        "team": "OTT",
+        "opponent": "WSH",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Quinn Hughes",
-        "team": "MIN",
-        "opponent": "CHI",
+        "player": "Wyatt Johnston",
+        "team": "DAL",
+        "opponent": "COL",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Kyle Connor",
-        "team": "WPG",
-        "opponent": "NSH",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Mattias Ekholm",
-        "team": "EDM",
-        "opponent": "SJS",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Brayden Point",
-        "team": "TBL",
-        "opponent": "SEA",
+        "player": "Gabriel Landeskog",
+        "team": "COL",
+        "opponent": "DAL",
         "hit_rate": 80,
         "last_10": 8
     }
