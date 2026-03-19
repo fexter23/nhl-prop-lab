@@ -98,15 +98,11 @@ with st.expander("🔥 High Hit-Rate Clubs / Trends (click to show)", expanded=F
     else:
         st.caption("No trending players found today")
 
-
-
 # ─── Lineups Section: Embedded Rotowire ──────────────────────────────────────
 with st.expander("📋 View Daily Projected Lineups (Rotowire)", expanded=False):
     st.caption("Live updates from Rotowire. Scroll within the frame to see all matchups.")
     
-    # Embedding the URL in an iframe
     lineups_url = "https://www.rotowire.com/hockey/nhl-lineups.php"
-    
     st.components.v1.iframe(lineups_url, height=600, scrolling=True)
 
 # ─── Sidebar ─────────────────────────────────────────────────────────────────
@@ -154,7 +150,7 @@ with st.sidebar:
             label_visibility="collapsed"
         )
 
-    # Fixed to 10 games as requested
+    # Fixed to 10 games as maximum window
     games_back = 10
 
     # ── Player data caching ──────────────────────────────────────────────────
@@ -226,8 +222,19 @@ with st.sidebar:
         if sel_player and sel_player.get('id'):
             try:
                 df_for_prop = df_recent.head(games_back).copy() if not df_recent.empty else pd.DataFrame()
-                over_rate = (df_for_prop[stat] > threshold).mean() * 100 if not df_for_prop.empty else 0
-                under_rate = 100 - over_rate
+
+                # ── Blended hit rate calculation when saving ─────────────────────
+                if not df_for_prop.empty:
+                    df_5  = df_for_prop.head(5)
+                    df_10 = df_for_prop.head(10)
+
+                    hit_5  = (df_5[stat] > threshold).mean() * 100 if not df_5.empty else 0.0
+                    hit_10 = (df_10[stat] > threshold).mean() * 100 if not df_10.empty else 0.0
+
+                    over_rate = (hit_5 + hit_10) / 2
+                    under_rate = 100 - over_rate
+                else:
+                    over_rate = under_rate = 0.0
 
                 new_prop = {
                     "unique_id": str(uuid.uuid4()),
@@ -273,8 +280,16 @@ if sel_player and sel_player.get('id'):
             df['gameDateFormatted'] = pd.to_datetime(df['gameDate']).dt.strftime('%b %d')
             df['toi_min'] = df['toi'].apply(toi_to_minutes)
 
-            over_rate  = (df[stat] > threshold).mean() * 100
+            # ── Blended hit rate: (last 5 + last 10) / 2 ────────────────────────
+            df_5  = df.head(5)
+            df_10 = df.head(10)
+
+            hit_5  = (df_5[stat] > threshold).mean() * 100 if not df_5.empty else 0.0
+            hit_10 = (df_10[stat] > threshold).mean() * 100 if not df_10.empty else 0.0
+
+            over_rate  = (hit_5 + hit_10) / 2
             under_rate = 100 - over_rate
+
             avg_toi    = minutes_to_toi(df['toi_min'].mean())
             avg_shifts = round(df['shifts'].mean(), 1)
 
