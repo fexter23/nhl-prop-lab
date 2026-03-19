@@ -1,85 +1,141 @@
 [
     {
-        "player": "Bryan Rust",
-        "team": "PIT",
-        "opponent": "CAR",
+        "player": "Charlie McAvoy",
+        "team": "BOS",
+        "opponent": "WPG",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Brady Tkachuk",
-        "team": "OTT",
-        "opponent": "WSH",
+        "player": "Leon Draisaitl",
+        "team": "EDM",
+        "opponent": "FLA",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Nathan MacKinnon",
-        "team": "COL",
-        "opponent": "DAL",
+        "player": "Connor McDavid",
+        "team": "EDM",
+        "opponent": "FLA",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Martin Necas",
-        "team": "COL",
-        "opponent": "DAL",
+        "player": "Evan Bouchard",
+        "team": "EDM",
+        "opponent": "FLA",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Robert Thomas",
-        "team": "STL",
-        "opponent": "CGY",
+        "player": "Macklin Celebrini",
+        "team": "SJS",
+        "opponent": "BUF",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Jesper Bratt",
-        "team": "NJD",
-        "opponent": "NYR",
+        "player": "Adrian Kempe",
+        "team": "LAK",
+        "opponent": "PHI",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Kyle Connor",
+        "team": "WPG",
+        "opponent": "BOS",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Jack Hughes",
-        "team": "NJD",
-        "opponent": "NYR",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Vincent Trocheck",
-        "team": "NYR",
-        "opponent": "NJD",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Erik Karlsson",
-        "team": "PIT",
-        "opponent": "CAR",
+        "player": "Pavel Zacha",
+        "team": "BOS",
+        "opponent": "WPG",
         "hit_rate": 80,
         "last_10": 8
     },
     {
         "player": "Tim St\u00fctzle",
         "team": "OTT",
-        "opponent": "WSH",
+        "opponent": "NYI",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Wyatt Johnston",
-        "team": "DAL",
-        "opponent": "COL",
+        "player": "Brady Tkachuk",
+        "team": "OTT",
+        "opponent": "NYI",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Gabriel Landeskog",
-        "team": "COL",
-        "opponent": "DAL",
+        "player": "Juraj Slafkovsk\u00fd",
+        "team": "MTL",
+        "opponent": "DET",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Nick Suzuki",
+        "team": "MTL",
+        "opponent": "DET",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Lane Hutson",
+        "team": "MTL",
+        "opponent": "DET",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Alex DeBrincat",
+        "team": "DET",
+        "opponent": "MTL",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Vincent Trocheck",
+        "team": "NYR",
+        "opponent": "CBJ",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Charlie Coyle",
+        "team": "CBJ",
+        "opponent": "NYR",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Adam Fantilli",
+        "team": "CBJ",
+        "opponent": "NYR",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Matthew Tkachuk",
+        "team": "FLA",
+        "opponent": "EDM",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Mattias Ekholm",
+        "team": "EDM",
+        "opponent": "FLA",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Brayden Point",
+        "team": "TBL",
+        "opponent": "VAN",
         "hit_rate": 80,
         "last_10": 8
     }
