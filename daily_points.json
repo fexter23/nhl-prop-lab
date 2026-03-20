@@ -1,141 +1,64 @@
 [
     {
-        "player": "Charlie McAvoy",
-        "team": "BOS",
-        "opponent": "WPG",
+        "player": "Nathan MacKinnon",
+        "team": "COL",
+        "opponent": "CHI",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Leon Draisaitl",
-        "team": "EDM",
-        "opponent": "FLA",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Connor McDavid",
-        "team": "EDM",
-        "opponent": "FLA",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Evan Bouchard",
-        "team": "EDM",
-        "opponent": "FLA",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Macklin Celebrini",
-        "team": "SJS",
-        "opponent": "BUF",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Adrian Kempe",
-        "team": "LAK",
-        "opponent": "PHI",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Kyle Connor",
-        "team": "WPG",
-        "opponent": "BOS",
+        "player": "William Nylander",
+        "team": "TOR",
+        "opponent": "CAR",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Pavel Zacha",
-        "team": "BOS",
-        "opponent": "WPG",
+        "player": "Jesper Bratt",
+        "team": "NJD",
+        "opponent": "WSH",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Tim St\u00fctzle",
-        "team": "OTT",
-        "opponent": "NYI",
+        "player": "Jack Hughes",
+        "team": "NJD",
+        "opponent": "WSH",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Brady Tkachuk",
-        "team": "OTT",
-        "opponent": "NYI",
+        "player": "Gabriel Landeskog",
+        "team": "COL",
+        "opponent": "CHI",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Juraj Slafkovsk\u00fd",
-        "team": "MTL",
-        "opponent": "DET",
+        "player": "Martin Necas",
+        "team": "COL",
+        "opponent": "CHI",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Nick Suzuki",
-        "team": "MTL",
-        "opponent": "DET",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Lane Hutson",
-        "team": "MTL",
-        "opponent": "DET",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Alex DeBrincat",
-        "team": "DET",
-        "opponent": "MTL",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Vincent Trocheck",
-        "team": "NYR",
-        "opponent": "CBJ",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Charlie Coyle",
-        "team": "CBJ",
-        "opponent": "NYR",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Adam Fantilli",
-        "team": "CBJ",
-        "opponent": "NYR",
+        "player": "Sam Bennett",
+        "team": "FLA",
+        "opponent": "CGY",
         "hit_rate": 80,
         "last_10": 8
     },
     {
         "player": "Matthew Tkachuk",
         "team": "FLA",
-        "opponent": "EDM",
+        "opponent": "CGY",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Mattias Ekholm",
-        "team": "EDM",
-        "opponent": "FLA",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Brayden Point",
-        "team": "TBL",
-        "opponent": "VAN",
+        "player": "Troy Terry",
+        "team": "ANA",
+        "opponent": "UTA",
         "hit_rate": 80,
         "last_10": 8
     }
