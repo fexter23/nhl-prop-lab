@@ -1,113 +1,15 @@
 [
     {
-        "player": "Nathan MacKinnon",
-        "team": "COL",
-        "opponent": "WSH",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Bryan Rust",
-        "team": "PIT",
-        "opponent": "CAR",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Adrian Kempe",
-        "team": "LAK",
-        "opponent": "UTA",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Anze Kopitar",
-        "team": "LAK",
-        "opponent": "UTA",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Vincent Trocheck",
+        "player": "Mika Zibanejad",
         "team": "NYR",
-        "opponent": "WPG",
+        "opponent": "OTT",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Gabriel Landeskog",
-        "team": "COL",
-        "opponent": "WSH",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Martin Necas",
-        "team": "COL",
-        "opponent": "WSH",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Rickard Rakell",
-        "team": "PIT",
-        "opponent": "CAR",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Erik Karlsson",
-        "team": "PIT",
-        "opponent": "CAR",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Adam Fantilli",
-        "team": "CBJ",
-        "opponent": "NYI",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Matthew Schaefer",
-        "team": "NYI",
-        "opponent": "CBJ",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Jason Robertson",
-        "team": "DAL",
-        "opponent": "VGK",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Nikita Kucherov",
-        "team": "TBL",
-        "opponent": "CGY",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Brayden Point",
-        "team": "TBL",
-        "opponent": "CGY",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Alex Tuch",
-        "team": "BUF",
-        "opponent": "ANA",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Artemi Panarin",
-        "team": "LAK",
-        "opponent": "UTA",
+        "player": "Adam Fox",
+        "team": "NYR",
+        "opponent": "OTT",
         "hit_rate": 80,
         "last_10": 8
     }
