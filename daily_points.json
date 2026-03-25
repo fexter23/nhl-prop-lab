@@ -2,189 +2,28 @@
     {
         "player": "David Pastrnak",
         "team": "BOS",
-        "opponent": "TOR",
-        "hit_rate": 90,
-        "last_10": 9
+        "opponent": "BUF",
+        "hit_rate": 100,
+        "last_10": 10
     },
     {
         "player": "Charlie McAvoy",
         "team": "BOS",
-        "opponent": "TOR",
+        "opponent": "BUF",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Juraj Slafkovsk\u00fd",
-        "team": "MTL",
-        "opponent": "CAR",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Nick Suzuki",
-        "team": "MTL",
-        "opponent": "CAR",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Alex DeBrincat",
-        "team": "DET",
-        "opponent": "OTT",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Bryan Rust",
-        "team": "PIT",
-        "opponent": "COL",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Robert Thomas",
-        "team": "STL",
-        "opponent": "WSH",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Jesper Bratt",
-        "team": "NJD",
-        "opponent": "DAL",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Artemi Panarin",
-        "team": "LAK",
-        "opponent": "CGY",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Leon Draisaitl",
-        "team": "EDM",
-        "opponent": "UTA",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "William Nylander",
-        "team": "TOR",
+        "player": "Alex Tuch",
+        "team": "BUF",
         "opponent": "BOS",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Viktor Arvidsson",
-        "team": "BOS",
-        "opponent": "TOR",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Sebastian Aho",
-        "team": "CAR",
-        "opponent": "MTL",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Cole Caufield",
-        "team": "MTL",
-        "opponent": "CAR",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Gabriel Landeskog",
-        "team": "COL",
-        "opponent": "PIT",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Nathan MacKinnon",
-        "team": "COL",
-        "opponent": "PIT",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Martin Necas",
-        "team": "COL",
-        "opponent": "PIT",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Rickard Rakell",
-        "team": "PIT",
-        "opponent": "COL",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Nikita Kucherov",
-        "team": "TBL",
-        "opponent": "MIN",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Dylan Holloway",
-        "team": "STL",
-        "opponent": "WSH",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Macklin Celebrini",
-        "team": "SJS",
-        "opponent": "NSH",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Jack Hughes",
-        "team": "NJD",
-        "opponent": "DAL",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Adrian Kempe",
-        "team": "LAK",
-        "opponent": "CGY",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Anze Kopitar",
-        "team": "LAK",
-        "opponent": "CGY",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Connor McDavid",
-        "team": "EDM",
-        "opponent": "UTA",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Evan Bouchard",
-        "team": "EDM",
-        "opponent": "UTA",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Troy Terry",
-        "team": "ANA",
-        "opponent": "VAN",
+        "player": "William Nylander",
+        "team": "TOR",
+        "opponent": "NYR",
         "hit_rate": 80,
         "last_10": 8
     }
