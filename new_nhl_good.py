@@ -285,8 +285,6 @@ with st.sidebar:
     else:
         st.caption("No props saved yet — add some using 'Save Prop'")
 
-    st.divider()
-
     # ─── My Dashboard Section (in Sidebar) ───────────────────────────────────
     st.header("📋 My Dashboard")
     if st.session_state.my_dashboard:
