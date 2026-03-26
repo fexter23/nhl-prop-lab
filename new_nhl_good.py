@@ -218,6 +218,7 @@ with st.sidebar:
     streak_label_temp = cached_data['streak_label']
     df_recent = cached_data['df_recent']
 
+    # ── Save Prop Button ─────────────────────────────────────────────────────
     if st.button("➕ Save Prop", use_container_width=True):
         if sel_player and sel_player.get('id'):
             try:
@@ -268,6 +269,78 @@ with st.sidebar:
                 st.error(f"Could not save prop: {e}")
         else:
             st.warning("Select a player first.")
+
+    # ── Download Dashboard Button (Now directly under Save Prop) ─────────────
+    if st.session_state.my_dashboard:
+        now = datetime.now().strftime("%Y-%m-%d_%H%M")
+        filename = f"nhl_props_{now}.json"
+        
+        st.download_button(
+            label="📥 Download Dashboard (JSON)",
+            data=json.dumps(st.session_state.my_dashboard, indent=4),
+            file_name=filename,
+            mime="application/json",
+            use_container_width=True
+        )
+    else:
+        st.caption("No props saved yet — add some using 'Save Prop'")
+
+    st.divider()
+
+    # ─── My Dashboard Section (in Sidebar) ───────────────────────────────────
+    st.header("📋 My Dashboard")
+    if st.session_state.my_dashboard:
+        dash_df = pd.DataFrame(st.session_state.my_dashboard)
+        dash_df['match_key'] = dash_df.apply(lambda r: " vs ".join(sorted([r['team'], r['opponent']])), axis=1)
+
+        unique_matches = dash_df['match_key'].unique()[::-1]
+
+        for match in unique_matches:
+            group = dash_df[dash_df['match_key'] == match]
+            prop_count = len(group)
+            total_ret = get_parlay_return(group['odds'].tolist())
+            header_text = f"🆚 {match} | {prop_count} prop{'s' if prop_count != 1 else ''} | :green[Return ${total_ret:.2f}]"
+
+            h_col1, h_col2, h_col3 = st.columns([0.1, 0.8, 0.1])
+            with h_col1:
+                st.checkbox("", key=f"check_{match}", label_visibility="collapsed")
+            with h_col2:
+                with st.expander(header_text, expanded=True):
+                    for _, entry in group.iterrows():
+                        over_c, under_c = get_color(entry['over']), get_color(entry['under'])
+                        c_t, c_d = st.columns([0.8, 0.2])
+                        with c_t:
+                            st.markdown(
+                                f"**{entry['player']}** {'🏠' if entry.get('location') == 'Home' else '✈️'}  \n"
+                                f"**{entry['stat']} {entry['threshold']} @ {entry['odds']}** \n"
+                                f"**O**: :{over_c}[**{entry['over']:.0f}%**]  **|** "
+                                f"**U**: :{under_c}[**{entry['under']:.0f}%**]  **|** "
+                                f"**Streak**: {entry['streak']}  **|** "
+                                f"**Shifts**: {entry['avg_shifts']}  **|** "
+                                f"**TOI**: {entry['avg_toi']}**",
+                                unsafe_allow_html=True
+                            )
+                        with c_d:
+                            if st.button("🗑️", key=f"del_{entry['unique_id']}"):
+                                st.session_state.my_dashboard = [d for d in st.session_state.my_dashboard if d['unique_id'] != entry['unique_id']]
+                                st.rerun()
+            with h_col3:
+                if st.button("x", key=f"del_group_{match}"):
+                    st.session_state.my_dashboard = [
+                        d for d in st.session_state.my_dashboard 
+                        if " vs ".join(sorted([d['team'], d['opponent']])) != match
+                    ]
+                    st.rerun()
+
+    uploaded_file = st.file_uploader("Upload Saved Dashboard", type=["json"])
+    if uploaded_file:
+        try:
+            new_data = json.load(uploaded_file)
+            if st.button("Confirm Load", type="primary", use_container_width=True):
+                st.session_state.my_dashboard = new_data
+                st.rerun()
+        except:
+            st.error("Invalid JSON file.")
 
 # ─── Player Analysis ─────────────────────────────────────────────────────────
 if sel_player and sel_player.get('id'):
@@ -341,66 +414,5 @@ if sel_player and sel_player.get('id'):
     except Exception as e:
         st.error(f"Error loading player data: {e}")
 
-# ─── Sidebar Dashboard ───────────────────────────────────────────────────────
-with st.sidebar:
-    st.header("📋 My Dashboard")
-    if st.session_state.my_dashboard:
-        dash_df = pd.DataFrame(st.session_state.my_dashboard)
-        dash_df['match_key'] = dash_df.apply(lambda r: " vs ".join(sorted([r['team'], r['opponent']])), axis=1)
-
-        unique_matches = dash_df['match_key'].unique()[::-1]
-
-        for match in unique_matches:
-            group = dash_df[dash_df['match_key'] == match]
-            prop_count = len(group)
-            total_ret = get_parlay_return(group['odds'].tolist())
-            header_text = f"🆚 {match} | {prop_count} prop{'s' if prop_count != 1 else ''} | :green[Return ${total_ret:.2f}]"
-
-            h_col1, h_col2, h_col3 = st.columns([0.1, 0.8, 0.1])
-            with h_col1:
-                st.checkbox("", key=f"check_{match}", label_visibility="collapsed")
-            with h_col2:
-                with st.expander(header_text, expanded=True):
-                    for _, entry in group.iterrows():
-                        over_c, under_c = get_color(entry['over']), get_color(entry['under'])
-                        c_t, c_d = st.columns([0.8, 0.2])
-                        with c_t:
-                            st.markdown(
-                                f"**{entry['player']}** {'🏠' if entry.get('location') == 'Home' else '✈️'}  \n"
-                                f"**{entry['stat']} {entry['threshold']} @ {entry['odds']}** \n"
-                                f"**O**: :{over_c}[**{entry['over']:.0f}%**]  **|** "
-                                f"**U**: :{under_c}[**{entry['under']:.0f}%**]  **|** "
-                                f"**Streak**: {entry['streak']}  **|** "
-                                f"**Shifts**: {entry['avg_shifts']}  **|** "
-                                f"**TOI**: {entry['avg_toi']}**",
-                                unsafe_allow_html=True
-                            )
-                        with c_d:
-                            if st.button("🗑️", key=f"del_{entry['unique_id']}"):
-                                st.session_state.my_dashboard = [d for d in st.session_state.my_dashboard if d['unique_id'] != entry['unique_id']]
-                                st.rerun()
-            with h_col3:
-                if st.button("x", key=f"del_group_{match}"):
-                    st.session_state.my_dashboard = [
-                        d for d in st.session_state.my_dashboard 
-                        if " vs ".join(sorted([d['team'], d['opponent']])) != match
-                    ]
-                    st.rerun()
-
-        now = datetime.now().strftime("%Y-%m-%d_%H%M")
-        filename = f"nhl_props_{now}.json"
-
-        st.download_button("Download Dashboard (JSON)", data=json.dumps(st.session_state.my_dashboard, indent=4), file_name=filename, mime="application/json", use_container_width=True)
-
-    uploaded_file = st.file_uploader("Upload Saved Dashboard", type=["json"])
-    if uploaded_file:
-        try:
-            new_data = json.load(uploaded_file)
-            if st.button("Confirm Load", type="primary", use_container_width=True):
-                st.session_state.my_dashboard = new_data
-                st.rerun()
-        except:
-            st.error("Invalid JSON file.")
-
-if not sel_player:
+else:
     st.info("Select a player to view stats.")
