@@ -66,20 +66,12 @@ st.markdown("""
 
 # ─── Load All Daily Data ─────────────────────────────────────────────────────
 pt_trends       = load_json('daily_points.json')
-pt_under_trends = load_json('daily_points_under.json')
-pt_over_trends  = load_json('daily_points_over.json')
-sh_trends       = load_json('daily_shots.json')
-sh_under_trends = load_json('daily_shots_under.json')
 context         = load_json('today_context.json', default={"matchups": [], "players": []})
 
 # ─── Top Section: High Hit-Rate Clubs ────────────────────────────────────────
 with st.expander("🔥 High Hit-Rate Clubs / Trends (click to show)", expanded=False):
     trend_definitions = [
         ("Over 0.5 Points",  pt_trends,       "🔥", "Over 0.5 Points"),
-        ("Under 1.5 Points", pt_under_trends, "🔥", "Under 1.5 Points"),
-        ("Over 1.5 Points",  pt_over_trends,  "🔥", "Over 1.5 Points"),
-        ("Over 1.5 Shots",   sh_trends,       "🎯", "Over 1.5 Shots"),
-        ("Under 1.5 Shots",  sh_under_trends, "🛡️", "Under 1.5 Shots"),
     ]
 
     if any(len(data) > 0 for _, data, _, _ in trend_definitions):
