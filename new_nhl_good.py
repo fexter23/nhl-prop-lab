@@ -82,7 +82,7 @@ with st.expander("🔥 High Hit-Rate Clubs / Trends (click to show)", expanded=F
                 if data and len(data) > 0:
                     lines = [
                         f"<span style='font-size:0.8rem;'>{t['player']} ({t['team']}) <b>{t['hit_rate']}%</b> vs {t['opponent']}</span>"
-                        for t in data[:8]
+                        for t in data[:15]
                     ]
                     st.markdown("  \n".join(lines), unsafe_allow_html=True)
                 else:
