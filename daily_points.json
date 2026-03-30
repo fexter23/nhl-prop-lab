@@ -1,64 +1,50 @@
 [
     {
-        "player": "David Pastrnak",
-        "team": "BOS",
-        "opponent": "CBJ",
-        "hit_rate": 100,
-        "last_10": 10
-    },
-    {
-        "player": "Nikita Kucherov",
-        "team": "TBL",
-        "opponent": "NSH",
+        "player": "Rickard Rakell",
+        "team": "PIT",
+        "opponent": "NYI",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Adam Fox",
-        "team": "NYR",
-        "opponent": "FLA",
+        "player": "Bryan Rust",
+        "team": "PIT",
+        "opponent": "NYI",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Matthew Schaefer",
+        "team": "NYI",
+        "opponent": "PIT",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Cole Caufield",
-        "team": "MTL",
-        "opponent": "CAR",
+        "player": "Martin Necas",
+        "team": "COL",
+        "opponent": "CGY",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Nick Suzuki",
-        "team": "MTL",
-        "opponent": "CAR",
+        "player": "Dylan Holloway",
+        "team": "STL",
+        "opponent": "SJS",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Charlie McAvoy",
-        "team": "BOS",
-        "opponent": "CBJ",
+        "player": "Jimmy Snuggerud",
+        "team": "STL",
+        "opponent": "SJS",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Adam Fantilli",
-        "team": "CBJ",
-        "opponent": "BOS",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Jesper Bratt",
-        "team": "NJD",
-        "opponent": "CHI",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Jack Hughes",
-        "team": "NJD",
-        "opponent": "CHI",
+        "player": "Robert Thomas",
+        "team": "STL",
+        "opponent": "SJS",
         "hit_rate": 80,
         "last_10": 8
     }
