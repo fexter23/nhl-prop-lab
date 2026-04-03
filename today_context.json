@@ -1,1426 +1,22 @@
 {
-    "last_updated": "2026-04-02 07:07:01",
+    "last_updated": "2026-04-03 07:01:17",
     "matchups": [
         {
-            "label": "BUF @ OTT",
+            "label": "PHI @ NYI",
             "teams": [
-                "BUF",
-                "OTT"
+                "PHI",
+                "NYI"
             ]
         },
         {
-            "label": "PIT @ TBL",
+            "label": "STL @ ANA",
             "teams": [
-                "PIT",
-                "TBL"
-            ]
-        },
-        {
-            "label": "BOS @ FLA",
-            "teams": [
-                "BOS",
-                "FLA"
-            ]
-        },
-        {
-            "label": "MTL @ NYR",
-            "teams": [
-                "MTL",
-                "NYR"
-            ]
-        },
-        {
-            "label": "DET @ PHI",
-            "teams": [
-                "DET",
-                "PHI"
-            ]
-        },
-        {
-            "label": "CBJ @ CAR",
-            "teams": [
-                "CBJ",
-                "CAR"
-            ]
-        },
-        {
-            "label": "WSH @ NJD",
-            "teams": [
-                "WSH",
-                "NJD"
-            ]
-        },
-        {
-            "label": "WPG @ DAL",
-            "teams": [
-                "WPG",
-                "DAL"
-            ]
-        },
-        {
-            "label": "VAN @ MIN",
-            "teams": [
-                "VAN",
-                "MIN"
-            ]
-        },
-        {
-            "label": "CHI @ EDM",
-            "teams": [
-                "CHI",
-                "EDM"
-            ]
-        },
-        {
-            "label": "CGY @ VGK",
-            "teams": [
-                "CGY",
-                "VGK"
-            ]
-        },
-        {
-            "label": "TOR @ SJS",
-            "teams": [
-                "TOR",
-                "SJS"
-            ]
-        },
-        {
-            "label": "UTA @ SEA",
-            "teams": [
-                "UTA",
-                "SEA"
-            ]
-        },
-        {
-            "label": "NSH @ LAK",
-            "teams": [
-                "NSH",
-                "LAK"
+                "STL",
+                "ANA"
             ]
         }
     ],
     "players": [
-        {
-            "id": 8484145,
-            "name": "Zach Benson",
-            "team": "BUF",
-            "pos": "L"
-        },
-        {
-            "id": 8475842,
-            "name": "Sam Carrick",
-            "team": "BUF",
-            "pos": "C"
-        },
-        {
-            "id": 8479941,
-            "name": "Justin Danforth",
-            "team": "BUF",
-            "pos": "R"
-        },
-        {
-            "id": 8482659,
-            "name": "Josh Doan",
-            "team": "BUF",
-            "pos": "R"
-        },
-        {
-            "id": 8482623,
-            "name": "Josh Dunne",
-            "team": "BUF",
-            "pos": "C"
-        },
-        {
-            "id": 8478413,
-            "name": "Jordan Greenway",
-            "team": "BUF",
-            "pos": "L"
-        },
-        {
-            "id": 8482896,
-            "name": "Tyson Kozak",
-            "team": "BUF",
-            "pos": "C"
-        },
-        {
-            "id": 8481522,
-            "name": "Peyton Krebs",
-            "team": "BUF",
-            "pos": "C"
-        },
-        {
-            "id": 8483468,
-            "name": "Jiri Kulich",
-            "team": "BUF",
-            "pos": "C"
-        },
-        {
-            "id": 8479359,
-            "name": "Beck Malenstyn",
-            "team": "BUF",
-            "pos": "L"
-        },
-        {
-            "id": 8480802,
-            "name": "Ryan McLeod",
-            "team": "BUF",
-            "pos": "C"
-        },
-        {
-            "id": 8480064,
-            "name": "Josh Norris",
-            "team": "BUF",
-            "pos": "C"
-        },
-        {
-            "id": 8483500,
-            "name": "Noah Ostlund",
-            "team": "BUF",
-            "pos": "C"
-        },
-        {
-            "id": 8476871,
-            "name": "Tanner Pearson",
-            "team": "BUF",
-            "pos": "L"
-        },
-        {
-            "id": 8482097,
-            "name": "Jack Quinn",
-            "team": "BUF",
-            "pos": "R"
-        },
-        {
-            "id": 8479420,
-            "name": "Tage Thompson",
-            "team": "BUF",
-            "pos": "C"
-        },
-        {
-            "id": 8477949,
-            "name": "Alex Tuch",
-            "team": "BUF",
-            "pos": "R"
-        },
-        {
-            "id": 8475722,
-            "name": "Jason Zucker",
-            "team": "BUF",
-            "pos": "L"
-        },
-        {
-            "id": 8481524,
-            "name": "Bowen Byram",
-            "team": "BUF",
-            "pos": "D"
-        },
-        {
-            "id": 8480839,
-            "name": "Rasmus Dahlin",
-            "team": "BUF",
-            "pos": "D"
-        },
-        {
-            "id": 8480891,
-            "name": "Michael Kesselring",
-            "team": "BUF",
-            "pos": "D"
-        },
-        {
-            "id": 8484305,
-            "name": "Zach Metsa",
-            "team": "BUF",
-            "pos": "D"
-        },
-        {
-            "id": 8482671,
-            "name": "Owen Power",
-            "team": "BUF",
-            "pos": "D"
-        },
-        {
-            "id": 8480807,
-            "name": "Mattias Samuelsson",
-            "team": "BUF",
-            "pos": "D"
-        },
-        {
-            "id": 8474568,
-            "name": "Luke Schenn",
-            "team": "BUF",
-            "pos": "D"
-        },
-        {
-            "id": 8479378,
-            "name": "Logan Stanley",
-            "team": "BUF",
-            "pos": "D"
-        },
-        {
-            "id": 8479982,
-            "name": "Conor Timmins",
-            "team": "BUF",
-            "pos": "D"
-        },
-        {
-            "id": 8478020,
-            "name": "Michael Amadio",
-            "team": "OTT",
-            "pos": "R"
-        },
-        {
-            "id": 8480208,
-            "name": "Drake Batherson",
-            "team": "OTT",
-            "pos": "R"
-        },
-        {
-            "id": 8476393,
-            "name": "Nick Cousins",
-            "team": "OTT",
-            "pos": "C"
-        },
-        {
-            "id": 8481528,
-            "name": "Dylan Cozens",
-            "team": "OTT",
-            "pos": "C"
-        },
-        {
-            "id": 8474189,
-            "name": "Lars Eller",
-            "team": "OTT",
-            "pos": "C"
-        },
-        {
-            "id": 8477998,
-            "name": "Warren Foegele",
-            "team": "OTT",
-            "pos": "L"
-        },
-        {
-            "id": 8473512,
-            "name": "Claude Giroux",
-            "team": "OTT",
-            "pos": "R"
-        },
-        {
-            "id": 8482092,
-            "name": "Ridly Greig",
-            "team": "OTT",
-            "pos": "C"
-        },
-        {
-            "id": 8483676,
-            "name": "Stephen Halliday",
-            "team": "OTT",
-            "pos": "C"
-        },
-        {
-            "id": 8477073,
-            "name": "Kurtis MacDermid",
-            "team": "OTT",
-            "pos": "L"
-        },
-        {
-            "id": 8481596,
-            "name": "Shane Pinto",
-            "team": "OTT",
-            "pos": "C"
-        },
-        {
-            "id": 8482116,
-            "name": "Tim St\u00fctzle",
-            "team": "OTT",
-            "pos": "C"
-        },
-        {
-            "id": 8480801,
-            "name": "Brady Tkachuk",
-            "team": "OTT",
-            "pos": "L"
-        },
-        {
-            "id": 8480188,
-            "name": "Fabian Zetterlund",
-            "team": "OTT",
-            "pos": "L"
-        },
-        {
-            "id": 8478469,
-            "name": "Thomas Chabot",
-            "team": "OTT",
-            "pos": "D"
-        },
-        {
-            "id": 8478502,
-            "name": "Dennis Gilbert",
-            "team": "OTT",
-            "pos": "D"
-        },
-        {
-            "id": 8475324,
-            "name": "Nick Jensen",
-            "team": "OTT",
-            "pos": "D"
-        },
-        {
-            "id": 8482095,
-            "name": "Tyler Kleven",
-            "team": "OTT",
-            "pos": "D"
-        },
-        {
-            "id": 8484321,
-            "name": "Nikolas Matinpalo",
-            "team": "OTT",
-            "pos": "D"
-        },
-        {
-            "id": 8482105,
-            "name": "Jake Sanderson",
-            "team": "OTT",
-            "pos": "D"
-        },
-        {
-            "id": 8481606,
-            "name": "Jordan Spence",
-            "team": "OTT",
-            "pos": "D"
-        },
-        {
-            "id": 8481575,
-            "name": "Lassi Thomson",
-            "team": "OTT",
-            "pos": "D"
-        },
-        {
-            "id": 8484759,
-            "name": "Carter Yakemchuk",
-            "team": "OTT",
-            "pos": "D"
-        },
-        {
-            "id": 8482245,
-            "name": "Artem Zub",
-            "team": "OTT",
-            "pos": "D"
-        },
-        {
-            "id": 8478569,
-            "name": "Noel Acciari",
-            "team": "PIT",
-            "pos": "C"
-        },
-        {
-            "id": 8479638,
-            "name": "Justin Brazeau",
-            "team": "PIT",
-            "pos": "R"
-        },
-        {
-            "id": 8482475,
-            "name": "Egor Chinakhov",
-            "team": "PIT",
-            "pos": "R"
-        },
-        {
-            "id": 8471675,
-            "name": "Sidney Crosby",
-            "team": "PIT",
-            "pos": "C"
-        },
-        {
-            "id": 8480980,
-            "name": "Connor Dewar",
-            "team": "PIT",
-            "pos": "C"
-        },
-        {
-            "id": 8480842,
-            "name": "Filip Hallander",
-            "team": "PIT",
-            "pos": "C"
-        },
-        {
-            "id": 8482993,
-            "name": "Avery Hayes",
-            "team": "PIT",
-            "pos": "R"
-        },
-        {
-            "id": 8475763,
-            "name": "Kevin Hayes",
-            "team": "PIT",
-            "pos": "R"
-        },
-        {
-            "id": 8485414,
-            "name": "Ben Kindel",
-            "team": "PIT",
-            "pos": "C"
-        },
-        {
-            "id": 8482758,
-            "name": "Ville Koivunen",
-            "team": "PIT",
-            "pos": "R"
-        },
-        {
-            "id": 8481481,
-            "name": "Blake Lizotte",
-            "team": "PIT",
-            "pos": "C"
-        },
-        {
-            "id": 8471215,
-            "name": "Evgeni Malkin",
-            "team": "PIT",
-            "pos": "C"
-        },
-        {
-            "id": 8477511,
-            "name": "Anthony Mantha",
-            "team": "PIT",
-            "pos": "R"
-        },
-        {
-            "id": 8483487,
-            "name": "Rutger McGroarty",
-            "team": "PIT",
-            "pos": "R"
-        },
-        {
-            "id": 8478438,
-            "name": "Tommy Novak",
-            "team": "PIT",
-            "pos": "C"
-        },
-        {
-            "id": 8476483,
-            "name": "Rickard Rakell",
-            "team": "PIT",
-            "pos": "R"
-        },
-        {
-            "id": 8475810,
-            "name": "Bryan Rust",
-            "team": "PIT",
-            "pos": "R"
-        },
-        {
-            "id": 8481725,
-            "name": "Elmer Soderblom",
-            "team": "PIT",
-            "pos": "L"
-        },
-        {
-            "id": 8477365,
-            "name": "Connor Clifton",
-            "team": "PIT",
-            "pos": "D"
-        },
-        {
-            "id": 8479398,
-            "name": "Samuel Girard",
-            "team": "PIT",
-            "pos": "D"
-        },
-        {
-            "id": 8477435,
-            "name": "Ryan Graves",
-            "team": "PIT",
-            "pos": "D"
-        },
-        {
-            "id": 8474578,
-            "name": "Erik Karlsson",
-            "team": "PIT",
-            "pos": "D"
-        },
-        {
-            "id": 8471724,
-            "name": "Kris Letang",
-            "team": "PIT",
-            "pos": "D"
-        },
-        {
-            "id": 8478854,
-            "name": "Ryan Shea",
-            "team": "PIT",
-            "pos": "D"
-        },
-        {
-            "id": 8482470,
-            "name": "Ilya Solovyov",
-            "team": "PIT",
-            "pos": "D"
-        },
-        {
-            "id": 8481030,
-            "name": "Jack St. Ivany",
-            "team": "PIT",
-            "pos": "D"
-        },
-        {
-            "id": 8478450,
-            "name": "Parker Wotherspoon",
-            "team": "PIT",
-            "pos": "D"
-        },
-        {
-            "id": 8477416,
-            "name": "Oliver Bjorkstrand",
-            "team": "TBL",
-            "pos": "R"
-        },
-        {
-            "id": 8478519,
-            "name": "Anthony Cirelli",
-            "team": "TBL",
-            "pos": "C"
-        },
-        {
-            "id": 8476878,
-            "name": "Zemgus Girgensons",
-            "team": "TBL",
-            "pos": "C"
-        },
-        {
-            "id": 8482201,
-            "name": "Gage Goncalves",
-            "team": "TBL",
-            "pos": "C"
-        },
-        {
-            "id": 8476826,
-            "name": "Yanni Gourde",
-            "team": "TBL",
-            "pos": "C"
-        },
-        {
-            "id": 8477404,
-            "name": "Jake Guentzel",
-            "team": "TBL",
-            "pos": "C"
-        },
-        {
-            "id": 8479542,
-            "name": "Brandon Hagel",
-            "team": "TBL",
-            "pos": "L"
-        },
-        {
-            "id": 8480995,
-            "name": "Pontus Holmberg",
-            "team": "TBL",
-            "pos": "R"
-        },
-        {
-            "id": 8483752,
-            "name": "Dominic James",
-            "team": "TBL",
-            "pos": "C"
-        },
-        {
-            "id": 8476453,
-            "name": "Nikita Kucherov",
-            "team": "TBL",
-            "pos": "R"
-        },
-        {
-            "id": 8477426,
-            "name": "Nick Paul",
-            "team": "TBL",
-            "pos": "L"
-        },
-        {
-            "id": 8470621,
-            "name": "Corey Perry",
-            "team": "TBL",
-            "pos": "R"
-        },
-        {
-            "id": 8478010,
-            "name": "Brayden Point",
-            "team": "TBL",
-            "pos": "C"
-        },
-        {
-            "id": 8477149,
-            "name": "Scott Sabourin",
-            "team": "TBL",
-            "pos": "R"
-        },
-        {
-            "id": 8483398,
-            "name": "Declan Carlile",
-            "team": "TBL",
-            "pos": "D"
-        },
-        {
-            "id": 8478416,
-            "name": "Erik Cernak",
-            "team": "TBL",
-            "pos": "D"
-        },
-        {
-            "id": 8481719,
-            "name": "Max Crozier",
-            "team": "TBL",
-            "pos": "D"
-        },
-        {
-            "id": 8480426,
-            "name": "Charle-Edouard D'Astous",
-            "team": "TBL",
-            "pos": "D"
-        },
-        {
-            "id": 8475167,
-            "name": "Victor Hedman",
-            "team": "TBL",
-            "pos": "D"
-        },
-        {
-            "id": 8482929,
-            "name": "Emil Lilleberg",
-            "team": "TBL",
-            "pos": "D"
-        },
-        {
-            "id": 8474151,
-            "name": "Ryan McDonagh",
-            "team": "TBL",
-            "pos": "D"
-        },
-        {
-            "id": 8482655,
-            "name": "J.J. Moser",
-            "team": "TBL",
-            "pos": "D"
-        },
-        {
-            "id": 8478178,
-            "name": "Darren Raddysh",
-            "team": "TBL",
-            "pos": "D"
-        },
-        {
-            "id": 8477463,
-            "name": "Steven Santini",
-            "team": "TBL",
-            "pos": "D"
-        },
-        {
-            "id": 8478042,
-            "name": "Viktor Arvidsson",
-            "team": "BOS",
-            "pos": "L"
-        },
-        {
-            "id": 8479591,
-            "name": "Michael Eyssimont",
-            "team": "BOS",
-            "pos": "C"
-        },
-        {
-            "id": 8479987,
-            "name": "Morgan Geekie",
-            "team": "BOS",
-            "pos": "C"
-        },
-        {
-            "id": 8479661,
-            "name": "Tanner Jeannot",
-            "team": "BOS",
-            "pos": "L"
-        },
-        {
-            "id": 8480355,
-            "name": "Mark Kastelic",
-            "team": "BOS",
-            "pos": "C"
-        },
-        {
-            "id": 8482177,
-            "name": "Marat Khusnutdinov",
-            "team": "BOS",
-            "pos": "C"
-        },
-        {
-            "id": 8476374,
-            "name": "Sean Kuraly",
-            "team": "BOS",
-            "pos": "C"
-        },
-        {
-            "id": 8477496,
-            "name": "Elias Lindholm",
-            "team": "BOS",
-            "pos": "C"
-        },
-        {
-            "id": 8483489,
-            "name": "Fraser Minten",
-            "team": "BOS",
-            "pos": "C"
-        },
-        {
-            "id": 8479999,
-            "name": "Casey Mittelstadt",
-            "team": "BOS",
-            "pos": "C"
-        },
-        {
-            "id": 8477956,
-            "name": "David Pastrnak",
-            "team": "BOS",
-            "pos": "R"
-        },
-        {
-            "id": 8482117,
-            "name": "Lukas Reichel",
-            "team": "BOS",
-            "pos": "L"
-        },
-        {
-            "id": 8482634,
-            "name": "Alex Steeves",
-            "team": "BOS",
-            "pos": "C"
-        },
-        {
-            "id": 8478401,
-            "name": "Pavel Zacha",
-            "team": "BOS",
-            "pos": "C"
-        },
-        {
-            "id": 8481219,
-            "name": "Jonathan Aspirot",
-            "team": "BOS",
-            "pos": "D"
-        },
-        {
-            "id": 8480887,
-            "name": "Jordan Harris",
-            "team": "BOS",
-            "pos": "D"
-        },
-        {
-            "id": 8480035,
-            "name": "Henri Jokiharju",
-            "team": "BOS",
-            "pos": "D"
-        },
-        {
-            "id": 8476854,
-            "name": "Hampus Lindholm",
-            "team": "BOS",
-            "pos": "D"
-        },
-        {
-            "id": 8482511,
-            "name": "Mason Lohrei",
-            "team": "BOS",
-            "pos": "D"
-        },
-        {
-            "id": 8479325,
-            "name": "Charlie McAvoy",
-            "team": "BOS",
-            "pos": "D"
-        },
-        {
-            "id": 8479369,
-            "name": "Andrew Peeke",
-            "team": "BOS",
-            "pos": "D"
-        },
-        {
-            "id": 8477507,
-            "name": "Nikita Zadorov",
-            "team": "BOS",
-            "pos": "D"
-        },
-        {
-            "id": 8477493,
-            "name": "Aleksander Barkov",
-            "team": "FLA",
-            "pos": "C"
-        },
-        {
-            "id": 8477935,
-            "name": "Sam Bennett",
-            "team": "FLA",
-            "pos": "C"
-        },
-        {
-            "id": 8480003,
-            "name": "Jesper Boqvist",
-            "team": "FLA",
-            "pos": "C"
-        },
-        {
-            "id": 8481518,
-            "name": "Nolan Foote",
-            "team": "FLA",
-            "pos": "L"
-        },
-        {
-            "id": 8479981,
-            "name": "Jonah Gadjovich",
-            "team": "FLA",
-            "pos": "L"
-        },
-        {
-            "id": 8478421,
-            "name": "A.J. Greer",
-            "team": "FLA",
-            "pos": "L"
-        },
-        {
-            "id": 8479393,
-            "name": "Noah Gregor",
-            "team": "FLA",
-            "pos": "L"
-        },
-        {
-            "id": 8476994,
-            "name": "Vinnie Hinostroza",
-            "team": "FLA",
-            "pos": "C"
-        },
-        {
-            "id": 8479316,
-            "name": "Luke Kunin",
-            "team": "FLA",
-            "pos": "C"
-        },
-        {
-            "id": 8482113,
-            "name": "Anton Lundell",
-            "team": "FLA",
-            "pos": "C"
-        },
-        {
-            "id": 8480185,
-            "name": "Eetu Luostarinen",
-            "team": "FLA",
-            "pos": "C"
-        },
-        {
-            "id": 8473419,
-            "name": "Brad Marchand",
-            "team": "FLA",
-            "pos": "L"
-        },
-        {
-            "id": 8477931,
-            "name": "Tomas Nosek",
-            "team": "FLA",
-            "pos": "L"
-        },
-        {
-            "id": 8481133,
-            "name": "Cole Reinhardt",
-            "team": "FLA",
-            "pos": "L"
-        },
-        {
-            "id": 8477933,
-            "name": "Sam Reinhart",
-            "team": "FLA",
-            "pos": "C"
-        },
-        {
-            "id": 8478542,
-            "name": "Evan Rodrigues",
-            "team": "FLA",
-            "pos": "C"
-        },
-        {
-            "id": 8482713,
-            "name": "Mackie Samoskevich",
-            "team": "FLA",
-            "pos": "R"
-        },
-        {
-            "id": 8481655,
-            "name": "Cole Schwindt",
-            "team": "FLA",
-            "pos": "C"
-        },
-        {
-            "id": 8479314,
-            "name": "Matthew Tkachuk",
-            "team": "FLA",
-            "pos": "L"
-        },
-        {
-            "id": 8477409,
-            "name": "Carter Verhaeghe",
-            "team": "FLA",
-            "pos": "C"
-        },
-        {
-            "id": 8484304,
-            "name": "Uvis Balinskis",
-            "team": "FLA",
-            "pos": "D"
-        },
-        {
-            "id": 8482107,
-            "name": "Mike Benning",
-            "team": "FLA",
-            "pos": "D"
-        },
-        {
-            "id": 8477932,
-            "name": "Aaron Ekblad",
-            "team": "FLA",
-            "pos": "D"
-        },
-        {
-            "id": 8478055,
-            "name": "Gustav Forsling",
-            "team": "FLA",
-            "pos": "D"
-        },
-        {
-            "id": 8484933,
-            "name": "Mikulas Hovorka",
-            "team": "FLA",
-            "pos": "D"
-        },
-        {
-            "id": 8477495,
-            "name": "Seth Jones",
-            "team": "FLA",
-            "pos": "D"
-        },
-        {
-            "id": 8475179,
-            "name": "Dmitry Kulikov",
-            "team": "FLA",
-            "pos": "D"
-        },
-        {
-            "id": 8478859,
-            "name": "Niko Mikkola",
-            "team": "FLA",
-            "pos": "D"
-        },
-        {
-            "id": 8482131,
-            "name": "Donovan Sebrango",
-            "team": "FLA",
-            "pos": "D"
-        },
-        {
-            "id": 8476981,
-            "name": "Josh Anderson",
-            "team": "MTL",
-            "pos": "R"
-        },
-        {
-            "id": 8482737,
-            "name": "Zachary Bolduc",
-            "team": "MTL",
-            "pos": "R"
-        },
-        {
-            "id": 8481540,
-            "name": "Cole Caufield",
-            "team": "MTL",
-            "pos": "R"
-        },
-        {
-            "id": 8481523,
-            "name": "Kirby Dach",
-            "team": "MTL",
-            "pos": "C"
-        },
-        {
-            "id": 8476479,
-            "name": "Phillip Danault",
-            "team": "MTL",
-            "pos": "C"
-        },
-        {
-            "id": 8484984,
-            "name": "Ivan Demidov",
-            "team": "MTL",
-            "pos": "R"
-        },
-        {
-            "id": 8478133,
-            "name": "Jake Evans",
-            "team": "MTL",
-            "pos": "C"
-        },
-        {
-            "id": 8475848,
-            "name": "Brendan Gallagher",
-            "team": "MTL",
-            "pos": "R"
-        },
-        {
-            "id": 8482775,
-            "name": "Oliver Kapanen",
-            "team": "MTL",
-            "pos": "C"
-        },
-        {
-            "id": 8479339,
-            "name": "Patrik Laine",
-            "team": "MTL",
-            "pos": "R"
-        },
-        {
-            "id": 8481618,
-            "name": "Alex Newhook",
-            "team": "MTL",
-            "pos": "C"
-        },
-        {
-            "id": 8483515,
-            "name": "Juraj Slafkovsk\u00fd",
-            "team": "MTL",
-            "pos": "L"
-        },
-        {
-            "id": 8480018,
-            "name": "Nick Suzuki",
-            "team": "MTL",
-            "pos": "C"
-        },
-        {
-            "id": 8480074,
-            "name": "Alexandre Texier",
-            "team": "MTL",
-            "pos": "L"
-        },
-        {
-            "id": 8480813,
-            "name": "Joe Veleno",
-            "team": "MTL",
-            "pos": "C"
-        },
-        {
-            "id": 8478851,
-            "name": "Alexandre Carrier",
-            "team": "MTL",
-            "pos": "D"
-        },
-        {
-            "id": 8480865,
-            "name": "Noah Dobson",
-            "team": "MTL",
-            "pos": "D"
-        },
-        {
-            "id": 8483686,
-            "name": "Adam Engstrom",
-            "team": "MTL",
-            "pos": "D"
-        },
-        {
-            "id": 8482087,
-            "name": "Kaiden Guhle",
-            "team": "MTL",
-            "pos": "D"
-        },
-        {
-            "id": 8483457,
-            "name": "Lane Hutson",
-            "team": "MTL",
-            "pos": "D"
-        },
-        {
-            "id": 8476875,
-            "name": "Mike Matheson",
-            "team": "MTL",
-            "pos": "D"
-        },
-        {
-            "id": 8481593,
-            "name": "Jayden Struble",
-            "team": "MTL",
-            "pos": "D"
-        },
-        {
-            "id": 8482964,
-            "name": "Arber Xhekaj",
-            "team": "MTL",
-            "pos": "D"
-        },
-        {
-            "id": 8477380,
-            "name": "Jonny Brodzinski",
-            "team": "NYR",
-            "pos": "C"
-        },
-        {
-            "id": 8482877,
-            "name": "Jaroslav Chmelar",
-            "team": "NYR",
-            "pos": "R"
-        },
-        {
-            "id": 8482157,
-            "name": "Will Cuylle",
-            "team": "NYR",
-            "pos": "L"
-        },
-        {
-            "id": 8481726,
-            "name": "Adam Edstrom",
-            "team": "NYR",
-            "pos": "C"
-        },
-        {
-            "id": 8481789,
-            "name": "Tye Kartye",
-            "team": "NYR",
-            "pos": "L"
-        },
-        {
-            "id": 8483690,
-            "name": "Noah Laba",
-            "team": "NYR",
-            "pos": "C"
-        },
-        {
-            "id": 8482109,
-            "name": "Alexis Lafreni\u00e8re",
-            "team": "NYR",
-            "pos": "L"
-        },
-        {
-            "id": 8476468,
-            "name": "J.T. Miller",
-            "team": "NYR",
-            "pos": "C"
-        },
-        {
-            "id": 8484210,
-            "name": "Gabe Perreault",
-            "team": "NYR",
-            "pos": "R"
-        },
-        {
-            "id": 8479390,
-            "name": "Taylor Raddysh",
-            "team": "NYR",
-            "pos": "R"
-        },
-        {
-            "id": 8482460,
-            "name": "Matt Rempe",
-            "team": "NYR",
-            "pos": "C"
-        },
-        {
-            "id": 8477839,
-            "name": "Conor Sheary",
-            "team": "NYR",
-            "pos": "L"
-        },
-        {
-            "id": 8483669,
-            "name": "Adam Sykora",
-            "team": "NYR",
-            "pos": "L"
-        },
-        {
-            "id": 8476389,
-            "name": "Vincent Trocheck",
-            "team": "NYR",
-            "pos": "C"
-        },
-        {
-            "id": 8476459,
-            "name": "Mika Zibanejad",
-            "team": "NYR",
-            "pos": "C"
-        },
-        {
-            "id": 8478840,
-            "name": "Will Borgen",
-            "team": "NYR",
-            "pos": "D"
-        },
-        {
-            "id": 8484169,
-            "name": "Drew Fortescue",
-            "team": "NYR",
-            "pos": "D"
-        },
-        {
-            "id": 8479323,
-            "name": "Adam Fox",
-            "team": "NYR",
-            "pos": "D"
-        },
-        {
-            "id": 8478882,
-            "name": "Vladislav Gavrikov",
-            "team": "NYR",
-            "pos": "D"
-        },
-        {
-            "id": 8482861,
-            "name": "Vincent Iorio",
-            "team": "NYR",
-            "pos": "D"
-        },
-        {
-            "id": 8481525,
-            "name": "Matthew Robertson",
-            "team": "NYR",
-            "pos": "D"
-        },
-        {
-            "id": 8482073,
-            "name": "Braden Schneider",
-            "team": "NYR",
-            "pos": "D"
-        },
-        {
-            "id": 8480001,
-            "name": "Urho Vaakanainen",
-            "team": "NYR",
-            "pos": "D"
-        },
-        {
-            "id": 8478891,
-            "name": "Mason Appleton",
-            "team": "DET",
-            "pos": "C"
-        },
-        {
-            "id": 8477456,
-            "name": "J.T. Compher",
-            "team": "DET",
-            "pos": "L"
-        },
-        {
-            "id": 8477429,
-            "name": "Andrew Copp",
-            "team": "DET",
-            "pos": "C"
-        },
-        {
-            "id": 8479337,
-            "name": "Alex DeBrincat",
-            "team": "DET",
-            "pos": "R"
-        },
-        {
-            "id": 8484471,
-            "name": "Emmitt Finnie",
-            "team": "DET",
-            "pos": "C"
-        },
-        {
-            "id": 8474141,
-            "name": "Patrick Kane",
-            "team": "DET",
-            "pos": "R"
-        },
-        {
-            "id": 8483464,
-            "name": "Marco Kasper",
-            "team": "DET",
-            "pos": "C"
-        },
-        {
-            "id": 8477946,
-            "name": "Dylan Larkin",
-            "team": "DET",
-            "pos": "C"
-        },
-        {
-            "id": 8482802,
-            "name": "Carter Mazur",
-            "team": "DET",
-            "pos": "L"
-        },
-        {
-            "id": 8474102,
-            "name": "David Perron",
-            "team": "DET",
-            "pos": "L"
-        },
-        {
-            "id": 8479992,
-            "name": "Michael Rasmussen",
-            "team": "DET",
-            "pos": "C"
-        },
-        {
-            "id": 8482078,
-            "name": "Lucas Raymond",
-            "team": "DET",
-            "pos": "L"
-        },
-        {
-            "id": 8479942,
-            "name": "Dominik Shine",
-            "team": "DET",
-            "pos": "R"
-        },
-        {
-            "id": 8474037,
-            "name": "James van Riemsdyk",
-            "team": "DET",
-            "pos": "L"
-        },
-        {
-            "id": 8480879,
-            "name": "Jacob Bernard-Docker",
-            "team": "DET",
-            "pos": "D"
-        },
-        {
-            "id": 8475279,
-            "name": "Ben Chiarot",
-            "team": "DET",
-            "pos": "D"
-        },
-        {
-            "id": 8482762,
-            "name": "Simon Edvinsson",
-            "team": "DET",
-            "pos": "D"
-        },
-        {
-            "id": 8475753,
-            "name": "Justin Faulk",
-            "team": "DET",
-            "pos": "D"
-        },
-        {
-            "id": 8474612,
-            "name": "Travis Hamonic",
-            "team": "DET",
-            "pos": "D"
-        },
-        {
-            "id": 8481607,
-            "name": "Albert Johansson",
-            "team": "DET",
-            "pos": "D"
-        },
-        {
-            "id": 8481542,
-            "name": "Moritz Seider",
-            "team": "DET",
-            "pos": "D"
-        },
         {
             "id": 8479022,
             "name": "Rodrigo Abols",
@@ -1566,2517 +162,423 @@
             "pos": "D"
         },
         {
-            "id": 8479944,
-            "name": "Zachary Aston-Reese",
-            "team": "CBJ",
-            "pos": "L"
-        },
-        {
-            "id": 8475745,
-            "name": "Charlie Coyle",
-            "team": "CBJ",
-            "pos": "C"
-        },
-        {
-            "id": 8483432,
-            "name": "Luca Del Bel Belluz",
-            "team": "CBJ",
-            "pos": "C"
-        },
-        {
-            "id": 8484166,
-            "name": "Adam Fantilli",
-            "team": "CBJ",
-            "pos": "C"
-        },
-        {
-            "id": 8478856,
-            "name": "Conor Garland",
-            "team": "CBJ",
-            "pos": "R"
-        },
-        {
-            "id": 8478046,
-            "name": "Danton Heinen",
-            "team": "CBJ",
-            "pos": "L"
-        },
-        {
-            "id": 8476432,
-            "name": "Boone Jenner",
-            "team": "CBJ",
-            "pos": "C"
-        },
-        {
-            "id": 8482660,
-            "name": "Kent Johnson",
-            "team": "CBJ",
+            "id": 8478445,
+            "name": "Mathew Barzal",
+            "team": "NYI",
             "pos": "C"
         },
         {
-            "id": 8480806,
-            "name": "Isac Lundestr\u00f6m",
-            "team": "CBJ",
+            "id": 8475231,
+            "name": "Casey Cizikas",
+            "team": "NYI",
             "pos": "C"
-        },
-        {
-            "id": 8480893,
-            "name": "Kirill Marchenko",
-            "team": "CBJ",
-            "pos": "R"
         },
         {
-            "id": 8478975,
-            "name": "Mason Marchment",
-            "team": "CBJ",
+            "id": 8477407,
+            "name": "Anthony Duclair",
+            "team": "NYI",
             "pos": "L"
         },
         {
-            "id": 8477497,
-            "name": "Sean Monahan",
-            "team": "CBJ",
+            "id": 8483553,
+            "name": "Marc Gatcomb",
+            "team": "NYI",
             "pos": "C"
-        },
-        {
-            "id": 8479671,
-            "name": "Mathieu Olivier",
-            "team": "CBJ",
-            "pos": "R"
-        },
-        {
-            "id": 8482705,
-            "name": "Cole Sillinger",
-            "team": "CBJ",
-            "pos": "C"
-        },
-        {
-            "id": 8481716,
-            "name": "Dmitri Voronkov",
-            "team": "CBJ",
-            "pos": "L"
         },
         {
-            "id": 8477425,
-            "name": "Miles Wood",
-            "team": "CBJ",
+            "id": 8482476,
+            "name": "Emil Heineman",
+            "team": "NYI",
             "pos": "L"
-        },
-        {
-            "id": 8481161,
-            "name": "Jake Christiansen",
-            "team": "CBJ",
-            "pos": "D"
-        },
-        {
-            "id": 8479371,
-            "name": "Dante Fabbro",
-            "team": "CBJ",
-            "pos": "D"
-        },
-        {
-            "id": 8475790,
-            "name": "Erik Gudbranson",
-            "team": "CBJ",
-            "pos": "D"
-        },
-        {
-            "id": 8483485,
-            "name": "Denton Mateychuk",
-            "team": "CBJ",
-            "pos": "D"
-        },
-        {
-            "id": 8478500,
-            "name": "Ivan Provorov",
-            "team": "CBJ",
-            "pos": "D"
         },
         {
-            "id": 8476923,
-            "name": "Damon Severson",
-            "team": "CBJ",
-            "pos": "D"
-        },
-        {
-            "id": 8474090,
-            "name": "Brendan Smith",
-            "team": "CBJ",
-            "pos": "D"
-        },
-        {
-            "id": 8478460,
-            "name": "Zach Werenski",
-            "team": "CBJ",
-            "pos": "D"
-        },
-        {
-            "id": 8481178,
-            "name": "Egor Zamula",
-            "team": "CBJ",
-            "pos": "D"
-        },
-        {
-            "id": 8478427,
-            "name": "Sebastian Aho",
-            "team": "CAR",
-            "pos": "C"
-        },
-        {
-            "id": 8482809,
-            "name": "Jackson Blake",
-            "team": "CAR",
+            "id": 8481601,
+            "name": "Simon Holmstrom",
+            "team": "NYI",
             "pos": "R"
-        },
-        {
-            "id": 8477478,
-            "name": "William Carrier",
-            "team": "CAR",
-            "pos": "L"
-        },
-        {
-            "id": 8475235,
-            "name": "Nicolas Deslauriers",
-            "team": "CAR",
-            "pos": "L"
-        },
-        {
-            "id": 8477940,
-            "name": "Nikolaj Ehlers",
-            "team": "CAR",
-            "pos": "L"
-        },
-        {
-            "id": 8475791,
-            "name": "Taylor Hall",
-            "team": "CAR",
-            "pos": "L"
-        },
-        {
-            "id": 8476873,
-            "name": "Mark Jankowski",
-            "team": "CAR",
-            "pos": "L"
-        },
-        {
-            "id": 8482093,
-            "name": "Seth Jarvis",
-            "team": "CAR",
-            "pos": "C"
         },
         {
-            "id": 8480829,
-            "name": "Jesperi Kotkaniemi",
-            "team": "CAR",
+            "id": 8477500,
+            "name": "Bo Horvat",
+            "team": "NYI",
             "pos": "C"
-        },
-        {
-            "id": 8476921,
-            "name": "Jordan Martinook",
-            "team": "CAR",
-            "pos": "L"
         },
         {
-            "id": 8480762,
-            "name": "Eric Robinson",
-            "team": "CAR",
+            "id": 8475314,
+            "name": "Anders Lee",
+            "team": "NYI",
             "pos": "L"
         },
         {
-            "id": 8473533,
-            "name": "Jordan Staal",
-            "team": "CAR",
+            "id": 8481237,
+            "name": "Kyle MacLean",
+            "team": "NYI",
             "pos": "C"
-        },
-        {
-            "id": 8482702,
-            "name": "Logan Stankoven",
-            "team": "CAR",
-            "pos": "C"
-        },
-        {
-            "id": 8480830,
-            "name": "Andrei Svechnikov",
-            "team": "CAR",
-            "pos": "R"
-        },
-        {
-            "id": 8478970,
-            "name": "Jalen Chatfield",
-            "team": "CAR",
-            "pos": "D"
-        },
-        {
-            "id": 8476906,
-            "name": "Shayne Gostisbehere",
-            "team": "CAR",
-            "pos": "D"
         },
         {
-            "id": 8480817,
-            "name": "K'Andre Miller",
-            "team": "CAR",
-            "pos": "D"
-        },
-        {
-            "id": 8482100,
-            "name": "Alexander Nikishin",
-            "team": "CAR",
-            "pos": "D"
-        },
-        {
-            "id": 8476422,
-            "name": "Mike Reilly",
-            "team": "CAR",
-            "pos": "D"
-        },
-        {
-            "id": 8476958,
-            "name": "Jaccob Slavin",
-            "team": "CAR",
-            "pos": "D"
-        },
-        {
-            "id": 8480336,
-            "name": "Sean Walker",
-            "team": "CAR",
-            "pos": "D"
-        },
-        {
-            "id": 8478463,
-            "name": "Anthony Beauvillier",
-            "team": "WSH",
-            "pos": "R"
-        },
-        {
-            "id": 8479400,
-            "name": "Pierre-Luc Dubois",
-            "team": "WSH",
+            "id": 8476419,
+            "name": "Jean-Gabriel Pageau",
+            "team": "NYI",
             "pos": "C"
         },
         {
-            "id": 8479520,
-            "name": "Brandon Duhaime",
-            "team": "WSH",
+            "id": 8476292,
+            "name": "Ondrej Palat",
+            "team": "NYI",
             "pos": "L"
-        },
-        {
-            "id": 8483573,
-            "name": "Ethen Frank",
-            "team": "WSH",
-            "pos": "R"
-        },
-        {
-            "id": 8480144,
-            "name": "David Kampf",
-            "team": "WSH",
-            "pos": "C"
         },
         {
-            "id": 8482148,
-            "name": "Hendrix Lapierre",
-            "team": "WSH",
+            "id": 8475151,
+            "name": "Kyle Palmieri",
+            "team": "NYI",
             "pos": "C"
-        },
-        {
-            "id": 8484186,
-            "name": "Ryan Leonard",
-            "team": "WSH",
-            "pos": "R"
-        },
-        {
-            "id": 8481580,
-            "name": "Connor McMichael",
-            "team": "WSH",
-            "pos": "L"
-        },
-        {
-            "id": 8471214,
-            "name": "Alex Ovechkin",
-            "team": "WSH",
-            "pos": "L"
-        },
-        {
-            "id": 8481656,
-            "name": "Aliaksei Protas",
-            "team": "WSH",
-            "pos": "L"
         },
         {
-            "id": 8482088,
-            "name": "Justin Sourdif",
-            "team": "WSH",
+            "id": 8484221,
+            "name": "Calum Ritchie",
+            "team": "NYI",
             "pos": "C"
         },
         {
-            "id": 8478440,
-            "name": "Dylan Strome",
-            "team": "WSH",
+            "id": 8475170,
+            "name": "Brayden Schenn",
+            "team": "NYI",
             "pos": "C"
         },
         {
-            "id": 8476880,
-            "name": "Tom Wilson",
-            "team": "WSH",
+            "id": 8485702,
+            "name": "Max Shabanov",
+            "team": "NYI",
             "pos": "R"
         },
         {
-            "id": 8480990,
-            "name": "Declan Chisholm",
-            "team": "WSH",
+            "id": 8480871,
+            "name": "Adam Boqvist",
+            "team": "NYI",
             "pos": "D"
         },
         {
-            "id": 8479345,
-            "name": "Jakob Chychrun",
-            "team": "WSH",
+            "id": 8477950,
+            "name": "Tony DeAngelo",
+            "team": "NYI",
             "pos": "D"
         },
         {
-            "id": 8480796,
-            "name": "Martin Feh\u00e9rv\u00e1ry",
-            "team": "WSH",
+            "id": 8483448,
+            "name": "Isaiah George",
+            "team": "NYI",
             "pos": "D"
         },
         {
-            "id": 8484873,
-            "name": "Cole Hutson",
-            "team": "WSH",
+            "id": 8476429,
+            "name": "Scott Mayfield",
+            "team": "NYI",
             "pos": "D"
         },
         {
-            "id": 8480043,
-            "name": "Timothy Liljegren",
-            "team": "WSH",
+            "id": 8476917,
+            "name": "Adam Pelech",
+            "team": "NYI",
             "pos": "D"
         },
         {
-            "id": 8475795,
-            "name": "Dylan McIlrath",
-            "team": "WSH",
+            "id": 8477506,
+            "name": "Ryan Pulock",
+            "team": "NYI",
             "pos": "D"
         },
         {
-            "id": 8478911,
-            "name": "Matt Roy",
-            "team": "WSH",
+            "id": 8481014,
+            "name": "Alexander Romanov",
+            "team": "NYI",
             "pos": "D"
         },
         {
-            "id": 8480873,
-            "name": "Rasmus Sandin",
-            "team": "WSH",
+            "id": 8485366,
+            "name": "Matthew Schaefer",
+            "team": "NYI",
             "pos": "D"
         },
         {
-            "id": 8477845,
-            "name": "Trevor van Riemsdyk",
-            "team": "WSH",
+            "id": 8477369,
+            "name": "Carson Soucy",
+            "team": "NYI",
             "pos": "D"
-        },
-        {
-            "id": 8475760,
-            "name": "Nick Bjugstad",
-            "team": "NJD",
-            "pos": "C"
-        },
-        {
-            "id": 8479407,
-            "name": "Jesper Bratt",
-            "team": "NJD",
-            "pos": "L"
         },
         {
-            "id": 8477015,
-            "name": "Connor Brown",
-            "team": "NJD",
+            "id": 8481013,
+            "name": "Jonatan Berggren",
+            "team": "STL",
             "pos": "R"
         },
         {
-            "id": 8481032,
-            "name": "Paul Cotter",
-            "team": "NJD",
+            "id": 8477402,
+            "name": "Pavel Buchnevich",
+            "team": "STL",
             "pos": "L"
         },
         {
-            "id": 8474149,
-            "name": "Evgenii Dadonov",
-            "team": "NJD",
+            "id": 8477494,
+            "name": "Jonathan Drouin",
+            "team": "STL",
             "pos": "L"
-        },
-        {
-            "id": 8479996,
-            "name": "Cody Glass",
-            "team": "NJD",
-            "pos": "C"
-        },
-        {
-            "id": 8481721,
-            "name": "Arseny Gritsyuk",
-            "team": "NJD",
-            "pos": "R"
-        },
-        {
-            "id": 8484177,
-            "name": "Lenni Hameenaho",
-            "team": "NJD",
-            "pos": "R"
-        },
-        {
-            "id": 8480002,
-            "name": "Nico Hischier",
-            "team": "NJD",
-            "pos": "C"
-        },
-        {
-            "id": 8481559,
-            "name": "Jack Hughes",
-            "team": "NJD",
-            "pos": "C"
-        },
-        {
-            "id": 8479772,
-            "name": "Zack MacEwen",
-            "team": "NJD",
-            "pos": "R"
-        },
-        {
-            "id": 8478414,
-            "name": "Timo Meier",
-            "team": "NJD",
-            "pos": "R"
-        },
-        {
-            "id": 8482110,
-            "name": "Dawson Mercer",
-            "team": "NJD",
-            "pos": "C"
-        },
-        {
-            "id": 8476474,
-            "name": "Stefan Noesen",
-            "team": "NJD",
-            "pos": "R"
         },
         {
-            "id": 8484958,
-            "name": "Maxim Tsyplakov",
-            "team": "NJD",
+            "id": 8484164,
+            "name": "Dalibor Dvorsky",
+            "team": "STL",
             "pos": "R"
-        },
-        {
-            "id": 8479395,
-            "name": "Dennis Cholowski",
-            "team": "NJD",
-            "pos": "D"
-        },
-        {
-            "id": 8475455,
-            "name": "Brenden Dillon",
-            "team": "NJD",
-            "pos": "D"
-        },
-        {
-            "id": 8476462,
-            "name": "Dougie Hamilton",
-            "team": "NJD",
-            "pos": "D"
-        },
-        {
-            "id": 8482684,
-            "name": "Luke Hughes",
-            "team": "NJD",
-            "pos": "D"
-        },
-        {
-            "id": 8480192,
-            "name": "Johnathan Kovacevic",
-            "team": "NJD",
-            "pos": "D"
-        },
-        {
-            "id": 8483495,
-            "name": "Simon Nemec",
-            "team": "NJD",
-            "pos": "D"
-        },
-        {
-            "id": 8477488,
-            "name": "Brett Pesce",
-            "team": "NJD",
-            "pos": "D"
-        },
-        {
-            "id": 8478399,
-            "name": "Jonas Siegenthaler",
-            "team": "NJD",
-            "pos": "D"
         },
         {
-            "id": 8480289,
-            "name": "Morgan Barron",
-            "team": "WPG",
+            "id": 8482090,
+            "name": "Jack Finley",
+            "team": "STL",
             "pos": "C"
         },
         {
-            "id": 8478398,
-            "name": "Kyle Connor",
-            "team": "WPG",
+            "id": 8482077,
+            "name": "Dylan Holloway",
+            "team": "STL",
             "pos": "L"
-        },
-        {
-            "id": 8484135,
-            "name": "Parker Ford",
-            "team": "WPG",
-            "pos": "C"
         },
         {
-            "id": 8480113,
-            "name": "Alex Iafallo",
-            "team": "WPG",
-            "pos": "L"
+            "id": 8479385,
+            "name": "Jordan Kyrou",
+            "team": "STL",
+            "pos": "R"
         },
         {
-            "id": 8481043,
-            "name": "Cole Koepke",
-            "team": "WPG",
+            "id": 8482089,
+            "name": "Jake Neighbours",
+            "team": "STL",
             "pos": "L"
-        },
-        {
-            "id": 8483471,
-            "name": "Brad Lambert",
-            "team": "WPG",
-            "pos": "C"
-        },
-        {
-            "id": 8476392,
-            "name": "Adam Lowry",
-            "team": "WPG",
-            "pos": "C"
         },
         {
-            "id": 8476480,
-            "name": "Vladislav Namestnikov",
-            "team": "WPG",
-            "pos": "C"
-        },
-        {
-            "id": 8475799,
-            "name": "Nino Niederreiter",
-            "team": "WPG",
-            "pos": "R"
-        },
-        {
-            "id": 8474679,
-            "name": "Gustav Nyquist",
-            "team": "WPG",
+            "id": 8483516,
+            "name": "Jimmy Snuggerud",
+            "team": "STL",
             "pos": "R"
         },
         {
-            "id": 8482149,
-            "name": "Cole Perfetti",
-            "team": "WPG",
+            "id": 8484230,
+            "name": "Otto Stenberg",
+            "team": "STL",
             "pos": "C"
-        },
-        {
-            "id": 8482765,
-            "name": "Isak Rosen",
-            "team": "WPG",
-            "pos": "R"
         },
         {
-            "id": 8476460,
-            "name": "Mark Scheifele",
-            "team": "WPG",
+            "id": 8476897,
+            "name": "Oskar Sundqvist",
+            "team": "STL",
             "pos": "C"
         },
         {
-            "id": 8473604,
-            "name": "Jonathan Toews",
-            "team": "WPG",
+            "id": 8480459,
+            "name": "Pius Suter",
+            "team": "STL",
             "pos": "C"
         },
         {
-            "id": 8480014,
-            "name": "Gabriel Vilardi",
-            "team": "WPG",
+            "id": 8480023,
+            "name": "Robert Thomas",
+            "team": "STL",
             "pos": "C"
         },
         {
-            "id": 8483526,
-            "name": "Danil Zhilkin",
-            "team": "WPG",
-            "pos": "C"
+            "id": 8480281,
+            "name": "Alexey Toropchenko",
+            "team": "STL",
+            "pos": "R"
         },
         {
-            "id": 8480196,
-            "name": "Jacob Bryson",
-            "team": "WPG",
-            "pos": "D"
+            "id": 8477573,
+            "name": "Nathan Walker",
+            "team": "STL",
+            "pos": "L"
         },
         {
-            "id": 8476331,
-            "name": "Dylan DeMelo",
-            "team": "WPG",
+            "id": 8481598,
+            "name": "Philip Broberg",
+            "team": "STL",
             "pos": "D"
         },
         {
-            "id": 8477938,
-            "name": "Haydn Fleury",
-            "team": "WPG",
+            "id": 8475764,
+            "name": "Cam Fowler",
+            "team": "STL",
             "pos": "D"
         },
         {
-            "id": 8481572,
-            "name": "Ville Heinola",
-            "team": "WPG",
+            "id": 8475718,
+            "name": "Justin Holl",
+            "team": "STL",
             "pos": "D"
         },
         {
-            "id": 8476525,
-            "name": "Colin Miller",
-            "team": "WPG",
+            "id": 8482516,
+            "name": "Matthew Kessel",
+            "team": "STL",
             "pos": "D"
         },
         {
-            "id": 8477504,
-            "name": "Josh Morrissey",
-            "team": "WPG",
+            "id": 8484188,
+            "name": "Theo Lindstein",
+            "team": "STL",
             "pos": "D"
         },
         {
-            "id": 8480145,
-            "name": "Neal Pionk",
-            "team": "WPG",
+            "id": 8482733,
+            "name": "Logan Mailloux",
+            "team": "STL",
             "pos": "D"
         },
         {
-            "id": 8483510,
-            "name": "Elias Salomonsson",
-            "team": "WPG",
+            "id": 8476892,
+            "name": "Colton Parayko",
+            "team": "STL",
             "pos": "D"
         },
         {
-            "id": 8480049,
-            "name": "Dylan Samberg",
-            "team": "WPG",
+            "id": 8481006,
+            "name": "Tyler Tucker",
+            "team": "STL",
             "pos": "D"
-        },
-        {
-            "id": 8479414,
-            "name": "Nathan Bastian",
-            "team": "DAL",
-            "pos": "R"
         },
         {
-            "id": 8473994,
-            "name": "Jamie Benn",
-            "team": "DAL",
-            "pos": "L"
-        },
-        {
-            "id": 8476278,
-            "name": "Colin Blackwell",
-            "team": "DAL",
+            "id": 8484153,
+            "name": "Leo Carlsson",
+            "team": "ANA",
             "pos": "C"
         },
         {
-            "id": 8482145,
-            "name": "Mavrik Bourque",
-            "team": "DAL",
+            "id": 8483444,
+            "name": "Nathan Gaucher",
+            "team": "ANA",
             "pos": "C"
         },
         {
-            "id": 8478047,
-            "name": "Michael Bunting",
-            "team": "DAL",
+            "id": 8483445,
+            "name": "Cutter Gauthier",
+            "team": "ANA",
             "pos": "L"
         },
         {
-            "id": 8480840,
-            "name": "Oskar B\u00e4ck",
-            "team": "DAL",
+            "id": 8475798,
+            "name": "Mikael Granlund",
+            "team": "ANA",
             "pos": "C"
         },
         {
-            "id": 8475168,
-            "name": "Matt Duchene",
-            "team": "DAL",
+            "id": 8478424,
+            "name": "Jansen Harkins",
+            "team": "ANA",
             "pos": "C"
         },
         {
-            "id": 8477454,
-            "name": "Adam Erne",
-            "team": "DAL",
+            "id": 8477527,
+            "name": "Ross Johnston",
+            "team": "ANA",
             "pos": "L"
         },
         {
-            "id": 8476889,
-            "name": "Radek Faksa",
-            "team": "DAL",
-            "pos": "C"
+            "id": 8473986,
+            "name": "Alex Killorn",
+            "team": "ANA",
+            "pos": "L"
         },
         {
-            "id": 8478449,
-            "name": "Roope Hintz",
-            "team": "DAL",
-            "pos": "C"
+            "id": 8475184,
+            "name": "Chris Kreider",
+            "team": "ANA",
+            "pos": "L"
         },
         {
-            "id": 8484829,
-            "name": "Justin Hryckowian",
-            "team": "DAL",
+            "id": 8482745,
+            "name": "Mason McTavish",
+            "team": "ANA",
             "pos": "C"
         },
         {
-            "id": 8478888,
-            "name": "Cameron Hughes",
-            "team": "DAL",
+            "id": 8480068,
+            "name": "Ryan Poehling",
+            "team": "ANA",
             "pos": "C"
         },
         {
-            "id": 8484938,
-            "name": "Arttu Hyry",
-            "team": "DAL",
+            "id": 8484762,
+            "name": "Beckett Sennecke",
+            "team": "ANA",
             "pos": "R"
         },
         {
-            "id": 8482740,
-            "name": "Wyatt Johnston",
-            "team": "DAL",
-            "pos": "C"
+            "id": 8478873,
+            "name": "Troy Terry",
+            "team": "ANA",
+            "pos": "R"
         },
         {
-            "id": 8478420,
-            "name": "Mikko Rantanen",
-            "team": "DAL",
+            "id": 8478366,
+            "name": "Frank Vatrano",
+            "team": "ANA",
             "pos": "R"
         },
         {
-            "id": 8480027,
-            "name": "Jason Robertson",
-            "team": "DAL",
+            "id": 8479705,
+            "name": "Jeffrey Viel",
+            "team": "ANA",
             "pos": "L"
-        },
-        {
-            "id": 8475794,
-            "name": "Tyler Seguin",
-            "team": "DAL",
-            "pos": "C"
         },
         {
-            "id": 8479351,
-            "name": "Sam Steel",
-            "team": "DAL",
+            "id": 8485512,
+            "name": "Tim Washe",
+            "team": "ANA",
             "pos": "C"
-        },
-        {
-            "id": 8483425,
-            "name": "Lian Bichsel",
-            "team": "DAL",
-            "pos": "D"
-        },
-        {
-            "id": 8478476,
-            "name": "Kyle Capobianco",
-            "team": "DAL",
-            "pos": "D"
-        },
-        {
-            "id": 8481581,
-            "name": "Thomas Harley",
-            "team": "DAL",
-            "pos": "D"
-        },
-        {
-            "id": 8480036,
-            "name": "Miro Heiskanen",
-            "team": "DAL",
-            "pos": "D"
         },
         {
-            "id": 8476902,
-            "name": "Esa Lindell",
-            "team": "DAL",
+            "id": 8474590,
+            "name": "John Carlson",
+            "team": "ANA",
             "pos": "D"
-        },
-        {
-            "id": 8480878,
-            "name": "Nils Lundkvist",
-            "team": "DAL",
-            "pos": "D"
-        },
-        {
-            "id": 8480950,
-            "name": "Ilya Lyubushkin",
-            "team": "DAL",
-            "pos": "D"
-        },
-        {
-            "id": 8474574,
-            "name": "Tyler Myers",
-            "team": "DAL",
-            "pos": "D"
-        },
-        {
-            "id": 8475755,
-            "name": "Alexander Petrovic",
-            "team": "DAL",
-            "pos": "D"
-        },
-        {
-            "id": 8482496,
-            "name": "Nils Aman",
-            "team": "VAN",
-            "pos": "C"
-        },
-        {
-            "id": 8476927,
-            "name": "Teddy Blueger",
-            "team": "VAN",
-            "pos": "C"
-        },
-        {
-            "id": 8478444,
-            "name": "Brock Boeser",
-            "team": "VAN",
-            "pos": "R"
-        },
-        {
-            "id": 8480078,
-            "name": "Filip Chytil",
-            "team": "VAN",
-            "pos": "C"
-        },
-        {
-            "id": 8478498,
-            "name": "Jake DeBrusk",
-            "team": "VAN",
-            "pos": "L"
-        },
-        {
-            "id": 8480876,
-            "name": "Curtis Douglas",
-            "team": "VAN",
-            "pos": "C"
-        },
-        {
-            "id": 8481535,
-            "name": "Nils Hoglander",
-            "team": "VAN",
-            "pos": "L"
-        },
-        {
-            "id": 8475169,
-            "name": "Evander Kane",
-            "team": "VAN",
-            "pos": "L"
-        },
-        {
-            "id": 8481024,
-            "name": "Linus Karlsson",
-            "team": "VAN",
-            "pos": "C"
-        },
-        {
-            "id": 8484406,
-            "name": "Ty Mueller",
-            "team": "VAN",
-            "pos": "C"
-        },
-        {
-            "id": 8482055,
-            "name": "Drew O'Connor",
-            "team": "VAN",
-            "pos": "L"
-        },
-        {
-            "id": 8483499,
-            "name": "Liam Ohgren",
-            "team": "VAN",
-            "pos": "L"
-        },
-        {
-            "id": 8480012,
-            "name": "Elias Pettersson",
-            "team": "VAN",
-            "pos": "C"
-        },
-        {
-            "id": 8482691,
-            "name": "Aatu R\u00e4ty",
-            "team": "VAN",
-            "pos": "C"
-        },
-        {
-            "id": 8482079,
-            "name": "Marco Rossi",
-            "team": "VAN",
-            "pos": "C"
-        },
-        {
-            "id": 8484136,
-            "name": "Max Sasson",
-            "team": "VAN",
-            "pos": "C"
-        },
-        {
-            "id": 8484798,
-            "name": "Zeev Buium",
-            "team": "VAN",
-            "pos": "D"
-        },
-        {
-            "id": 8475762,
-            "name": "Derek Forbort",
-            "team": "VAN",
-            "pos": "D"
-        },
-        {
-            "id": 8479425,
-            "name": "Filip Hronek",
-            "team": "VAN",
-            "pos": "D"
-        },
-        {
-            "id": 8480058,
-            "name": "Pierre-Olivier Joseph",
-            "team": "VAN",
-            "pos": "D"
-        },
-        {
-            "id": 8483768,
-            "name": "Victor Mancini",
-            "team": "VAN",
-            "pos": "D"
-        },
-        {
-            "id": 8483678,
-            "name": "Elias Pettersson",
-            "team": "VAN",
-            "pos": "D"
-        },
-        {
-            "id": 8477969,
-            "name": "Marcus Pettersson",
-            "team": "VAN",
-            "pos": "D"
-        },
-        {
-            "id": 8484240,
-            "name": "Tom Willander",
-            "team": "VAN",
-            "pos": "D"
-        },
-        {
-            "id": 8481557,
-            "name": "Matt Boldy",
-            "team": "MIN",
-            "pos": "L"
-        },
-        {
-            "id": 8481553,
-            "name": "Bobby Brink",
-            "team": "MIN",
-            "pos": "R"
-        },
-        {
-            "id": 8478493,
-            "name": "Joel Eriksson Ek",
-            "team": "MIN",
-            "pos": "C"
-        },
-        {
-            "id": 8477952,
-            "name": "Robby Fabbri",
-            "team": "MIN",
-            "pos": "C"
-        },
-        {
-            "id": 8475220,
-            "name": "Marcus Foligno",
-            "team": "MIN",
-            "pos": "L"
-        },
-        {
-            "id": 8473422,
-            "name": "Nick Foligno",
-            "team": "MIN",
-            "pos": "L"
-        },
-        {
-            "id": 8477451,
-            "name": "Ryan Hartman",
-            "team": "MIN",
-            "pos": "R"
-        },
-        {
-            "id": 8475149,
-            "name": "Marcus Johansson",
-            "team": "MIN",
-            "pos": "L"
-        },
-        {
-            "id": 8478864,
-            "name": "Kirill Kaprizov",
-            "team": "MIN",
-            "pos": "L"
-        },
-        {
-            "id": 8477446,
-            "name": "Michael McCarron",
-            "team": "MIN",
-            "pos": "C"
-        },
-        {
-            "id": 8481477,
-            "name": "Nico Sturm",
-            "team": "MIN",
-            "pos": "C"
-        },
-        {
-            "id": 8475765,
-            "name": "Vladimir Tarasenko",
-            "team": "MIN",
-            "pos": "R"
-        },
-        {
-            "id": 8478508,
-            "name": "Yakov Trenin",
-            "team": "MIN",
-            "pos": "C"
-        },
-        {
-            "id": 8483525,
-            "name": "Danila Yurov",
-            "team": "MIN",
-            "pos": "R"
-        },
-        {
-            "id": 8475692,
-            "name": "Mats Zuccarello",
-            "team": "MIN",
-            "pos": "R"
-        },
-        {
-            "id": 8474567,
-            "name": "Zach Bogosian",
-            "team": "MIN",
-            "pos": "D"
-        },
-        {
-            "id": 8476463,
-            "name": "Jonas Brodin",
-            "team": "MIN",
-            "pos": "D"
-        },
-        {
-            "id": 8482122,
-            "name": "Brock Faber",
-            "team": "MIN",
-            "pos": "D"
-        },
-        {
-            "id": 8480800,
-            "name": "Quinn Hughes",
-            "team": "MIN",
-            "pos": "D"
-        },
-        {
-            "id": 8482094,
-            "name": "Daemon Hunt",
-            "team": "MIN",
-            "pos": "D"
-        },
-        {
-            "id": 8478136,
-            "name": "Jake Middleton",
-            "team": "MIN",
-            "pos": "D"
-        },
-        {
-            "id": 8473507,
-            "name": "Jeff Petry",
-            "team": "MIN",
-            "pos": "D"
-        },
-        {
-            "id": 8474716,
-            "name": "Jared Spurgeon",
-            "team": "MIN",
-            "pos": "D"
-        },
-        {
-            "id": 8484144,
-            "name": "Connor Bedard",
-            "team": "CHI",
-            "pos": "C"
-        },
-        {
-            "id": 8477479,
-            "name": "Tyler Bertuzzi",
-            "team": "CHI",
-            "pos": "L"
-        },
-        {
-            "id": 8484793,
-            "name": "Sacha Boisvert",
-            "team": "CHI",
-            "pos": "C"
-        },
-        {
-            "id": 8477444,
-            "name": "Andre Burakovsky",
-            "team": "CHI",
-            "pos": "L"
-        },
-        {
-            "id": 8477987,
-            "name": "Ryan Donato",
-            "team": "CHI",
-            "pos": "C"
-        },
-        {
-            "id": 8485391,
-            "name": "Anton Frondell",
-            "team": "CHI",
-            "pos": "C"
-        },
-        {
-            "id": 8483450,
-            "name": "Ryan Greene",
-            "team": "CHI",
-            "pos": "C"
-        },
-        {
-            "id": 8478043,
-            "name": "Sam Lafferty",
-            "team": "CHI",
-            "pos": "C"
-        },
-        {
-            "id": 8484185,
-            "name": "Nick Lardis",
-            "team": "CHI",
-            "pos": "L"
-        },
-        {
-            "id": 8478233,
-            "name": "Andrew Mangiapane",
-            "team": "CHI",
-            "pos": "L"
-        },
-        {
-            "id": 8481624,
-            "name": "Ilya Mikheyev",
-            "team": "CHI",
-            "pos": "R"
-        },
-        {
-            "id": 8484197,
-            "name": "Oliver Moore",
-            "team": "CHI",
-            "pos": "C"
-        },
-        {
-            "id": 8483493,
-            "name": "Frank Nazar",
-            "team": "CHI",
-            "pos": "C"
-        },
-        {
-            "id": 8482172,
-            "name": "Landon Slaggert",
-            "team": "CHI",
-            "pos": "L"
-        },
-        {
-            "id": 8476882,
-            "name": "Teuvo Teravainen",
-            "team": "CHI",
-            "pos": "C"
-        },
-        {
-            "id": 8476952,
-            "name": "Dominic Toninato",
-            "team": "CHI",
-            "pos": "C"
-        },
-        {
-            "id": 8481806,
-            "name": "Louis Crevier",
-            "team": "CHI",
-            "pos": "D"
-        },
-        {
-            "id": 8482807,
-            "name": "Ethan Del Mastro",
-            "team": "CHI",
-            "pos": "D"
-        },
-        {
-            "id": 8476891,
-            "name": "Matt Grzelcyk",
-            "team": "CHI",
-            "pos": "D"
-        },
-        {
-            "id": 8482176,
-            "name": "Wyatt Kaiser",
-            "team": "CHI",
-            "pos": "D"
-        },
-        {
-            "id": 8483466,
-            "name": "Kevin Korchinski",
-            "team": "CHI",
-            "pos": "D"
-        },
-        {
-            "id": 8484783,
-            "name": "Artyom Levshunov",
-            "team": "CHI",
-            "pos": "D"
-        },
-        {
-            "id": 8483506,
-            "name": "Sam Rinzel",
-            "team": "CHI",
-            "pos": "D"
-        },
-        {
-            "id": 8481568,
-            "name": "Alex Vlasic",
-            "team": "CHI",
-            "pos": "D"
-        },
-        {
-            "id": 8482703,
-            "name": "Colton Dach",
-            "team": "EDM",
-            "pos": "C"
-        },
-        {
-            "id": 8477450,
-            "name": "Jason Dickinson",
-            "team": "EDM",
-            "pos": "C"
-        },
-        {
-            "id": 8477934,
-            "name": "Leon Draisaitl",
-            "team": "EDM",
-            "pos": "C"
-        },
-        {
-            "id": 8479365,
-            "name": "Trent Frederic",
-            "team": "EDM",
-            "pos": "C"
-        },
-        {
-            "id": 8474641,
-            "name": "Adam Henrique",
-            "team": "EDM",
-            "pos": "C"
-        },
-        {
-            "id": 8475786,
-            "name": "Zach Hyman",
-            "team": "EDM",
-            "pos": "L"
-        },
-        {
-            "id": 8477406,
-            "name": "Mattias Janmark",
-            "team": "EDM",
-            "pos": "C"
-        },
-        {
-            "id": 8479368,
-            "name": "Max Jones",
-            "team": "EDM",
-            "pos": "L"
-        },
-        {
-            "id": 8477953,
-            "name": "Kasperi Kapanen",
-            "team": "EDM",
-            "pos": "R"
-        },
-        {
-            "id": 8477508,
-            "name": "Curtis Lazar",
-            "team": "EDM",
-            "pos": "C"
-        },
-        {
-            "id": 8478402,
-            "name": "Connor McDavid",
-            "team": "EDM",
-            "pos": "C"
-        },
-        {
-            "id": 8476454,
-            "name": "Ryan Nugent-Hopkins",
-            "team": "EDM",
-            "pos": "C"
-        },
-        {
-            "id": 8481617,
-            "name": "Vasily Podkolzin",
-            "team": "EDM",
-            "pos": "R"
-        },
-        {
-            "id": 8478458,
-            "name": "Jack Roslovic",
-            "team": "EDM",
-            "pos": "C"
-        },
-        {
-            "id": 8484509,
-            "name": "Josh Samanski",
-            "team": "EDM",
-            "pos": "C"
-        },
-        {
-            "id": 8483512,
-            "name": "Matt Savoie",
-            "team": "EDM",
-            "pos": "C"
-        },
-        {
-            "id": 8480803,
-            "name": "Evan Bouchard",
-            "team": "EDM",
-            "pos": "D"
-        },
-        {
-            "id": 8475218,
-            "name": "Mattias Ekholm",
-            "team": "EDM",
-            "pos": "D"
-        },
-        {
-            "id": 8480834,
-            "name": "Ty Emberson",
-            "team": "EDM",
-            "pos": "D"
-        },
-        {
-            "id": 8476473,
-            "name": "Connor Murphy",
-            "team": "EDM",
-            "pos": "D"
-        },
-        {
-            "id": 8477498,
-            "name": "Darnell Nurse",
-            "team": "EDM",
-            "pos": "D"
-        },
-        {
-            "id": 8481056,
-            "name": "Spencer Stastney",
-            "team": "EDM",
-            "pos": "D"
-        },
-        {
-            "id": 8478013,
-            "name": "Jake Walman",
-            "team": "EDM",
-            "pos": "D"
-        },
-        {
-            "id": 8474150,
-            "name": "Mikael Backlund",
-            "team": "CGY",
-            "pos": "C"
-        },
-        {
-            "id": 8481556,
-            "name": "John Beecher",
-            "team": "CGY",
-            "pos": "C"
-        },
-        {
-            "id": 8476399,
-            "name": "Blake Coleman",
-            "team": "CGY",
-            "pos": "L"
-        },
-        {
-            "id": 8482679,
-            "name": "Matt Coronato",
-            "team": "CGY",
-            "pos": "R"
-        },
-        {
-            "id": 8480797,
-            "name": "Joel Farabee",
-            "team": "CGY",
-            "pos": "L"
-        },
-        {
-            "id": 8480028,
-            "name": "Morgan Frost",
-            "team": "CGY",
-            "pos": "C"
-        },
-        {
-            "id": 8484860,
-            "name": "Matvei Gridin",
-            "team": "CGY",
-            "pos": "R"
-        },
-        {
-            "id": 8486056,
-            "name": "Tyson Gross",
-            "team": "CGY",
-            "pos": "C"
-        },
-        {
-            "id": 8484180,
-            "name": "Samuel Honzek",
-            "team": "CGY",
-            "pos": "L"
-        },
-        {
-            "id": 8476456,
-            "name": "Jonathan Huberdeau",
-            "team": "CGY",
-            "pos": "L"
-        },
-        {
-            "id": 8483609,
-            "name": "Adam Klapka",
-            "team": "CGY",
-            "pos": "R"
-        },
-        {
-            "id": 8479066,
-            "name": "Ryan Lomberg",
-            "team": "CGY",
-            "pos": "L"
-        },
-        {
-            "id": 8478109,
-            "name": "Victor Olofsson",
-            "team": "CGY",
-            "pos": "L"
-        },
-        {
-            "id": 8482747,
-            "name": "Brennan Othmann",
-            "team": "CGY",
-            "pos": "L"
-        },
-        {
-            "id": 8481028,
-            "name": "Martin Pospisil",
-            "team": "CGY",
-            "pos": "C"
-        },
-        {
-            "id": 8481068,
-            "name": "Yegor Sharangovich",
-            "team": "CGY",
-            "pos": "C"
-        },
-        {
-            "id": 8476458,
-            "name": "Ryan Strome",
-            "team": "CGY",
-            "pos": "C"
-        },
-        {
-            "id": 8482074,
-            "name": "Connor Zary",
-            "team": "CGY",
-            "pos": "C"
-        },
-        {
-            "id": 8480860,
-            "name": "Kevin Bahl",
-            "team": "CGY",
-            "pos": "D"
-        },
-        {
-            "id": 8479402,
-            "name": "Jake Bean",
-            "team": "CGY",
-            "pos": "D"
-        },
-        {
-            "id": 8484150,
-            "name": "Hunter Brzustewicz",
-            "team": "CGY",
-            "pos": "D"
-        },
-        {
-            "id": 8477810,
-            "name": "Joel Hanley",
-            "team": "CGY",
-            "pos": "D"
-        },
-        {
-            "id": 8482165,
-            "name": "Yan Kuznetsov",
-            "team": "CGY",
-            "pos": "D"
-        },
-        {
-            "id": 8476874,
-            "name": "Olli M\u00e4\u00e4tt\u00e4",
-            "team": "CGY",
-            "pos": "D"
-        },
-        {
-            "id": 8481167,
-            "name": "Brayden Pachal",
-            "team": "CGY",
-            "pos": "D"
-        },
-        {
-            "id": 8484768,
-            "name": "Zayne Parekh",
-            "team": "CGY",
-            "pos": "D"
-        },
-        {
-            "id": 8480727,
-            "name": "Zach Whitecloud",
-            "team": "CGY",
-            "pos": "D"
-        },
-        {
-            "id": 8477964,
-            "name": "Ivan Barbashev",
-            "team": "VGK",
-            "pos": "L"
-        },
-        {
-            "id": 8481604,
-            "name": "Pavel Dorofeyev",
-            "team": "VGK",
-            "pos": "R"
-        },
-        {
-            "id": 8475343,
-            "name": "Nic Dowd",
-            "team": "VGK",
-            "pos": "C"
-        },
-        {
-            "id": 8478403,
-            "name": "Jack Eichel",
-            "team": "VGK",
-            "pos": "C"
-        },
-        {
-            "id": 8476881,
-            "name": "Tomas Hertl",
-            "team": "VGK",
-            "pos": "C"
-        },
-        {
-            "id": 8482125,
-            "name": "Alexander Holtz",
-            "team": "VGK",
-            "pos": "R"
-        },
-        {
-            "id": 8479353,
-            "name": "Brett Howden",
-            "team": "VGK",
-            "pos": "C"
-        },
-        {
-            "id": 8476448,
-            "name": "William Karlsson",
-            "team": "VGK",
-            "pos": "C"
-        },
-        {
-            "id": 8478434,
-            "name": "Keegan Kolesar",
-            "team": "VGK",
-            "pos": "R"
-        },
-        {
-            "id": 8478483,
-            "name": "Mitch Marner",
-            "team": "VGK",
-            "pos": "R"
-        },
-        {
-            "id": 8476438,
-            "name": "Brandon Saad",
-            "team": "VGK",
-            "pos": "L"
-        },
-        {
-            "id": 8476925,
-            "name": "Colton Sissons",
-            "team": "VGK",
-            "pos": "C"
-        },
-        {
-            "id": 8482062,
-            "name": "Cole Smith",
-            "team": "VGK",
-            "pos": "R"
-        },
-        {
-            "id": 8475191,
-            "name": "Reilly Smith",
-            "team": "VGK",
-            "pos": "R"
-        },
-        {
-            "id": 8475913,
-            "name": "Mark Stone",
-            "team": "VGK",
-            "pos": "R"
-        },
-        {
-            "id": 8478397,
-            "name": "Rasmus Andersson",
-            "team": "VGK",
-            "pos": "D"
-        },
-        {
-            "id": 8478396,
-            "name": "Noah Hanifin",
-            "team": "VGK",
-            "pos": "D"
-        },
-        {
-            "id": 8477018,
-            "name": "Ben Hutton",
-            "team": "VGK",
-            "pos": "D"
-        },
-        {
-            "id": 8481527,
-            "name": "Kaedan Korczak",
-            "team": "VGK",
-            "pos": "D"
-        },
-        {
-            "id": 8478468,
-            "name": "Jeremy Lauzon",
-            "team": "VGK",
-            "pos": "D"
-        },
-        {
-            "id": 8475188,
-            "name": "Brayden McNabb",
-            "team": "VGK",
-            "pos": "D"
-        },
-        {
-            "id": 8477447,
-            "name": "Shea Theodore",
-            "team": "VGK",
-            "pos": "D"
-        },
-        {
-            "id": 8484158,
-            "name": "Easton Cowan",
-            "team": "TOR",
-            "pos": "R"
-        },
-        {
-            "id": 8477503,
-            "name": "Max Domi",
-            "team": "TOR",
-            "pos": "C"
-        },
-        {
-            "id": 8480870,
-            "name": "Bo Groulx",
-            "team": "TOR",
-            "pos": "C"
-        },
-        {
-            "id": 8475714,
-            "name": "Calle Jarnkrok",
-            "team": "TOR",
-            "pos": "C"
-        },
-        {
-            "id": 8478057,
-            "name": "Dakota Joshua",
-            "team": "TOR",
-            "pos": "C"
-        },
-        {
-            "id": 8482720,
-            "name": "Matthew Knies",
-            "team": "TOR",
-            "pos": "L"
-        },
-        {
-            "id": 8478904,
-            "name": "Steven Lorentz",
-            "team": "TOR",
-            "pos": "C"
-        },
-        {
-            "id": 8481711,
-            "name": "Matias Maccelli",
-            "team": "TOR",
-            "pos": "L"
-        },
-        {
-            "id": 8479318,
-            "name": "Auston Matthews",
-            "team": "TOR",
-            "pos": "C"
-        },
-        {
-            "id": 8477939,
-            "name": "William Nylander",
-            "team": "TOR",
-            "pos": "R"
-        },
-        {
-            "id": 8479543,
-            "name": "Michael Pezzetta",
-            "team": "TOR",
-            "pos": "L"
-        },
-        {
-            "id": 8484901,
-            "name": "Jacob Quillan",
-            "team": "TOR",
-            "pos": "C"
-        },
-        {
-            "id": 8481582,
-            "name": "Nicholas Robertson",
-            "team": "TOR",
-            "pos": "L"
-        },
-        {
-            "id": 8475166,
-            "name": "John Tavares",
-            "team": "TOR",
-            "pos": "C"
-        },
-        {
-            "id": 8481122,
-            "name": "Simon Benoit",
-            "team": "TOR",
-            "pos": "D"
-        },
-        {
-            "id": 8478443,
-            "name": "Brandon Carlo",
-            "team": "TOR",
-            "pos": "D"
-        },
-        {
-            "id": 8475171,
-            "name": "Oliver Ekman-Larsson",
-            "team": "TOR",
-            "pos": "D"
-        },
-        {
-            "id": 8476931,
-            "name": "Jake McCabe",
-            "team": "TOR",
-            "pos": "D"
-        },
-        {
-            "id": 8479026,
-            "name": "Philippe Myers",
-            "team": "TOR",
-            "pos": "D"
-        },
-        {
-            "id": 8476853,
-            "name": "Morgan Rielly",
-            "team": "TOR",
-            "pos": "D"
-        },
-        {
-            "id": 8479442,
-            "name": "Troy Stecher",
-            "team": "TOR",
-            "pos": "D"
-        },
-        {
-            "id": 8475690,
-            "name": "Chris Tanev",
-            "team": "TOR",
-            "pos": "D"
-        },
-        {
-            "id": 8484801,
-            "name": "Macklin Celebrini",
-            "team": "SJS",
-            "pos": "C"
-        },
-        {
-            "id": 8484994,
-            "name": "Igor Chernyshov",
-            "team": "SJS",
-            "pos": "L"
-        },
-        {
-            "id": 8480848,
-            "name": "Ty Dellandrea",
-            "team": "SJS",
-            "pos": "C"
-        },
-        {
-            "id": 8482667,
-            "name": "William Eklund",
-            "team": "SJS",
-            "pos": "L"
-        },
-        {
-            "id": 8478874,
-            "name": "Adam Gaudette",
-            "team": "SJS",
-            "pos": "R"
-        },
-        {
-            "id": 8476624,
-            "name": "Barclay Goodrow",
-            "team": "SJS",
-            "pos": "C"
-        },
-        {
-            "id": 8484911,
-            "name": "Collin Graf",
-            "team": "SJS",
-            "pos": "R"
-        },
-        {
-            "id": 8480798,
-            "name": "Philipp Kurashev",
-            "team": "SJS",
-            "pos": "C"
-        },
-        {
-            "id": 8485402,
-            "name": "Michael Misa",
-            "team": "SJS",
-            "pos": "C"
-        },
-        {
-            "id": 8482859,
-            "name": "Zack Ostapchuk",
-            "team": "SJS",
-            "pos": "C"
-        },
-        {
-            "id": 8471817,
-            "name": "Ryan Reaves",
-            "team": "SJS",
-            "pos": "R"
-        },
-        {
-            "id": 8483630,
-            "name": "Pavol Regenda",
-            "team": "SJS",
-            "pos": "L"
-        },
-        {
-            "id": 8480748,
-            "name": "Kiefer Sherwood",
-            "team": "SJS",
-            "pos": "L"
-        },
-        {
-            "id": 8484227,
-            "name": "Will Smith",
-            "team": "SJS",
-            "pos": "C"
-        },
-        {
-            "id": 8475726,
-            "name": "Tyler Toffoli",
-            "team": "SJS",
-            "pos": "C"
-        },
-        {
-            "id": 8477505,
-            "name": "Alexander Wennberg",
-            "team": "SJS",
-            "pos": "C"
-        },
-        {
-            "id": 8479576,
-            "name": "Vincent Desharnais",
-            "team": "SJS",
-            "pos": "D"
-        },
-        {
-            "id": 8484806,
-            "name": "Sam Dickinson",
-            "team": "SJS",
-            "pos": "D"
-        },
-        {
-            "id": 8479983,
-            "name": "Mario Ferraro",
-            "team": "SJS",
-            "pos": "D"
-        },
-        {
-            "id": 8475906,
-            "name": "John Klingberg",
-            "team": "SJS",
-            "pos": "D"
-        },
-        {
-            "id": 8475181,
-            "name": "Nick Leddy",
-            "team": "SJS",
-            "pos": "D"
-        },
-        {
-            "id": 8482166,
-            "name": "Shakir Mukhamadullin",
-            "team": "SJS",
-            "pos": "D"
-        },
-        {
-            "id": 8475200,
-            "name": "Dmitry Orlov",
-            "team": "SJS",
-            "pos": "D"
-        },
-        {
-            "id": 8479619,
-            "name": "Michael Carcone",
-            "team": "UTA",
-            "pos": "L"
-        },
-        {
-            "id": 8483431,
-            "name": "Logan Cooley",
-            "team": "UTA",
-            "pos": "C"
-        },
-        {
-            "id": 8478474,
-            "name": "Lawson Crouse",
-            "team": "UTA",
-            "pos": "L"
-        },
-        {
-            "id": 8482699,
-            "name": "Dylan Guenther",
-            "team": "UTA",
-            "pos": "R"
-        },
-        {
-            "id": 8480849,
-            "name": "Barrett Hayton",
-            "team": "UTA",
-            "pos": "C"
-        },
-        {
-            "id": 8479343,
-            "name": "Clayton Keller",
-            "team": "UTA",
-            "pos": "R"
-        },
-        {
-            "id": 8477021,
-            "name": "Alexander Kerfoot",
-            "team": "UTA",
-            "pos": "C"
-        },
-        {
-            "id": 8480855,
-            "name": "Jack McBain",
-            "team": "UTA",
-            "pos": "C"
-        },
-        {
-            "id": 8477070,
-            "name": "Liam O'Brien",
-            "team": "UTA",
-            "pos": "C"
-        },
-        {
-            "id": 8482175,
-            "name": "JJ Peterka",
-            "team": "UTA",
-            "pos": "R"
-        },
-        {
-            "id": 8477951,
-            "name": "Nick Schmaltz",
-            "team": "UTA",
-            "pos": "C"
-        },
-        {
-            "id": 8478831,
-            "name": "Kevin Stenlund",
-            "team": "UTA",
-            "pos": "C"
-        },
-        {
-            "id": 8479293,
-            "name": "Brandon Tanev",
-            "team": "UTA",
-            "pos": "L"
-        },
-        {
-            "id": 8479977,
-            "name": "Kailer Yamamoto",
-            "team": "UTA",
-            "pos": "R"
-        },
-        {
-            "id": 8474013,
-            "name": "Ian Cole",
-            "team": "UTA",
-            "pos": "D"
-        },
-        {
-            "id": 8480084,
-            "name": "Nick DeSimone",
-            "team": "UTA",
-            "pos": "D"
-        },
-        {
-            "id": 8480434,
-            "name": "Sean Durzi",
-            "team": "UTA",
-            "pos": "D"
-        },
-        {
-            "id": 8478507,
-            "name": "John Marino",
-            "team": "UTA",
-            "pos": "D"
-        },
-        {
-            "id": 8477220,
-            "name": "Nate Schmidt",
-            "team": "UTA",
-            "pos": "D"
-        },
-        {
-            "id": 8479410,
-            "name": "Mikhail Sergachev",
-            "team": "UTA",
-            "pos": "D"
-        },
-        {
-            "id": 8477346,
-            "name": "MacKenzie Weegar",
-            "team": "UTA",
-            "pos": "D"
-        },
-        {
-            "id": 8482665,
-            "name": "Matty Beniers",
-            "team": "SEA",
-            "pos": "C"
-        },
-        {
-            "id": 8484800,
-            "name": "Berkly Catton",
-            "team": "SEA",
-            "pos": "C"
-        },
-        {
-            "id": 8474586,
-            "name": "Jordan Eberle",
-            "team": "SEA",
-            "pos": "R"
-        },
-        {
-            "id": 8484168,
-            "name": "Oscar Fisker Molgaard",
-            "team": "SEA",
-            "pos": "C"
-        },
-        {
-            "id": 8477919,
-            "name": "Frederick Gaudreau",
-            "team": "SEA",
-            "pos": "C"
-        },
-        {
-            "id": 8481554,
-            "name": "Kaapo Kakko",
-            "team": "SEA",
-            "pos": "R"
-        },
-        {
-            "id": 8477955,
-            "name": "Jared McCann",
-            "team": "SEA",
-            "pos": "L"
-        },
-        {
-            "id": 8482259,
-            "name": "Bobby McMann",
-            "team": "SEA",
-            "pos": "C"
-        },
-        {
-            "id": 8482874,
-            "name": "Jacob Melanson",
-            "team": "SEA",
-            "pos": "R"
-        },
-        {
-            "id": 8483570,
-            "name": "Ben Meyers",
-            "team": "SEA",
-            "pos": "C"
-        },
-        {
-            "id": 8475768,
-            "name": "Jaden Schwartz",
-            "team": "SEA",
-            "pos": "L"
-        },
-        {
-            "id": 8476905,
-            "name": "Chandler Stephenson",
-            "team": "SEA",
-            "pos": "C"
-        },
-        {
-            "id": 8480009,
-            "name": "Eeli Tolvanen",
-            "team": "SEA",
-            "pos": "R"
-        },
-        {
-            "id": 8482751,
-            "name": "Ryan Winterton",
-            "team": "SEA",
-            "pos": "C"
-        },
-        {
-            "id": 8483524,
-            "name": "Shane Wright",
-            "team": "SEA",
-            "pos": "C"
-        },
-        {
-            "id": 8478407,
-            "name": "Vince Dunn",
-            "team": "SEA",
-            "pos": "D"
-        },
-        {
-            "id": 8482858,
-            "name": "Ryker Evans",
-            "team": "SEA",
-            "pos": "D"
-        },
-        {
-            "id": 8479985,
-            "name": "Cale Fleury",
-            "team": "SEA",
-            "pos": "D"
-        },
-        {
-            "id": 8476457,
-            "name": "Adam Larsson",
-            "team": "SEA",
-            "pos": "D"
-        },
-        {
-            "id": 8479324,
-            "name": "Ryan Lindgren",
-            "team": "SEA",
-            "pos": "D"
-        },
-        {
-            "id": 8479372,
-            "name": "Joshua Mahura",
-            "team": "SEA",
-            "pos": "D"
-        },
-        {
-            "id": 8477986,
-            "name": "Brandon Montour",
-            "team": "SEA",
-            "pos": "D"
-        },
-        {
-            "id": 8476467,
-            "name": "Jamie Oleksiak",
-            "team": "SEA",
-            "pos": "D"
-        },
-        {
-            "id": 8482146,
-            "name": "Luke Evangelista",
-            "team": "NSH",
-            "pos": "R"
-        },
-        {
-            "id": 8476887,
-            "name": "Filip Forsberg",
-            "team": "NSH",
-            "pos": "L"
-        },
-        {
-            "id": 8475287,
-            "name": "Erik Haula",
-            "team": "NSH",
-            "pos": "L"
-        },
-        {
-            "id": 8479370,
-            "name": "Tyson Jost",
-            "team": "NSH",
-            "pos": "C"
-        },
-        {
-            "id": 8483465,
-            "name": "Joakim Kemell",
-            "team": "NSH",
-            "pos": "R"
-        },
-        {
-            "id": 8482742,
-            "name": "Zachary L'Heureux",
-            "team": "NSH",
-            "pos": "L"
-        },
-        {
-            "id": 8476539,
-            "name": "Jonathan Marchessault",
-            "team": "NSH",
-            "pos": "C"
-        },
-        {
-            "id": 8475158,
-            "name": "Ryan O'Reilly",
-            "team": "NSH",
-            "pos": "C"
-        },
-        {
-            "id": 8483513,
-            "name": "Reid Schaefer",
-            "team": "NSH",
-            "pos": "L"
-        },
-        {
-            "id": 8474564,
-            "name": "Steven Stamkos",
-            "team": "NSH",
-            "pos": "C"
-        },
-        {
-            "id": 8482768,
-            "name": "Fedor Svechkov",
-            "team": "NSH",
-            "pos": "C"
-        },
-        {
-            "id": 8482103,
-            "name": "Ozzy Wiesblatt",
-            "team": "NSH",
-            "pos": "C"
-        },
-        {
-            "id": 8484241,
-            "name": "Matthew Wood",
-            "team": "NSH",
-            "pos": "R"
-        },
-        {
-            "id": 8482111,
-            "name": "Justin Barron",
-            "team": "NSH",
-            "pos": "D"
-        },
-        {
-            "id": 8479980,
-            "name": "Nicolas Hague",
-            "team": "NSH",
-            "pos": "D"
-        },
-        {
-            "id": 8474600,
-            "name": "Roman Josi",
-            "team": "NSH",
-            "pos": "D"
-        },
-        {
-            "id": 8480246,
-            "name": "Nick Perbix",
-            "team": "NSH",
-            "pos": "D"
-        },
-        {
-            "id": 8476869,
-            "name": "Brady Skjei",
-            "team": "NSH",
-            "pos": "D"
-        },
-        {
-            "id": 8482715,
-            "name": "Ryan Ufko",
-            "team": "NSH",
-            "pos": "D"
-        },
-        {
-            "id": 8482482,
-            "name": "Adam Wilsby",
-            "team": "NSH",
-            "pos": "D"
-        },
-        {
-            "id": 8476469,
-            "name": "Joel Armia",
-            "team": "LAK",
-            "pos": "R"
-        },
-        {
-            "id": 8482124,
-            "name": "Quinton Byfield",
-            "team": "LAK",
-            "pos": "R"
-        },
-        {
-            "id": 8477942,
-            "name": "Kevin Fiala",
-            "team": "LAK",
-            "pos": "L"
-        },
-        {
-            "id": 8482726,
-            "name": "Samuel Helenius",
-            "team": "LAK",
-            "pos": "C"
-        },
-        {
-            "id": 8478472,
-            "name": "Mathieu Joseph",
-            "team": "LAK",
-            "pos": "R"
-        },
-        {
-            "id": 8477960,
-            "name": "Adrian Kempe",
-            "team": "LAK",
-            "pos": "R"
-        },
-        {
-            "id": 8471685,
-            "name": "Anze Kopitar",
-            "team": "LAK",
-            "pos": "C"
-        },
-        {
-            "id": 8483808,
-            "name": "Andrei Kuzmenko",
-            "team": "LAK",
-            "pos": "L"
-        },
-        {
-            "id": 8482155,
-            "name": "Alex Laferriere",
-            "team": "LAK",
-            "pos": "R"
-        },
-        {
-            "id": 8476872,
-            "name": "Scott Laughton",
-            "team": "LAK",
-            "pos": "C"
-        },
-        {
-            "id": 8481732,
-            "name": "Andre Lee",
-            "team": "LAK",
-            "pos": "L"
-        },
-        {
-            "id": 8482408,
-            "name": "Jeff Malott",
-            "team": "LAK",
-            "pos": "L"
-        },
-        {
-            "id": 8479675,
-            "name": "Trevor Moore",
-            "team": "LAK",
-            "pos": "L"
-        },
-        {
-            "id": 8478550,
-            "name": "Artemi Panarin",
-            "team": "LAK",
-            "pos": "L"
-        },
-        {
-            "id": 8481532,
-            "name": "Alex Turcotte",
-            "team": "LAK",
-            "pos": "C"
-        },
-        {
-            "id": 8483406,
-            "name": "Taylor Ward",
-            "team": "LAK",
-            "pos": "R"
-        },
-        {
-            "id": 8483756,
-            "name": "Jared Wright",
-            "team": "LAK",
-            "pos": "R"
         },
         {
-            "id": 8479998,
-            "name": "Mikey Anderson",
-            "team": "LAK",
+            "id": 8475462,
+            "name": "Radko Gudas",
+            "team": "ANA",
             "pos": "D"
         },
         {
-            "id": 8476879,
-            "name": "Cody Ceci",
-            "team": "LAK",
+            "id": 8481563,
+            "name": "Drew Helleson",
+            "team": "ANA",
             "pos": "D"
         },
         {
-            "id": 8482730,
-            "name": "Brandt Clarke",
-            "team": "LAK",
+            "id": 8481605,
+            "name": "Jackson LaCombe",
+            "team": "ANA",
             "pos": "D"
         },
         {
-            "id": 8474563,
-            "name": "Drew Doughty",
-            "team": "LAK",
+            "id": 8483490,
+            "name": "Pavel Mintyukov",
+            "team": "ANA",
             "pos": "D"
         },
         {
-            "id": 8475208,
-            "name": "Brian Dumoulin",
-            "team": "LAK",
+            "id": 8482178,
+            "name": "Ian Moore",
+            "team": "ANA",
             "pos": "D"
         },
         {
-            "id": 8476441,
-            "name": "Joel Edmundson",
-            "team": "LAK",
+            "id": 8476885,
+            "name": "Jacob Trouba",
+            "team": "ANA",
             "pos": "D"
         },
         {
-            "id": 8479421,
-            "name": "Jacob Moverare",
-            "team": "LAK",
+            "id": 8482803,
+            "name": "Olen Zellweger",
+            "team": "ANA",
             "pos": "D"
         }
     ]

@@ -1,148 +1,15 @@
 [
     {
-        "player": "Rickard Rakell",
-        "team": "PIT",
-        "opponent": "TBL",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Bryan Rust",
-        "team": "PIT",
-        "opponent": "TBL",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "David Pastrnak",
-        "team": "BOS",
-        "opponent": "FLA",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Pavel Zacha",
-        "team": "BOS",
-        "opponent": "FLA",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Cole Caufield",
-        "team": "MTL",
-        "opponent": "NYR",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Nick Suzuki",
-        "team": "MTL",
-        "opponent": "NYR",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Alex DeBrincat",
-        "team": "DET",
-        "opponent": "PHI",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Leon Draisaitl",
-        "team": "EDM",
-        "opponent": "CHI",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Jake Guentzel",
-        "team": "TBL",
-        "opponent": "PIT",
+        "player": "Dylan Holloway",
+        "team": "STL",
+        "opponent": "ANA",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Nikita Kucherov",
-        "team": "TBL",
-        "opponent": "PIT",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Viktor Arvidsson",
-        "team": "BOS",
-        "opponent": "FLA",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Charlie McAvoy",
-        "team": "BOS",
-        "opponent": "FLA",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Juraj Slafkovsk\u00fd",
-        "team": "MTL",
-        "opponent": "NYR",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Adam Fox",
-        "team": "NYR",
-        "opponent": "MTL",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Patrick Kane",
-        "team": "DET",
-        "opponent": "PHI",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Jesper Bratt",
-        "team": "NJD",
-        "opponent": "WSH",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Jack Hughes",
-        "team": "NJD",
-        "opponent": "WSH",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Kyle Connor",
-        "team": "WPG",
-        "opponent": "DAL",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Brock Boeser",
-        "team": "VAN",
-        "opponent": "MIN",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Connor McDavid",
-        "team": "EDM",
-        "opponent": "CHI",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Artemi Panarin",
-        "team": "LAK",
-        "opponent": "NSH",
+        "player": "Robert Thomas",
+        "team": "STL",
+        "opponent": "ANA",
         "hit_rate": 80,
         "last_10": 8
     }
