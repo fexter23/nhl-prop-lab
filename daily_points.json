@@ -1,34 +1,6 @@
 [
     {
-        "player": "Alex DeBrincat",
-        "team": "DET",
-        "opponent": "NYR",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "David Pastrnak",
-        "team": "BOS",
-        "opponent": "TBL",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Jake Guentzel",
-        "team": "TBL",
-        "opponent": "BOS",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
         "player": "Rickard Rakell",
-        "team": "PIT",
-        "opponent": "FLA",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Bryan Rust",
         "team": "PIT",
         "opponent": "FLA",
         "hit_rate": 90,
@@ -49,84 +21,56 @@
         "last_10": 9
     },
     {
-        "player": "Leon Draisaitl",
-        "team": "EDM",
-        "opponent": "VGK",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Connor McDavid",
-        "team": "EDM",
-        "opponent": "VGK",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Patrick Kane",
+        "player": "Alex DeBrincat",
         "team": "DET",
-        "opponent": "NYR",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Adam Fox",
-        "team": "NYR",
-        "opponent": "DET",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Jordan Spence",
-        "team": "OTT",
         "opponent": "MIN",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Nathan MacKinnon",
-        "team": "COL",
-        "opponent": "DAL",
+        "player": "Sam Bennett",
+        "team": "FLA",
+        "opponent": "PIT",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Mikko Rantanen",
-        "team": "DAL",
-        "opponent": "COL",
+        "player": "Bryan Rust",
+        "team": "PIT",
+        "opponent": "FLA",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "David Pastrnak",
+        "team": "BOS",
+        "opponent": "PHI",
         "hit_rate": 80,
         "last_10": 8
     },
     {
         "player": "Pavel Zacha",
         "team": "BOS",
-        "opponent": "TBL",
+        "opponent": "PHI",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Nikita Kucherov",
-        "team": "TBL",
-        "opponent": "BOS",
+        "player": "Sebastian Aho",
+        "team": "CAR",
+        "opponent": "OTT",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Juraj Slafkovsk\u00fd",
-        "team": "MTL",
-        "opponent": "NJD",
+        "player": "Seth Jarvis",
+        "team": "CAR",
+        "opponent": "OTT",
         "hit_rate": 80,
         "last_10": 8
     },
     {
         "player": "Jesper Bratt",
-        "team": "NJD",
-        "opponent": "MTL",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Connor Brown",
         "team": "NJD",
         "opponent": "MTL",
         "hit_rate": 80,
@@ -147,16 +91,30 @@
         "last_10": 8
     },
     {
-        "player": "Sebastian Aho",
-        "team": "CAR",
-        "opponent": "NYI",
+        "player": "Adam Fox",
+        "team": "NYR",
+        "opponent": "WSH",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Artemi Panarin",
-        "team": "LAK",
-        "opponent": "TOR",
+        "player": "Dylan Holloway",
+        "team": "STL",
+        "opponent": "COL",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Robert Thomas",
+        "team": "STL",
+        "opponent": "COL",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Nathan MacKinnon",
+        "team": "COL",
+        "opponent": "STL",
         "hit_rate": 80,
         "last_10": 8
     }
