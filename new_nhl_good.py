@@ -307,7 +307,7 @@ with st.sidebar:
                                 f"**U**: :{under_c}[**{entry['under']:.0f}%**]  **|** "
                                 f"**Streak**: {entry['streak']}  **|** "
                                 f"**Shifts**: {entry['avg_shifts']}  **|** "
-                                f"**TOI**: {entry['avg_toi']}**",
+                                f"**TOI**: {entry['avg_toi']}",
                                 unsafe_allow_html=True
                             )
                         with c_d:
