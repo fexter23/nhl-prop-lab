@@ -1,120 +1,29 @@
 [
     {
-        "player": "Rickard Rakell",
-        "team": "PIT",
-        "opponent": "FLA",
+        "player": "Jake Guentzel",
+        "team": "TBL",
+        "opponent": "BUF",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Cole Caufield",
-        "team": "MTL",
-        "opponent": "NJD",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Nick Suzuki",
-        "team": "MTL",
-        "opponent": "NJD",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Alex DeBrincat",
-        "team": "DET",
-        "opponent": "MIN",
+        "player": "Nikita Kucherov",
+        "team": "TBL",
+        "opponent": "BUF",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Sam Bennett",
-        "team": "FLA",
-        "opponent": "PIT",
+        "player": "Filip Forsberg",
+        "team": "NSH",
+        "opponent": "LAK",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Bryan Rust",
-        "team": "PIT",
-        "opponent": "FLA",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "David Pastrnak",
-        "team": "BOS",
-        "opponent": "PHI",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Pavel Zacha",
-        "team": "BOS",
-        "opponent": "PHI",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Sebastian Aho",
-        "team": "CAR",
-        "opponent": "OTT",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Seth Jarvis",
-        "team": "CAR",
-        "opponent": "OTT",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Jesper Bratt",
-        "team": "NJD",
-        "opponent": "MTL",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Nico Hischier",
-        "team": "NJD",
-        "opponent": "MTL",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Jack Hughes",
-        "team": "NJD",
-        "opponent": "MTL",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Adam Fox",
-        "team": "NYR",
-        "opponent": "WSH",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Dylan Holloway",
-        "team": "STL",
-        "opponent": "COL",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Robert Thomas",
-        "team": "STL",
-        "opponent": "COL",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Nathan MacKinnon",
-        "team": "COL",
-        "opponent": "STL",
+        "player": "Artemi Panarin",
+        "team": "LAK",
+        "opponent": "NSH",
         "hit_rate": 80,
         "last_10": 8
     }
