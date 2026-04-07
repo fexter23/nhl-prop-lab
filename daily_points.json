@@ -2,28 +2,168 @@
     {
         "player": "Jake Guentzel",
         "team": "TBL",
-        "opponent": "BUF",
+        "opponent": "OTT",
         "hit_rate": 90,
         "last_10": 9
     },
     {
         "player": "Nikita Kucherov",
         "team": "TBL",
-        "opponent": "BUF",
+        "opponent": "OTT",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Dylan Holloway",
+        "team": "STL",
+        "opponent": "COL",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Leon Draisaitl",
+        "team": "EDM",
+        "opponent": "UTA",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Cole Caufield",
+        "team": "MTL",
+        "opponent": "FLA",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Nick Suzuki",
+        "team": "MTL",
+        "opponent": "FLA",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Alex DeBrincat",
+        "team": "DET",
+        "opponent": "CBJ",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Patrick Kane",
+        "team": "DET",
+        "opponent": "CBJ",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Trevor Zegras",
+        "team": "PHI",
+        "opponent": "NJD",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Jesper Bratt",
+        "team": "NJD",
+        "opponent": "PHI",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Nico Hischier",
+        "team": "NJD",
+        "opponent": "PHI",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Jack Hughes",
+        "team": "NJD",
+        "opponent": "PHI",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Timo Meier",
+        "team": "NJD",
+        "opponent": "PHI",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "David Pastrnak",
+        "team": "BOS",
+        "opponent": "CAR",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Pavel Zacha",
+        "team": "BOS",
+        "opponent": "CAR",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Sebastian Aho",
+        "team": "CAR",
+        "opponent": "BOS",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Seth Jarvis",
+        "team": "CAR",
+        "opponent": "BOS",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Robert Thomas",
+        "team": "STL",
+        "opponent": "COL",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Mikko Rantanen",
+        "team": "DAL",
+        "opponent": "CGY",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Ryan Hartman",
+        "team": "MIN",
+        "opponent": "SEA",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Connor McDavid",
+        "team": "EDM",
+        "opponent": "UTA",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Evan Bouchard",
+        "team": "EDM",
+        "opponent": "UTA",
         "hit_rate": 80,
         "last_10": 8
     },
     {
         "player": "Filip Forsberg",
         "team": "NSH",
-        "opponent": "LAK",
+        "opponent": "ANA",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Artemi Panarin",
-        "team": "LAK",
-        "opponent": "NSH",
+        "player": "Steven Stamkos",
+        "team": "NSH",
+        "opponent": "ANA",
         "hit_rate": 80,
         "last_10": 8
     }
