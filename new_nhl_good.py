@@ -5,6 +5,17 @@ import uuid
 import json
 from datetime import datetime, timezone
 from nhlpy import NHLClient
+from PIL import Image 
+
+# ====================== FAVICON & PAGE CONFIG ======================
+# This MUST be the first Streamlit command in the entire script
+
+st.set_page_config(
+    page_title="NhL Hit Tracker",
+    page_icon="🏒",                    # fallback emoji
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
 
 client = NHLClient()
 
