@@ -1,71 +1,106 @@
 [
     {
-        "player": "Sidney Crosby",
-        "team": "PIT",
-        "opponent": "WSH",
+        "player": "Andrei Svechnikov",
+        "team": "CAR",
+        "opponent": "PHI",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Leon Draisaitl",
+        "team": "EDM",
+        "opponent": "COL",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Jake Guentzel",
+        "team": "TBL",
+        "opponent": "DET",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Rickard Rakell",
-        "team": "PIT",
-        "opponent": "WSH",
+        "player": "Brandon Hagel",
+        "team": "TBL",
+        "opponent": "DET",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Bryan Rust",
-        "team": "PIT",
-        "opponent": "WSH",
+        "player": "Nikita Kucherov",
+        "team": "TBL",
+        "opponent": "DET",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Cole Caufield",
-        "team": "MTL",
-        "opponent": "NYI",
+        "player": "Adam Fox",
+        "team": "NYR",
+        "opponent": "FLA",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Nick Suzuki",
-        "team": "MTL",
-        "opponent": "NYI",
+        "player": "Sebastian Aho",
+        "team": "CAR",
+        "opponent": "PHI",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Pavel Zacha",
-        "team": "BOS",
-        "opponent": "CBJ",
+        "player": "Trevor Zegras",
+        "team": "PHI",
+        "opponent": "CAR",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Dylan Guenther",
-        "team": "UTA",
-        "opponent": "CGY",
+        "player": "John Tavares",
+        "team": "TOR",
+        "opponent": "DAL",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Clayton Keller",
-        "team": "UTA",
-        "opponent": "CGY",
+        "player": "Ryan Hartman",
+        "team": "MIN",
+        "opponent": "STL",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Mikhail Sergachev",
-        "team": "UTA",
-        "opponent": "CGY",
+        "player": "Dylan Holloway",
+        "team": "STL",
+        "opponent": "MIN",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Matt Coronato",
-        "team": "CGY",
-        "opponent": "UTA",
+        "player": "Robert Thomas",
+        "team": "STL",
+        "opponent": "MIN",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Alexander Wennberg",
+        "team": "SJS",
+        "opponent": "NSH",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Connor McDavid",
+        "team": "EDM",
+        "opponent": "COL",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Evan Bouchard",
+        "team": "EDM",
+        "opponent": "COL",
         "hit_rate": 80,
         "last_10": 8
     }
