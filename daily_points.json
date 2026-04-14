@@ -2,48 +2,41 @@
     {
         "player": "Andrei Svechnikov",
         "team": "CAR",
+        "opponent": "NYI",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Nick Suzuki",
+        "team": "MTL",
         "opponent": "PHI",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Leon Draisaitl",
-        "team": "EDM",
-        "opponent": "COL",
+        "player": "Clayton Keller",
+        "team": "UTA",
+        "opponent": "WPG",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Jake Guentzel",
-        "team": "TBL",
-        "opponent": "DET",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Brandon Hagel",
-        "team": "TBL",
-        "opponent": "DET",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Nikita Kucherov",
-        "team": "TBL",
-        "opponent": "DET",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Adam Fox",
-        "team": "NYR",
-        "opponent": "FLA",
+        "player": "Pavel Zacha",
+        "team": "BOS",
+        "opponent": "NJD",
         "hit_rate": 80,
         "last_10": 8
     },
     {
         "player": "Sebastian Aho",
         "team": "CAR",
+        "opponent": "NYI",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Cole Caufield",
+        "team": "MTL",
         "opponent": "PHI",
         "hit_rate": 80,
         "last_10": 8
@@ -51,56 +44,49 @@
     {
         "player": "Trevor Zegras",
         "team": "PHI",
-        "opponent": "CAR",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "John Tavares",
-        "team": "TOR",
-        "opponent": "DAL",
+        "opponent": "MTL",
         "hit_rate": 80,
         "last_10": 8
     },
     {
         "player": "Ryan Hartman",
         "team": "MIN",
-        "opponent": "STL",
+        "opponent": "ANA",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Mark Scheifele",
+        "team": "WPG",
+        "opponent": "UTA",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Mikhail Sergachev",
+        "team": "UTA",
+        "opponent": "WPG",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Matt Coronato",
+        "team": "CGY",
+        "opponent": "COL",
         "hit_rate": 80,
         "last_10": 8
     },
     {
         "player": "Dylan Holloway",
         "team": "STL",
-        "opponent": "MIN",
+        "opponent": "PIT",
         "hit_rate": 80,
         "last_10": 8
     },
     {
         "player": "Robert Thomas",
         "team": "STL",
-        "opponent": "MIN",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Alexander Wennberg",
-        "team": "SJS",
-        "opponent": "NSH",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Connor McDavid",
-        "team": "EDM",
-        "opponent": "COL",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Evan Bouchard",
-        "team": "EDM",
-        "opponent": "COL",
+        "opponent": "PIT",
         "hit_rate": 80,
         "last_10": 8
     }
