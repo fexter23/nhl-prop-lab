@@ -1,92 +1,64 @@
 [
     {
-        "player": "Andrei Svechnikov",
-        "team": "CAR",
-        "opponent": "NYI",
+        "player": "Adam Fox",
+        "team": "NYR",
+        "opponent": "TBL",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Nick Suzuki",
-        "team": "MTL",
-        "opponent": "PHI",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Clayton Keller",
-        "team": "UTA",
-        "opponent": "WPG",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Pavel Zacha",
-        "team": "BOS",
-        "opponent": "NJD",
+        "player": "Jake Guentzel",
+        "team": "TBL",
+        "opponent": "NYR",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Sebastian Aho",
-        "team": "CAR",
-        "opponent": "NYI",
+        "player": "Brandon Hagel",
+        "team": "TBL",
+        "opponent": "NYR",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Cole Caufield",
-        "team": "MTL",
-        "opponent": "PHI",
+        "player": "Nikita Kucherov",
+        "team": "TBL",
+        "opponent": "NYR",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Trevor Zegras",
-        "team": "PHI",
-        "opponent": "MTL",
+        "player": "Patrick Kane",
+        "team": "DET",
+        "opponent": "FLA",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Ryan Hartman",
-        "team": "MIN",
-        "opponent": "ANA",
+        "player": "John Tavares",
+        "team": "TOR",
+        "opponent": "OTT",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Mark Scheifele",
-        "team": "WPG",
-        "opponent": "UTA",
+        "player": "Macklin Celebrini",
+        "team": "SJS",
+        "opponent": "CHI",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Mikhail Sergachev",
-        "team": "UTA",
-        "opponent": "WPG",
+        "player": "Alexander Wennberg",
+        "team": "SJS",
+        "opponent": "CHI",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Matt Coronato",
-        "team": "CGY",
-        "opponent": "COL",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Dylan Holloway",
-        "team": "STL",
-        "opponent": "PIT",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Robert Thomas",
-        "team": "STL",
-        "opponent": "PIT",
+        "player": "Kaapo Kakko",
+        "team": "SEA",
+        "opponent": "VGK",
         "hit_rate": 80,
         "last_10": 8
     }
