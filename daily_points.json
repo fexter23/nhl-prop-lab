@@ -1,64 +1,99 @@
 [
     {
-        "player": "Adam Fox",
-        "team": "NYR",
-        "opponent": "TBL",
+        "player": "Robert Thomas",
+        "team": "STL",
+        "opponent": "UTA",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Jake Guentzel",
-        "team": "TBL",
-        "opponent": "NYR",
+        "player": "Clayton Keller",
+        "team": "UTA",
+        "opponent": "STL",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Leon Draisaitl",
+        "team": "EDM",
+        "opponent": "VAN",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Dylan Holloway",
+        "team": "STL",
+        "opponent": "UTA",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Brandon Hagel",
-        "team": "TBL",
-        "opponent": "NYR",
+        "player": "Dylan Guenther",
+        "team": "UTA",
+        "opponent": "STL",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Nikita Kucherov",
-        "team": "TBL",
-        "opponent": "NYR",
+        "player": "Mikhail Sergachev",
+        "team": "UTA",
+        "opponent": "STL",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Patrick Kane",
-        "team": "DET",
-        "opponent": "FLA",
+        "player": "Cutter Gauthier",
+        "team": "ANA",
+        "opponent": "NSH",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "John Tavares",
-        "team": "TOR",
-        "opponent": "OTT",
+        "player": "Mark Scheifele",
+        "team": "WPG",
+        "opponent": "SJS",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Macklin Celebrini",
-        "team": "SJS",
-        "opponent": "CHI",
+        "player": "Adrian Kempe",
+        "team": "LAK",
+        "opponent": "CGY",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Alexander Wennberg",
-        "team": "SJS",
-        "opponent": "CHI",
+        "player": "Matt Coronato",
+        "team": "CGY",
+        "opponent": "LAK",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Kaapo Kakko",
-        "team": "SEA",
-        "opponent": "VGK",
+        "player": "Jake DeBrusk",
+        "team": "VAN",
+        "opponent": "EDM",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Connor McDavid",
+        "team": "EDM",
+        "opponent": "VAN",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Evan Bouchard",
+        "team": "EDM",
+        "opponent": "VAN",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Cale Makar",
+        "team": "COL",
+        "opponent": "SEA",
         "hit_rate": 80,
         "last_10": 8
     }
