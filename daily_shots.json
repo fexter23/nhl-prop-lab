@@ -1,1 +1,93 @@
-[]
+[
+    {
+        "player": "Jake Sanderson",
+        "team": "OTT",
+        "opponent": "CAR",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Seth Jarvis",
+        "team": "CAR",
+        "opponent": "OTT",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Logan Stankoven",
+        "team": "CAR",
+        "opponent": "OTT",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Jason Robertson",
+        "team": "DAL",
+        "opponent": "MIN",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Tyson Foerster",
+        "team": "PHI",
+        "opponent": "PIT",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Rickard Rakell",
+        "team": "PIT",
+        "opponent": "PHI",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Dylan Cozens",
+        "team": "OTT",
+        "opponent": "CAR",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Tim St\u00fctzle",
+        "team": "OTT",
+        "opponent": "CAR",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Nikolaj Ehlers",
+        "team": "CAR",
+        "opponent": "OTT",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Sean Walker",
+        "team": "CAR",
+        "opponent": "OTT",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Matt Boldy",
+        "team": "MIN",
+        "opponent": "DAL",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Kirill Kaprizov",
+        "team": "MIN",
+        "opponent": "DAL",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Vladimir Tarasenko",
+        "team": "MIN",
+        "opponent": "DAL",
+        "hit_rate": 80,
+        "last_10": 8
+    }
+]

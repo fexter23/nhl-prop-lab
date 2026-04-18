@@ -1,1 +1,331 @@
-[]
+[
+    {
+        "player": "Nick Jensen",
+        "team": "OTT",
+        "opponent": "CAR",
+        "hit_rate": 100,
+        "last_10": 10
+    },
+    {
+        "player": "Jesperi Kotkaniemi",
+        "team": "CAR",
+        "opponent": "OTT",
+        "hit_rate": 100,
+        "last_10": 10
+    },
+    {
+        "player": "Zach Bogosian",
+        "team": "MIN",
+        "opponent": "DAL",
+        "hit_rate": 100,
+        "last_10": 10
+    },
+    {
+        "player": "Kyle Capobianco",
+        "team": "DAL",
+        "opponent": "MIN",
+        "hit_rate": 100,
+        "last_10": 10
+    },
+    {
+        "player": "Ilya Lyubushkin",
+        "team": "DAL",
+        "opponent": "MIN",
+        "hit_rate": 100,
+        "last_10": 10
+    },
+    {
+        "player": "Kris Letang",
+        "team": "PIT",
+        "opponent": "PHI",
+        "hit_rate": 100,
+        "last_10": 10
+    },
+    {
+        "player": "Jack St. Ivany",
+        "team": "PIT",
+        "opponent": "PHI",
+        "hit_rate": 100,
+        "last_10": 10
+    },
+    {
+        "player": "Lars Eller",
+        "team": "OTT",
+        "opponent": "CAR",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Hayden Hodgson",
+        "team": "OTT",
+        "opponent": "CAR",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Kurtis MacDermid",
+        "team": "OTT",
+        "opponent": "CAR",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Nicolas Deslauriers",
+        "team": "CAR",
+        "opponent": "OTT",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Eric Robinson",
+        "team": "CAR",
+        "opponent": "OTT",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Nico Sturm",
+        "team": "MIN",
+        "opponent": "DAL",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Jamie Benn",
+        "team": "DAL",
+        "opponent": "MIN",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Tyler Seguin",
+        "team": "DAL",
+        "opponent": "MIN",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Tyler Myers",
+        "team": "DAL",
+        "opponent": "MIN",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Nikita Grebenkin",
+        "team": "PHI",
+        "opponent": "PIT",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Emil Andrae",
+        "team": "PHI",
+        "opponent": "PIT",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Noah Juulsen",
+        "team": "PHI",
+        "opponent": "PIT",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Cam York",
+        "team": "PHI",
+        "opponent": "PIT",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Samuel Girard",
+        "team": "PIT",
+        "opponent": "PHI",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Ryan Shea",
+        "team": "PIT",
+        "opponent": "PHI",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Lassi Thomson",
+        "team": "OTT",
+        "opponent": "CAR",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Mark Jankowski",
+        "team": "CAR",
+        "opponent": "OTT",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Alexander Nikishin",
+        "team": "CAR",
+        "opponent": "OTT",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Danila Yurov",
+        "team": "MIN",
+        "opponent": "DAL",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Daemon Hunt",
+        "team": "MIN",
+        "opponent": "DAL",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Jake Middleton",
+        "team": "MIN",
+        "opponent": "DAL",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Jeff Petry",
+        "team": "MIN",
+        "opponent": "DAL",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Nathan Bastian",
+        "team": "DAL",
+        "opponent": "MIN",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Oskar B\u00e4ck",
+        "team": "DAL",
+        "opponent": "MIN",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Radek Faksa",
+        "team": "DAL",
+        "opponent": "MIN",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Sam Steel",
+        "team": "DAL",
+        "opponent": "MIN",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Lian Bichsel",
+        "team": "DAL",
+        "opponent": "MIN",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Nils Lundkvist",
+        "team": "DAL",
+        "opponent": "MIN",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Sean Couturier",
+        "team": "PHI",
+        "opponent": "PIT",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Luke Glendening",
+        "team": "PHI",
+        "opponent": "PIT",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Carl Grundstrom",
+        "team": "PHI",
+        "opponent": "PIT",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Garnet Hathaway",
+        "team": "PHI",
+        "opponent": "PIT",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Jamie Drysdale",
+        "team": "PHI",
+        "opponent": "PIT",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Nick Seeler",
+        "team": "PHI",
+        "opponent": "PIT",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Connor Dewar",
+        "team": "PIT",
+        "opponent": "PHI",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Ville Koivunen",
+        "team": "PIT",
+        "opponent": "PHI",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Connor Clifton",
+        "team": "PIT",
+        "opponent": "PHI",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Ryan Graves",
+        "team": "PIT",
+        "opponent": "PHI",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Ilya Solovyov",
+        "team": "PIT",
+        "opponent": "PHI",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Parker Wotherspoon",
+        "team": "PIT",
+        "opponent": "PHI",
+        "hit_rate": 80,
+        "last_10": 8
+    }
+]

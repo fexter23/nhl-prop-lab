@@ -1,1 +1,37 @@
-[]
+[
+    {
+        "player": "Andrei Svechnikov",
+        "team": "CAR",
+        "opponent": "OTT",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Sebastian Aho",
+        "team": "CAR",
+        "opponent": "OTT",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Logan Stankoven",
+        "team": "CAR",
+        "opponent": "OTT",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Ryan Hartman",
+        "team": "MIN",
+        "opponent": "DAL",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Trevor Zegras",
+        "team": "PHI",
+        "opponent": "PIT",
+        "hit_rate": 80,
+        "last_10": 8
+    }
+]
