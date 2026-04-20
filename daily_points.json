@@ -1,57 +1,64 @@
 [
     {
-        "player": "Clayton Keller",
-        "team": "UTA",
-        "opponent": "VGK",
-        "hit_rate": 100,
-        "last_10": 10
+        "player": "Andrei Svechnikov",
+        "team": "CAR",
+        "opponent": "OTT",
+        "hit_rate": 90,
+        "last_10": 9
     },
     {
-        "player": "Cale Makar",
-        "team": "COL",
-        "opponent": "LAK",
+        "player": "Leon Draisaitl",
+        "team": "EDM",
+        "opponent": "ANA",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Trevor Zegras",
+        "team": "PHI",
+        "opponent": "PIT",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Nick Suzuki",
-        "team": "MTL",
-        "opponent": "TBL",
+        "player": "Sebastian Aho",
+        "team": "CAR",
+        "opponent": "OTT",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Jake Guentzel",
-        "team": "TBL",
-        "opponent": "MTL",
+        "player": "Logan Stankoven",
+        "team": "CAR",
+        "opponent": "OTT",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Pavel Zacha",
-        "team": "BOS",
-        "opponent": "BUF",
+        "player": "Ryan Hartman",
+        "team": "MIN",
+        "opponent": "DAL",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Dylan Guenther",
-        "team": "UTA",
-        "opponent": "VGK",
+        "player": "Cutter Gauthier",
+        "team": "ANA",
+        "opponent": "EDM",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Mikhail Sergachev",
-        "team": "UTA",
-        "opponent": "VGK",
+        "player": "Connor McDavid",
+        "team": "EDM",
+        "opponent": "ANA",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Jack Eichel",
-        "team": "VGK",
-        "opponent": "UTA",
+        "player": "Evan Bouchard",
+        "team": "EDM",
+        "opponent": "ANA",
         "hit_rate": 80,
         "last_10": 8
     }
