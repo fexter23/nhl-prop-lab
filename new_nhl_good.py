@@ -8,11 +8,9 @@ import uuid
 from PIL import Image 
 
 # ====================== FAVICON & PAGE CONFIG ======================
-# This MUST be the first Streamlit command in the entire script
-
 st.set_page_config(
     page_title="NhL Hit Tracker",
-    page_icon="🏒",                    # fallback emoji
+    page_icon="🏒",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -59,11 +57,25 @@ def get_parlay_return(odds_list, bet=1.0):
             continue
     return multiplier * bet
 
-# === NEW: Helper to get current NHL season (used for playoff/regular detection) ===
 def get_current_season():
     now = datetime.now()
-    # NHL season format: 20252026 for 2025-26 season
     return f"{now.year if now.month >= 9 else now.year - 1}{now.year if now.month < 9 else now.year + 1}"
+
+# === NEW: Blended regular + playoff logs (most recent games first) ===
+def get_blended_game_logs(client, player_id, season):
+    try:
+        log_reg = client.stats.player_game_log(player_id=player_id, season_id=season, game_type=2)
+        log_ply = client.stats.player_game_log(player_id=player_id, season_id=season, game_type=3)
+        
+        logs_reg = log_reg if isinstance(log_reg, list) else log_reg.get('gameLog', []) if isinstance(log_reg, dict) else []
+        logs_ply = log_ply if isinstance(log_ply, list) else log_ply.get('gameLog', []) if isinstance(log_ply, dict) else []
+        
+        all_logs = logs_reg + logs_ply
+        all_logs.sort(key=lambda g: g.get('gameDate', ''), reverse=True)
+        return all_logs
+    except Exception as e:
+        print(f"Error fetching blended logs for {player_id}: {e}")
+        return []
 
 # Session state init
 if 'my_dashboard' not in st.session_state:
@@ -82,17 +94,16 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ─── Load All Daily Data ─────────────────────────────────────────────────────
-pt_trends       = load_json('daily_points.json')
-context         = load_json('today_context.json', default={"matchups": [], "players": []})
+pt_trends = load_json('daily_points.json')
+context   = load_json('today_context.json', default={"matchups": [], "players": []})
 
-# === NEW: Playoff-aware settings (pulled from full_setup.py) ===
-game_type = context.get('game_type', 2)
-season    = context.get('season') or get_current_season()
+# Only need season for blending
+season = context.get('season') or get_current_season()
 
 # ─── Top Section: High Hit-Rate Clubs ────────────────────────────────────────
 with st.expander("🔥 High Hit-Rate Clubs / Trends (click to show)", expanded=False):
     trend_definitions = [
-        ("Over 0.5 Points",  pt_trends,       "🔥", "Over 0.5 Points"),
+        ("Over 0.5 Points", pt_trends, "🔥", "Over 0.5 Points"),
     ]
 
     if any(len(data) > 0 for _, data, _, _ in trend_definitions):
@@ -111,10 +122,9 @@ with st.expander("🔥 High Hit-Rate Clubs / Trends (click to show)", expanded=F
     else:
         st.caption("No trending players found today")
 
-# ─── Lineups Section: Embedded Rotowire ──────────────────────────────────────
+# ─── Lineups Section ────────────────────────────────────────────────────────
 with st.expander("📋 View Daily Projected Lineups (Rotowire)", expanded=False):
     st.caption("Live updates from Rotowire. Scroll within the frame to see all matchups.")
-    
     lineups_url = "https://www.rotowire.com/hockey/nhl-lineups.php"
     st.components.v1.iframe(lineups_url, height=600, scrolling=True)
 
@@ -163,7 +173,6 @@ with st.sidebar:
             label_visibility="collapsed"
         )
 
-    # Fixed to 10 games as maximum window
     games_back = 10
 
     # ── Player data caching ──────────────────────────────────────────────────
@@ -187,14 +196,8 @@ with st.sidebar:
                     }
                     break
 
-            # === UPDATED: Use dynamic season + game_type (2=regular or 3=playoffs) ===
-            log_data = client.stats.player_game_log(
-                player_id=sel_player['id'], 
-                season_id=season, 
-                game_type=game_type
-            )
-            logs = log_data if isinstance(log_data, list) else log_data.get('gameLog', [])
-
+            # === BLENDED regular + playoff logs ===
+            logs = get_blended_game_logs(client, sel_player['id'], season)
             df_recent = pd.DataFrame(logs).copy() if logs else pd.DataFrame()
 
             streak_label = "N/A"
@@ -241,14 +244,11 @@ with st.sidebar:
             try:
                 df_for_prop = df_recent.head(games_back).copy() if not df_recent.empty else pd.DataFrame()
 
-                # ── Blended hit rate calculation when saving ─────────────────────
                 if not df_for_prop.empty:
                     df_5  = df_for_prop.head(5)
                     df_10 = df_for_prop.head(10)
-
                     hit_5  = (df_5[stat] > threshold).mean() * 100 if not df_5.empty else 0.0
                     hit_10 = (df_10[stat] > threshold).mean() * 100 if not df_10.empty else 0.0
-
                     over_rate = (hit_5 + hit_10) / 2
                     under_rate = 100 - over_rate
                 else:
@@ -287,11 +287,10 @@ with st.sidebar:
         else:
             st.warning("Select a player first.")
 
-    # ── Download Dashboard Button (Now directly under Save Prop) ─────────────
+    # Download Dashboard
     if st.session_state.my_dashboard:
         now = datetime.now().strftime("%Y-%m-%d_%H%M")
         filename = f"nhl_props_{now}.json"
-        
         st.download_button(
             label="📥 Download Dashboard (JSON)",
             data=json.dumps(st.session_state.my_dashboard, indent=4),
@@ -302,12 +301,11 @@ with st.sidebar:
     else:
         st.caption("No props saved yet — add some using 'Save Prop'")
 
-    # ─── My Dashboard Section (in Sidebar) ───────────────────────────────────
+    # My Dashboard
     st.header("📋 My Dashboard")
     if st.session_state.my_dashboard:
         dash_df = pd.DataFrame(st.session_state.my_dashboard)
         dash_df['match_key'] = dash_df.apply(lambda r: " vs ".join(sorted([r['team'], r['opponent']])), axis=1)
-
         unique_matches = dash_df['match_key'].unique()[::-1]
 
         for match in unique_matches:
@@ -368,13 +366,10 @@ if sel_player and sel_player.get('id'):
             df['gameDateFormatted'] = pd.to_datetime(df['gameDate']).dt.strftime('%b %d')
             df['toi_min'] = df['toi'].apply(toi_to_minutes)
 
-            # ── Blended hit rate: (last 5 + last 10) / 2 ────────────────────────
             df_5  = df.head(5)
             df_10 = df.head(10)
-
             hit_5  = (df_5[stat] > threshold).mean() * 100 if not df_5.empty else 0.0
             hit_10 = (df_10[stat] > threshold).mean() * 100 if not df_10.empty else 0.0
-
             over_rate  = (hit_5 + hit_10) / 2
             under_rate = 100 - over_rate
 
