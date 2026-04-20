@@ -1,10 +1,10 @@
+import json
+from datetime import datetime, timezone
+from nhlpy import NHLClient
 import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
 import uuid
-import json
-from datetime import datetime, timezone
-from nhlpy import NHLClient
 from PIL import Image 
 
 # ====================== FAVICON & PAGE CONFIG ======================
@@ -59,6 +59,12 @@ def get_parlay_return(odds_list, bet=1.0):
             continue
     return multiplier * bet
 
+# === NEW: Helper to get current NHL season (used for playoff/regular detection) ===
+def get_current_season():
+    now = datetime.now()
+    # NHL season format: 20252026 for 2025-26 season
+    return f"{now.year if now.month >= 9 else now.year - 1}{now.year if now.month < 9 else now.year + 1}"
+
 # Session state init
 if 'my_dashboard' not in st.session_state:
     st.session_state.my_dashboard = []
@@ -78,6 +84,10 @@ st.markdown("""
 # ─── Load All Daily Data ─────────────────────────────────────────────────────
 pt_trends       = load_json('daily_points.json')
 context         = load_json('today_context.json', default={"matchups": [], "players": []})
+
+# === NEW: Playoff-aware settings (pulled from full_setup.py) ===
+game_type = context.get('game_type', 2)
+season    = context.get('season') or get_current_season()
 
 # ─── Top Section: High Hit-Rate Clubs ────────────────────────────────────────
 with st.expander("🔥 High Hit-Rate Clubs / Trends (click to show)", expanded=False):
@@ -177,8 +187,12 @@ with st.sidebar:
                     }
                     break
 
-            season = "20252026"
-            log_data = client.stats.player_game_log(player_id=sel_player['id'], season_id=season, game_type=2)
+            # === UPDATED: Use dynamic season + game_type (2=regular or 3=playoffs) ===
+            log_data = client.stats.player_game_log(
+                player_id=sel_player['id'], 
+                season_id=season, 
+                game_type=game_type
+            )
             logs = log_data if isinstance(log_data, list) else log_data.get('gameLog', [])
 
             df_recent = pd.DataFrame(logs).copy() if logs else pd.DataFrame()
