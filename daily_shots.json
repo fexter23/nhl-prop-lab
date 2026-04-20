@@ -1,1 +1,121 @@
-[]
+[
+    {
+        "player": "Tyson Foerster",
+        "team": "PHI",
+        "opponent": "PIT",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Rickard Rakell",
+        "team": "PIT",
+        "opponent": "PHI",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Dylan Cozens",
+        "team": "OTT",
+        "opponent": "CAR",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Jake Sanderson",
+        "team": "OTT",
+        "opponent": "CAR",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Logan Stankoven",
+        "team": "CAR",
+        "opponent": "OTT",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Jason Robertson",
+        "team": "DAL",
+        "opponent": "MIN",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Leo Carlsson",
+        "team": "ANA",
+        "opponent": "EDM",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Cutter Gauthier",
+        "team": "ANA",
+        "opponent": "EDM",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Troy Terry",
+        "team": "ANA",
+        "opponent": "EDM",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Connor McDavid",
+        "team": "EDM",
+        "opponent": "ANA",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Erik Karlsson",
+        "team": "PIT",
+        "opponent": "PHI",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Tim St\u00fctzle",
+        "team": "OTT",
+        "opponent": "CAR",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Seth Jarvis",
+        "team": "CAR",
+        "opponent": "OTT",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Matt Boldy",
+        "team": "MIN",
+        "opponent": "DAL",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Kirill Kaprizov",
+        "team": "MIN",
+        "opponent": "DAL",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Beckett Sennecke",
+        "team": "ANA",
+        "opponent": "EDM",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Jacob Trouba",
+        "team": "ANA",
+        "opponent": "EDM",
+        "hit_rate": 80,
+        "last_10": 8
+    }
+]

@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-04-20 15:11:46",
+    "last_updated": "2026-04-20 15:23:20",
     "matchups": [
         {
             "label": "PHI @ PIT",
@@ -1232,7 +1232,5 @@
             "pos": "D"
         }
     ],
-    "is_playoff_day": true,
-    "game_type": 3,
     "season": "20252026"
 }
