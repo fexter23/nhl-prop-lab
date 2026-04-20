@@ -1,5 +1,5 @@
 {
-    "last_updated": "2026-04-20 07:57:15",
+    "last_updated": "2026-04-20 15:11:46",
     "matchups": [
         {
             "label": "PHI @ PIT",
@@ -140,8 +140,20 @@
             "pos": "D"
         },
         {
+            "id": 8484148,
+            "name": "Oliver Bonk",
+            "team": "PHI",
+            "pos": "D"
+        },
+        {
             "id": 8482142,
             "name": "Jamie Drysdale",
+            "team": "PHI",
+            "pos": "D"
+        },
+        {
+            "id": 8483460,
+            "name": "David Jiricek",
             "team": "PHI",
             "pos": "D"
         },
@@ -1219,5 +1231,8 @@
             "team": "EDM",
             "pos": "D"
         }
-    ]
+    ],
+    "is_playoff_day": true,
+    "game_type": 3,
+    "season": "20252026"
 }
