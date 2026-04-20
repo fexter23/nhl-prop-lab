@@ -10,6 +10,23 @@ def get_current_season():
     # NHL season format: 20252026 for 2025-26 season
     return f"{now.year if now.month >= 9 else now.year - 1}{now.year if now.month < 9 else now.year + 1}"
 
+def get_blended_game_logs(player_id, season):
+    """Fetch regular (2) + playoff (3) logs and return most recent games first."""
+    try:
+        log_reg = client.stats.player_game_log(player_id=player_id, season_id=season, game_type=2)
+        log_ply = client.stats.player_game_log(player_id=player_id, season_id=season, game_type=3)
+        
+        logs_reg = log_reg if isinstance(log_reg, list) else log_reg.get('gameLog', []) if isinstance(log_reg, dict) else []
+        logs_ply = log_ply if isinstance(log_ply, list) else log_ply.get('gameLog', []) if isinstance(log_ply, dict) else []
+        
+        all_logs = logs_reg + logs_ply
+        # Sort newest first by gameDate (YYYY-MM-DD)
+        all_logs.sort(key=lambda g: g.get('gameDate', ''), reverse=True)
+        return all_logs
+    except Exception as e:
+        print(f"Error fetching logs for player {player_id}: {e}")
+        return []
+
 def generate_all_daily_data():
     print("Fetching today's schedule...")
     today_str = datetime.now(timezone.utc).strftime('%Y-%m-%d')
@@ -18,23 +35,21 @@ def generate_all_daily_data():
     
     if not games:
         print("No games scheduled for today.")
-        # Clear files if no games to avoid showing old data
-        for f_name in ['daily_points.json', 'daily_shots.json', 'daily_shots_under.json', 'today_context.json']:
+        # Clear files
+        for f_name in ['daily_points.json', 'daily_points_under.json', 'daily_points_over.json',
+                       'daily_shots.json', 'daily_shots_under.json', 'today_context.json']:
             with open(f_name, 'w') as f:
                 if 'context' in f_name:
-                    json.dump({"matchups": [], "players": [], "is_playoff_day": False, "game_type": 2, "season": get_current_season()}, f, indent=4)
+                    json.dump({
+                        "matchups": [],
+                        "players": [],
+                        "season": get_current_season()
+                    }, f, indent=4)
                 else:
                     json.dump([], f, indent=4)
         return
 
     season = get_current_season()
-    
-    # === NEW: Detect playoff day from the schedule ===
-    game_types = {g.get('gameType') for g in games if g.get('gameType') is not None}
-    is_playoff_day = 3 in game_types
-    game_type_for_logs = 3 if is_playoff_day else 2
-    print(f"Detected {'PLAYOFF' if is_playoff_day else 'regular season'} games today → using game_type={game_type_for_logs} for player logs.")
-
     points_trends = []
     points_under_trends = []
     points_over_trends = []
@@ -74,13 +89,8 @@ def generate_all_daily_data():
                     "pos": p_pos
                 })
                 
-                # === CHANGED: Use detected game_type for logs ===
-                log_data = client.stats.player_game_log(
-                    player_id=p_id, 
-                    season_id=season, 
-                    game_type=game_type_for_logs
-                )
-                logs = log_data if isinstance(log_data, list) else log_data.get('gameLog', [])
+                # === BLENDED: regular + playoff logs (most recent 10 games) ===
+                logs = get_blended_game_logs(p_id, season)
                 
                 if len(logs) >= 10:
                     recent_10 = logs[:10]
@@ -96,7 +106,7 @@ def generate_all_daily_data():
                             "last_10": p_hits
                         })
                     
-                    # Points < 1.5 (under)
+                    # Points < 1.5 (under 1.5 points)
                     p_hits_under = sum(1 for g in recent_10 if g.get('points', 0) < 1.5)
                     if p_hits_under >= 8:
                         points_under_trends.append({
@@ -107,7 +117,7 @@ def generate_all_daily_data():
                             "last_10": p_hits_under
                         })
                     
-                    # Points > 1.5 (over)
+                    # Points > 1.5 (over 1.5 points)
                     p_hits_over = sum(1 for g in recent_10 if g.get('points', 0) > 1.5)
                     if p_hits_over >= 8:
                         points_over_trends.append({
@@ -155,19 +165,17 @@ def generate_all_daily_data():
     with open('daily_shots_under.json', 'w') as f:
         json.dump(sorted(shots_under_trends, key=lambda x: x['hit_rate'], reverse=True), f, indent=4)
     
-    # Save Context (now includes playoff detection)
+    # Save Context
     context_data = {
         "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "matchups": matchups,
         "players": all_today_players,
-        "is_playoff_day": is_playoff_day,
-        "game_type": game_type_for_logs,
         "season": season
     }
     with open('today_context.json', 'w') as f:
         json.dump(context_data, f, indent=4)
     
-    print(f"All daily data files updated successfully (playoff mode: {is_playoff_day}).")
+    print(f"All daily data files updated successfully (blended regular + playoff logs).")
 
 if __name__ == "__main__":
     generate_all_daily_data()
