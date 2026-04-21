@@ -1,64 +1,36 @@
 [
     {
-        "player": "Logan Stankoven",
-        "team": "CAR",
-        "opponent": "OTT",
+        "player": "Clayton Keller",
+        "team": "UTA",
+        "opponent": "VGK",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Ryan Hartman",
-        "team": "MIN",
-        "opponent": "DAL",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Leon Draisaitl",
-        "team": "EDM",
-        "opponent": "ANA",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Porter Martone",
-        "team": "PHI",
-        "opponent": "PIT",
+        "player": "Nick Suzuki",
+        "team": "MTL",
+        "opponent": "TBL",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Trevor Zegras",
-        "team": "PHI",
-        "opponent": "PIT",
+        "player": "Jake Guentzel",
+        "team": "TBL",
+        "opponent": "MTL",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Andrei Svechnikov",
-        "team": "CAR",
-        "opponent": "OTT",
+        "player": "Pavel Zacha",
+        "team": "BOS",
+        "opponent": "BUF",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Cutter Gauthier",
-        "team": "ANA",
-        "opponent": "EDM",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Connor McDavid",
-        "team": "EDM",
-        "opponent": "ANA",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Evan Bouchard",
-        "team": "EDM",
-        "opponent": "ANA",
+        "player": "Dylan Guenther",
+        "team": "UTA",
+        "opponent": "VGK",
         "hit_rate": 80,
         "last_10": 8
     }
