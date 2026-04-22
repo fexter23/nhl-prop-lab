@@ -1,36 +1,22 @@
 [
     {
-        "player": "Clayton Keller",
-        "team": "UTA",
-        "opponent": "VGK",
+        "player": "Leon Draisaitl",
+        "team": "EDM",
+        "opponent": "ANA",
+        "hit_rate": 100,
+        "last_10": 10
+    },
+    {
+        "player": "Porter Martone",
+        "team": "PHI",
+        "opponent": "PIT",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Nick Suzuki",
-        "team": "MTL",
-        "opponent": "TBL",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Jake Guentzel",
-        "team": "TBL",
-        "opponent": "MTL",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Pavel Zacha",
-        "team": "BOS",
-        "opponent": "BUF",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Dylan Guenther",
-        "team": "UTA",
-        "opponent": "VGK",
+        "player": "Ryan Hartman",
+        "team": "MIN",
+        "opponent": "DAL",
         "hit_rate": 80,
         "last_10": 8
     }
