@@ -366,6 +366,15 @@ if sel_player and sel_player.get('id'):
             df['gameDateFormatted'] = pd.to_datetime(df['gameDate']).dt.strftime('%b %d')
             df['toi_min'] = df['toi'].apply(toi_to_minutes)
 
+            # === NEW: Identify regular season vs playoff games ===
+            if 'gameType' in df.columns:
+                df['Game Type'] = df['gameType'].map({
+                    2: 'Regular Season',
+                    3: 'Playoffs'
+                }).fillna('Unknown')
+            else:
+                df['Game Type'] = 'Unknown'
+
             df_5  = df.head(5)
             df_10 = df.head(10)
             hit_5  = (df_5[stat] > threshold).mean() * 100 if not df_5.empty else 0.0
@@ -416,7 +425,7 @@ if sel_player and sel_player.get('id'):
 
             st.divider()
             st.dataframe(
-                df.drop(columns=['gameId', 'toi_min'], errors='ignore'),
+                df.drop(columns=['gameId', 'toi_min', 'commonName', 'opponentCommonName', 'gameDate', 'gameType'], errors='ignore'),
                 use_container_width=True, hide_index=True
             )
         else:
