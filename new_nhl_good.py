@@ -5,11 +5,10 @@ import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
 import uuid
-from PIL import Image 
 
 # ====================== FAVICON & PAGE CONFIG ======================
 st.set_page_config(
-    page_title="NhL Hit Tracker",
+    page_title="NHL Hit Tracker",
     page_icon="🏒",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -61,27 +60,34 @@ def get_current_season():
     now = datetime.now()
     return f"{now.year if now.month >= 9 else now.year - 1}{now.year if now.month < 9 else now.year + 1}"
 
-# === NEW: Blended regular + playoff logs (most recent games first) ===
+# === UPDATED: Blended logs with manual gameType injection ===
 def get_blended_game_logs(client, player_id, season):
     try:
-        log_reg = client.stats.player_game_log(player_id=player_id, season_id=season, game_type=2)
-        log_ply = client.stats.player_game_log(player_id=player_id, season_id=season, game_type=3)
+        # Fetch Regular Season (Type 2)
+        log_reg_raw = client.stats.player_game_log(player_id=player_id, season_id=season, game_type=2)
+        # Fetch Playoffs (Type 3)
+        log_ply_raw = client.stats.player_game_log(player_id=player_id, season_id=season, game_type=3)
         
-        logs_reg = log_reg if isinstance(log_reg, list) else log_reg.get('gameLog', []) if isinstance(log_reg, dict) else []
-        logs_ply = log_ply if isinstance(log_ply, list) else log_ply.get('gameLog', []) if isinstance(log_ply, dict) else []
+        logs_reg = log_reg_raw if isinstance(log_reg_raw, list) else log_reg_raw.get('gameLog', []) if isinstance(log_reg_raw, dict) else []
+        logs_ply = log_ply_raw if isinstance(log_ply_raw, list) else log_ply_raw.get('gameLog', []) if isinstance(log_ply_raw, dict) else []
+        
+        # Inject gameType because the API response doesn't include it in the game objects
+        for g in logs_reg:
+            g['gameType'] = 2
+        for g in logs_ply:
+            g['gameType'] = 3
         
         all_logs = logs_reg + logs_ply
+        # Sort by date descending
         all_logs.sort(key=lambda g: g.get('gameDate', ''), reverse=True)
         return all_logs
     except Exception as e:
-        print(f"Error fetching blended logs for {player_id}: {e}")
+        st.error(f"Error fetching blended logs for {player_id}: {e}")
         return []
 
 # Session state init
 if 'my_dashboard' not in st.session_state:
     st.session_state.my_dashboard = []
-
-st.set_page_config(page_title="NHL Hit Rate Tracker", layout="wide")
 
 # Custom styling
 st.markdown("""
@@ -173,6 +179,7 @@ with st.sidebar:
             label_visibility="collapsed"
         )
 
+    # Forced to 10 games per user requirements
     games_back = 10
 
     # ── Player data caching ──────────────────────────────────────────────────
@@ -196,7 +203,6 @@ with st.sidebar:
                     }
                     break
 
-            # === BLENDED regular + playoff logs ===
             logs = get_blended_game_logs(client, sel_player['id'], season)
             df_recent = pd.DataFrame(logs).copy() if logs else pd.DataFrame()
 
@@ -366,7 +372,7 @@ if sel_player and sel_player.get('id'):
             df['gameDateFormatted'] = pd.to_datetime(df['gameDate']).dt.strftime('%b %d')
             df['toi_min'] = df['toi'].apply(toi_to_minutes)
 
-            # === NEW: Identify regular season vs playoff games ===
+            # Identification of regular season vs playoff games using injected gameType
             if 'gameType' in df.columns:
                 df['Game Type'] = df['gameType'].map({
                     2: 'Regular Season',
@@ -424,6 +430,7 @@ if sel_player and sel_player.get('id'):
                 st.plotly_chart(fig, use_container_width=True)
 
             st.divider()
+            # Added Game Type to the visible dataframe
             st.dataframe(
                 df.drop(columns=['gameId', 'toi_min', 'commonName', 'opponentCommonName', 'gameDate', 'gameType','shorthandedGoals', 'shorthandedPoints', 'gameWinningGoals','homeRoadFlag'], errors='ignore'),
                 use_container_width=True, hide_index=True
