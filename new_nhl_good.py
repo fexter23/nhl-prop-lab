@@ -425,7 +425,7 @@ if sel_player and sel_player.get('id'):
 
             st.divider()
             st.dataframe(
-                df.drop(columns=['gameId', 'toi_min', 'commonName', 'opponentCommonName', 'gameDate', 'gameType'], errors='ignore'),
+                df.drop(columns=['gameId', 'toi_min', 'commonName', 'opponentCommonName', 'gameDate', 'gameType','shorthandedGoals', 'shorthandedPoints', 'gameWinningGoals'], errors='ignore'),
                 use_container_width=True, hide_index=True
             )
         else:
