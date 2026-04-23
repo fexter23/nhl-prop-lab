@@ -1,85 +1,127 @@
 [
     {
-        "player": "Leo Carlsson",
-        "team": "ANA",
-        "opponent": "EDM",
+        "player": "Dylan Cozens",
+        "team": "OTT",
+        "opponent": "CAR",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Rickard Rakell",
-        "team": "PIT",
-        "opponent": "PHI",
+        "player": "Jake Sanderson",
+        "team": "OTT",
+        "opponent": "CAR",
+        "hit_rate": 100,
+        "last_10": 10
+    },
+    {
+        "player": "Martin Necas",
+        "team": "COL",
+        "opponent": "LAK",
+        "hit_rate": 100,
+        "last_10": 10
+    },
+    {
+        "player": "Alex Laferriere",
+        "team": "LAK",
+        "opponent": "COL",
+        "hit_rate": 100,
+        "last_10": 10
+    },
+    {
+        "player": "Tage Thompson",
+        "team": "BUF",
+        "opponent": "BOS",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Jason Robertson",
-        "team": "DAL",
-        "opponent": "MIN",
+        "player": "Logan Stankoven",
+        "team": "CAR",
+        "opponent": "OTT",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Troy Terry",
-        "team": "ANA",
-        "opponent": "EDM",
+        "player": "Nathan MacKinnon",
+        "team": "COL",
+        "opponent": "LAK",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Connor McDavid",
-        "team": "EDM",
-        "opponent": "ANA",
+        "player": "Cale Makar",
+        "team": "COL",
+        "opponent": "LAK",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Tyson Foerster",
-        "team": "PHI",
-        "opponent": "PIT",
+        "player": "Sam Malinski",
+        "team": "COL",
+        "opponent": "LAK",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Jack Quinn",
+        "team": "BUF",
+        "opponent": "BOS",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Matt Boldy",
-        "team": "MIN",
-        "opponent": "DAL",
+        "player": "Rasmus Dahlin",
+        "team": "BUF",
+        "opponent": "BOS",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Kirill Kaprizov",
-        "team": "MIN",
-        "opponent": "DAL",
+        "player": "Seth Jarvis",
+        "team": "CAR",
+        "opponent": "OTT",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Cutter Gauthier",
-        "team": "ANA",
-        "opponent": "EDM",
+        "player": "Andrei Svechnikov",
+        "team": "CAR",
+        "opponent": "OTT",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Beckett Sennecke",
-        "team": "ANA",
-        "opponent": "EDM",
+        "player": "Shane Pinto",
+        "team": "OTT",
+        "opponent": "CAR",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Vasily Podkolzin",
-        "team": "EDM",
-        "opponent": "ANA",
+        "player": "Tim St\u00fctzle",
+        "team": "OTT",
+        "opponent": "CAR",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Darnell Nurse",
-        "team": "EDM",
-        "opponent": "ANA",
+        "player": "Josh Manson",
+        "team": "COL",
+        "opponent": "LAK",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Quinton Byfield",
+        "team": "LAK",
+        "opponent": "COL",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Adrian Kempe",
+        "team": "LAK",
+        "opponent": "COL",
         "hit_rate": 80,
         "last_10": 8
     }
