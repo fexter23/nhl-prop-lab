@@ -1,36 +1,50 @@
 [
     {
-        "player": "Logan Stankoven",
-        "team": "CAR",
-        "opponent": "OTT",
+        "player": "Leon Draisaitl",
+        "team": "EDM",
+        "opponent": "ANA",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Alex Tuch",
-        "team": "BUF",
-        "opponent": "BOS",
+        "player": "Jake Guentzel",
+        "team": "TBL",
+        "opponent": "MTL",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Pavel Zacha",
-        "team": "BOS",
-        "opponent": "BUF",
+        "player": "Nikita Kucherov",
+        "team": "TBL",
+        "opponent": "MTL",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Sebastian Aho",
-        "team": "CAR",
-        "opponent": "OTT",
+        "player": "Nick Suzuki",
+        "team": "MTL",
+        "opponent": "TBL",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Jackson Blake",
-        "team": "CAR",
-        "opponent": "OTT",
+        "player": "Mark Stone",
+        "team": "VGK",
+        "opponent": "UTA",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Dylan Guenther",
+        "team": "UTA",
+        "opponent": "VGK",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Clayton Keller",
+        "team": "UTA",
+        "opponent": "VGK",
         "hit_rate": 80,
         "last_10": 8
     }
