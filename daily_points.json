@@ -1,50 +1,43 @@
 [
     {
-        "player": "Leon Draisaitl",
-        "team": "EDM",
-        "opponent": "ANA",
+        "player": "Logan Stankoven",
+        "team": "CAR",
+        "opponent": "OTT",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Jake Guentzel",
-        "team": "TBL",
-        "opponent": "MTL",
+        "player": "Jackson Blake",
+        "team": "CAR",
+        "opponent": "OTT",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Porter Martone",
+        "team": "PHI",
+        "opponent": "PIT",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Taylor Hall",
+        "team": "CAR",
+        "opponent": "OTT",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Nikita Kucherov",
-        "team": "TBL",
-        "opponent": "MTL",
+        "player": "Drake Batherson",
+        "team": "OTT",
+        "opponent": "CAR",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Nick Suzuki",
-        "team": "MTL",
-        "opponent": "TBL",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Mark Stone",
-        "team": "VGK",
-        "opponent": "UTA",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Dylan Guenther",
-        "team": "UTA",
-        "opponent": "VGK",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Clayton Keller",
-        "team": "UTA",
-        "opponent": "VGK",
+        "player": "Joel Eriksson Ek",
+        "team": "MIN",
+        "opponent": "DAL",
         "hit_rate": 80,
         "last_10": 8
     }

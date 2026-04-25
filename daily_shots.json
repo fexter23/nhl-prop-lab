@@ -1,141 +1,99 @@
 [
     {
-        "player": "Pavel Dorofeyev",
-        "team": "VGK",
-        "opponent": "UTA",
+        "player": "Dylan Cozens",
+        "team": "OTT",
+        "opponent": "CAR",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Leo Carlsson",
-        "team": "ANA",
-        "opponent": "EDM",
-        "hit_rate": 100,
-        "last_10": 10
-    },
-    {
-        "player": "Brandon Hagel",
-        "team": "TBL",
-        "opponent": "MTL",
+        "player": "Logan Stankoven",
+        "team": "CAR",
+        "opponent": "OTT",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Juraj Slafkovsk\u00fd",
-        "team": "MTL",
-        "opponent": "TBL",
+        "player": "Jake Sanderson",
+        "team": "OTT",
+        "opponent": "CAR",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Jack Eichel",
-        "team": "VGK",
-        "opponent": "UTA",
+        "player": "Jason Robertson",
+        "team": "DAL",
+        "opponent": "MIN",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Mark Stone",
-        "team": "VGK",
-        "opponent": "UTA",
+        "player": "Matt Boldy",
+        "team": "MIN",
+        "opponent": "DAL",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Nick Schmaltz",
-        "team": "UTA",
-        "opponent": "VGK",
+        "player": "Kirill Kaprizov",
+        "team": "MIN",
+        "opponent": "DAL",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Connor McDavid",
-        "team": "EDM",
-        "opponent": "ANA",
+        "player": "Rickard Rakell",
+        "team": "PIT",
+        "opponent": "PHI",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Jake Guentzel",
-        "team": "TBL",
-        "opponent": "MTL",
+        "player": "Seth Jarvis",
+        "team": "CAR",
+        "opponent": "OTT",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Nikita Kucherov",
-        "team": "TBL",
-        "opponent": "MTL",
+        "player": "Andrei Svechnikov",
+        "team": "CAR",
+        "opponent": "OTT",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Darren Raddysh",
-        "team": "TBL",
-        "opponent": "MTL",
+        "player": "Wyatt Johnston",
+        "team": "DAL",
+        "opponent": "MIN",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Lawson Crouse",
-        "team": "UTA",
-        "opponent": "VGK",
+        "player": "Evgeni Malkin",
+        "team": "PIT",
+        "opponent": "PHI",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Dylan Guenther",
-        "team": "UTA",
-        "opponent": "VGK",
+        "player": "Erik Karlsson",
+        "team": "PIT",
+        "opponent": "PHI",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "JJ Peterka",
-        "team": "UTA",
-        "opponent": "VGK",
+        "player": "Noah Cates",
+        "team": "PHI",
+        "opponent": "PIT",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Leon Draisaitl",
-        "team": "EDM",
-        "opponent": "ANA",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Vasily Podkolzin",
-        "team": "EDM",
-        "opponent": "ANA",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Matt Savoie",
-        "team": "EDM",
-        "opponent": "ANA",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Cutter Gauthier",
-        "team": "ANA",
-        "opponent": "EDM",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Mason McTavish",
-        "team": "ANA",
-        "opponent": "EDM",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Troy Terry",
-        "team": "ANA",
-        "opponent": "EDM",
+        "player": "Tyson Foerster",
+        "team": "PHI",
+        "opponent": "PIT",
         "hit_rate": 80,
         "last_10": 8
     }
