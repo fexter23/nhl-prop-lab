@@ -1,99 +1,148 @@
 [
     {
-        "player": "Dylan Cozens",
-        "team": "OTT",
-        "opponent": "CAR",
+        "player": "Alex Laferriere",
+        "team": "LAK",
+        "opponent": "COL",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Logan Stankoven",
-        "team": "CAR",
-        "opponent": "OTT",
+        "player": "Leo Carlsson",
+        "team": "ANA",
+        "opponent": "EDM",
+        "hit_rate": 100,
+        "last_10": 10
+    },
+    {
+        "player": "Tage Thompson",
+        "team": "BUF",
+        "opponent": "BOS",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Jake Sanderson",
-        "team": "OTT",
-        "opponent": "CAR",
+        "player": "Martin Necas",
+        "team": "COL",
+        "opponent": "LAK",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Jason Robertson",
-        "team": "DAL",
-        "opponent": "MIN",
+        "player": "Cale Makar",
+        "team": "COL",
+        "opponent": "LAK",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Matt Boldy",
-        "team": "MIN",
-        "opponent": "DAL",
+        "player": "Sam Malinski",
+        "team": "COL",
+        "opponent": "LAK",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Kirill Kaprizov",
-        "team": "MIN",
-        "opponent": "DAL",
+        "player": "Brandon Hagel",
+        "team": "TBL",
+        "opponent": "MTL",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Rickard Rakell",
-        "team": "PIT",
-        "opponent": "PHI",
+        "player": "Connor McDavid",
+        "team": "EDM",
+        "opponent": "ANA",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Seth Jarvis",
-        "team": "CAR",
-        "opponent": "OTT",
+        "player": "Vasily Podkolzin",
+        "team": "EDM",
+        "opponent": "ANA",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Jack Quinn",
+        "team": "BUF",
+        "opponent": "BOS",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Andrei Svechnikov",
-        "team": "CAR",
-        "opponent": "OTT",
+        "player": "Rasmus Dahlin",
+        "team": "BUF",
+        "opponent": "BOS",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Wyatt Johnston",
-        "team": "DAL",
-        "opponent": "MIN",
+        "player": "Morgan Geekie",
+        "team": "BOS",
+        "opponent": "BUF",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Evgeni Malkin",
-        "team": "PIT",
-        "opponent": "PHI",
+        "player": "Nathan MacKinnon",
+        "team": "COL",
+        "opponent": "LAK",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Erik Karlsson",
-        "team": "PIT",
-        "opponent": "PHI",
+        "player": "Josh Manson",
+        "team": "COL",
+        "opponent": "LAK",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Noah Cates",
-        "team": "PHI",
-        "opponent": "PIT",
+        "player": "Quinton Byfield",
+        "team": "LAK",
+        "opponent": "COL",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Tyson Foerster",
-        "team": "PHI",
-        "opponent": "PIT",
+        "player": "Adrian Kempe",
+        "team": "LAK",
+        "opponent": "COL",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Trevor Moore",
+        "team": "LAK",
+        "opponent": "COL",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Darren Raddysh",
+        "team": "TBL",
+        "opponent": "MTL",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Juraj Slafkovsk\u00fd",
+        "team": "MTL",
+        "opponent": "TBL",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Cutter Gauthier",
+        "team": "ANA",
+        "opponent": "EDM",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Mason McTavish",
+        "team": "ANA",
+        "opponent": "EDM",
         "hit_rate": 80,
         "last_10": 8
     }
