@@ -1,36 +1,36 @@
 [
     {
-        "player": "Leon Draisaitl",
-        "team": "EDM",
-        "opponent": "ANA",
-        "hit_rate": 100,
-        "last_10": 10
+        "player": "Porter Martone",
+        "team": "PHI",
+        "opponent": "PIT",
+        "hit_rate": 90,
+        "last_10": 9
     },
     {
-        "player": "Alex Tuch",
-        "team": "BUF",
-        "opponent": "BOS",
+        "player": "Jack Eichel",
+        "team": "VGK",
+        "opponent": "UTA",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Jake Guentzel",
-        "team": "TBL",
-        "opponent": "MTL",
+        "player": "Mark Stone",
+        "team": "VGK",
+        "opponent": "UTA",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Brandon Hagel",
-        "team": "TBL",
-        "opponent": "MTL",
+        "player": "Dylan Guenther",
+        "team": "UTA",
+        "opponent": "VGK",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Nikita Kucherov",
-        "team": "TBL",
-        "opponent": "MTL",
+        "player": "Clayton Keller",
+        "team": "UTA",
+        "opponent": "VGK",
         "hit_rate": 80,
         "last_10": 8
     }
