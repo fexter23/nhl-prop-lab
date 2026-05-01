@@ -1,71 +1,85 @@
 [
     {
-        "player": "Leo Carlsson",
-        "team": "ANA",
-        "opponent": "EDM",
+        "player": "Pavel Dorofeyev",
+        "team": "VGK",
+        "opponent": "UTA",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Jason Robertson",
-        "team": "DAL",
-        "opponent": "MIN",
+        "player": "Brandon Hagel",
+        "team": "TBL",
+        "opponent": "MTL",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Matt Boldy",
-        "team": "MIN",
-        "opponent": "DAL",
+        "player": "Tage Thompson",
+        "team": "BUF",
+        "opponent": "BOS",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Kirill Kaprizov",
-        "team": "MIN",
-        "opponent": "DAL",
+        "player": "Jack Eichel",
+        "team": "VGK",
+        "opponent": "UTA",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Connor McDavid",
-        "team": "EDM",
-        "opponent": "ANA",
+        "player": "Mark Stone",
+        "team": "VGK",
+        "opponent": "UTA",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Alex Killorn",
-        "team": "ANA",
-        "opponent": "EDM",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Wyatt Johnston",
-        "team": "DAL",
-        "opponent": "MIN",
+        "player": "Jake Guentzel",
+        "team": "TBL",
+        "opponent": "MTL",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Joel Eriksson Ek",
-        "team": "MIN",
-        "opponent": "DAL",
+        "player": "Darren Raddysh",
+        "team": "TBL",
+        "opponent": "MTL",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Leon Draisaitl",
-        "team": "EDM",
-        "opponent": "ANA",
+        "player": "Juraj Slafkovsk\u00fd",
+        "team": "MTL",
+        "opponent": "TBL",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Cutter Gauthier",
-        "team": "ANA",
-        "opponent": "EDM",
+        "player": "Alex Tuch",
+        "team": "BUF",
+        "opponent": "BOS",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Rasmus Dahlin",
+        "team": "BUF",
+        "opponent": "BOS",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Dylan Guenther",
+        "team": "UTA",
+        "opponent": "VGK",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Nick Schmaltz",
+        "team": "UTA",
+        "opponent": "VGK",
         "hit_rate": 80,
         "last_10": 8
     }
