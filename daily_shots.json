@@ -1,85 +1,15 @@
 [
     {
-        "player": "Pavel Dorofeyev",
-        "team": "VGK",
-        "opponent": "UTA",
-        "hit_rate": 100,
-        "last_10": 10
-    },
-    {
-        "player": "Brandon Hagel",
-        "team": "TBL",
-        "opponent": "MTL",
+        "player": "Logan Stankoven",
+        "team": "CAR",
+        "opponent": "PHI",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Tage Thompson",
-        "team": "BUF",
-        "opponent": "BOS",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Jack Eichel",
-        "team": "VGK",
-        "opponent": "UTA",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Mark Stone",
-        "team": "VGK",
-        "opponent": "UTA",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Jake Guentzel",
-        "team": "TBL",
-        "opponent": "MTL",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Darren Raddysh",
-        "team": "TBL",
-        "opponent": "MTL",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Juraj Slafkovsk\u00fd",
-        "team": "MTL",
-        "opponent": "TBL",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Alex Tuch",
-        "team": "BUF",
-        "opponent": "BOS",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Rasmus Dahlin",
-        "team": "BUF",
-        "opponent": "BOS",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Dylan Guenther",
-        "team": "UTA",
-        "opponent": "VGK",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Nick Schmaltz",
-        "team": "UTA",
-        "opponent": "VGK",
+        "player": "Andrei Svechnikov",
+        "team": "CAR",
+        "opponent": "PHI",
         "hit_rate": 80,
         "last_10": 8
     }
