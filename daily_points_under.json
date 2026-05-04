@@ -1,589 +1,561 @@
 [
     {
-        "player": "Josh Anderson",
-        "team": "MTL",
-        "opponent": "TBL",
+        "player": "Rodrigo Abols",
+        "team": "PHI",
+        "opponent": "CAR",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Phillip Danault",
-        "team": "MTL",
-        "opponent": "TBL",
+        "player": "Denver Barkey",
+        "team": "PHI",
+        "opponent": "CAR",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Ivan Demidov",
-        "team": "MTL",
-        "opponent": "TBL",
+        "player": "Christian Dvorak",
+        "team": "PHI",
+        "opponent": "CAR",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Jake Evans",
-        "team": "MTL",
-        "opponent": "TBL",
+        "player": "Tyson Foerster",
+        "team": "PHI",
+        "opponent": "CAR",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Brendan Gallagher",
-        "team": "MTL",
-        "opponent": "TBL",
+        "player": "Luke Glendening",
+        "team": "PHI",
+        "opponent": "CAR",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Oliver Kapanen",
-        "team": "MTL",
-        "opponent": "TBL",
+        "player": "Nikita Grebenkin",
+        "team": "PHI",
+        "opponent": "CAR",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Joe Veleno",
-        "team": "MTL",
-        "opponent": "TBL",
+        "player": "Carl Grundstrom",
+        "team": "PHI",
+        "opponent": "CAR",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Alexandre Carrier",
-        "team": "MTL",
-        "opponent": "TBL",
+        "player": "Travis Konecny",
+        "team": "PHI",
+        "opponent": "CAR",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Noah Dobson",
-        "team": "MTL",
-        "opponent": "TBL",
+        "player": "Owen Tippett",
+        "team": "PHI",
+        "opponent": "CAR",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Adam Engstrom",
-        "team": "MTL",
-        "opponent": "TBL",
+        "player": "Emil Andrae",
+        "team": "PHI",
+        "opponent": "CAR",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Kaiden Guhle",
-        "team": "MTL",
-        "opponent": "TBL",
+        "player": "David Jiricek",
+        "team": "PHI",
+        "opponent": "CAR",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Mike Matheson",
-        "team": "MTL",
-        "opponent": "TBL",
+        "player": "Travis Sanheim",
+        "team": "PHI",
+        "opponent": "CAR",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Jayden Struble",
-        "team": "MTL",
-        "opponent": "TBL",
+        "player": "Nick Seeler",
+        "team": "PHI",
+        "opponent": "CAR",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Arber Xhekaj",
-        "team": "MTL",
-        "opponent": "TBL",
+        "player": "Cam York",
+        "team": "PHI",
+        "opponent": "CAR",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Oliver Bjorkstrand",
-        "team": "TBL",
-        "opponent": "MTL",
+        "player": "Nicolas Deslauriers",
+        "team": "CAR",
+        "opponent": "PHI",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Conor Geekie",
-        "team": "TBL",
-        "opponent": "MTL",
+        "player": "Jesperi Kotkaniemi",
+        "team": "CAR",
+        "opponent": "PHI",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Zemgus Girgensons",
-        "team": "TBL",
-        "opponent": "MTL",
+        "player": "Eric Robinson",
+        "team": "CAR",
+        "opponent": "PHI",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Gage Goncalves",
-        "team": "TBL",
-        "opponent": "MTL",
+        "player": "Jalen Chatfield",
+        "team": "CAR",
+        "opponent": "PHI",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Yanni Gourde",
-        "team": "TBL",
-        "opponent": "MTL",
+        "player": "Alexander Nikishin",
+        "team": "CAR",
+        "opponent": "PHI",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Pontus Holmberg",
-        "team": "TBL",
-        "opponent": "MTL",
+        "player": "Jaccob Slavin",
+        "team": "CAR",
+        "opponent": "PHI",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Dominic James",
-        "team": "TBL",
-        "opponent": "MTL",
+        "player": "Jansen Harkins",
+        "team": "ANA",
+        "opponent": "VGK",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Corey Perry",
-        "team": "TBL",
-        "opponent": "MTL",
+        "player": "Ross Johnston",
+        "team": "ANA",
+        "opponent": "VGK",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Brayden Point",
-        "team": "TBL",
-        "opponent": "MTL",
+        "player": "Frank Vatrano",
+        "team": "ANA",
+        "opponent": "VGK",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Scott Sabourin",
-        "team": "TBL",
-        "opponent": "MTL",
+        "player": "Jeffrey Viel",
+        "team": "ANA",
+        "opponent": "VGK",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Declan Carlile",
-        "team": "TBL",
-        "opponent": "MTL",
+        "player": "Tim Washe",
+        "team": "ANA",
+        "opponent": "VGK",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Erik Cernak",
-        "team": "TBL",
-        "opponent": "MTL",
+        "player": "Radko Gudas",
+        "team": "ANA",
+        "opponent": "VGK",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Max Crozier",
-        "team": "TBL",
-        "opponent": "MTL",
+        "player": "Drew Helleson",
+        "team": "ANA",
+        "opponent": "VGK",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Charle-Edouard D'Astous",
-        "team": "TBL",
-        "opponent": "MTL",
+        "player": "Tyson Hinds",
+        "team": "ANA",
+        "opponent": "VGK",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Emil Lilleberg",
-        "team": "TBL",
-        "opponent": "MTL",
+        "player": "Ian Moore",
+        "team": "ANA",
+        "opponent": "VGK",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Ryan McDonagh",
-        "team": "TBL",
-        "opponent": "MTL",
+        "player": "Jacob Trouba",
+        "team": "ANA",
+        "opponent": "VGK",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Bobby Brink",
-        "team": "MIN",
-        "opponent": "COL",
+        "player": "Olen Zellweger",
+        "team": "ANA",
+        "opponent": "VGK",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Robby Fabbri",
-        "team": "MIN",
-        "opponent": "COL",
+        "player": "Nic Dowd",
+        "team": "VGK",
+        "opponent": "ANA",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Marcus Foligno",
-        "team": "MIN",
-        "opponent": "COL",
+        "player": "Tomas Hertl",
+        "team": "VGK",
+        "opponent": "ANA",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Marcus Johansson",
-        "team": "MIN",
-        "opponent": "COL",
+        "player": "Alexander Holtz",
+        "team": "VGK",
+        "opponent": "ANA",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Ben Jones",
-        "team": "MIN",
-        "opponent": "COL",
+        "player": "Keegan Kolesar",
+        "team": "VGK",
+        "opponent": "ANA",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Michael McCarron",
-        "team": "MIN",
-        "opponent": "COL",
+        "player": "Brandon Saad",
+        "team": "VGK",
+        "opponent": "ANA",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Nico Sturm",
-        "team": "MIN",
-        "opponent": "COL",
+        "player": "Cole Smith",
+        "team": "VGK",
+        "opponent": "ANA",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Vladimir Tarasenko",
-        "team": "MIN",
-        "opponent": "COL",
+        "player": "Ben Hutton",
+        "team": "VGK",
+        "opponent": "ANA",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Yakov Trenin",
-        "team": "MIN",
-        "opponent": "COL",
+        "player": "Kaedan Korczak",
+        "team": "VGK",
+        "opponent": "ANA",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Danila Yurov",
-        "team": "MIN",
-        "opponent": "COL",
+        "player": "Jeremy Lauzon",
+        "team": "VGK",
+        "opponent": "ANA",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Zach Bogosian",
-        "team": "MIN",
-        "opponent": "COL",
+        "player": "Brayden McNabb",
+        "team": "VGK",
+        "opponent": "ANA",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Jonas Brodin",
-        "team": "MIN",
-        "opponent": "COL",
-        "hit_rate": 100,
-        "last_10": 10
-    },
-    {
-        "player": "Daemon Hunt",
-        "team": "MIN",
-        "opponent": "COL",
-        "hit_rate": 100,
-        "last_10": 10
-    },
-    {
-        "player": "Jake Middleton",
-        "team": "MIN",
-        "opponent": "COL",
-        "hit_rate": 100,
-        "last_10": 10
-    },
-    {
-        "player": "Jeff Petry",
-        "team": "MIN",
-        "opponent": "COL",
-        "hit_rate": 100,
-        "last_10": 10
-    },
-    {
-        "player": "Jared Spurgeon",
-        "team": "MIN",
-        "opponent": "COL",
-        "hit_rate": 100,
-        "last_10": 10
-    },
-    {
-        "player": "Zakhar Bardakov",
-        "team": "COL",
-        "opponent": "MIN",
-        "hit_rate": 100,
-        "last_10": 10
-    },
-    {
-        "player": "Ross Colton",
-        "team": "COL",
-        "opponent": "MIN",
-        "hit_rate": 100,
-        "last_10": 10
-    },
-    {
-        "player": "Jack Drury",
-        "team": "COL",
-        "opponent": "MIN",
-        "hit_rate": 100,
-        "last_10": 10
-    },
-    {
-        "player": "Parker Kelly",
-        "team": "COL",
-        "opponent": "MIN",
-        "hit_rate": 100,
-        "last_10": 10
-    },
-    {
-        "player": "Joel Kiviranta",
-        "team": "COL",
-        "opponent": "MIN",
-        "hit_rate": 100,
-        "last_10": 10
-    },
-    {
-        "player": "Brock Nelson",
-        "team": "COL",
-        "opponent": "MIN",
-        "hit_rate": 100,
-        "last_10": 10
-    },
-    {
-        "player": "Logan O'Connor",
-        "team": "COL",
-        "opponent": "MIN",
-        "hit_rate": 100,
-        "last_10": 10
-    },
-    {
-        "player": "Nicolas Roy",
-        "team": "COL",
-        "opponent": "MIN",
-        "hit_rate": 100,
-        "last_10": 10
-    },
-    {
-        "player": "Nick Blankenburg",
-        "team": "COL",
-        "opponent": "MIN",
-        "hit_rate": 100,
-        "last_10": 10
-    },
-    {
-        "player": "Brent Burns",
-        "team": "COL",
-        "opponent": "MIN",
-        "hit_rate": 100,
-        "last_10": 10
-    },
-    {
-        "player": "Brett Kulak",
-        "team": "COL",
-        "opponent": "MIN",
-        "hit_rate": 100,
-        "last_10": 10
-    },
-    {
-        "player": "Sam Malinski",
-        "team": "COL",
-        "opponent": "MIN",
-        "hit_rate": 100,
-        "last_10": 10
-    },
-    {
-        "player": "Josh Manson",
-        "team": "COL",
-        "opponent": "MIN",
-        "hit_rate": 100,
-        "last_10": 10
-    },
-    {
-        "player": "Devon Toews",
-        "team": "COL",
-        "opponent": "MIN",
-        "hit_rate": 100,
-        "last_10": 10
-    },
-    {
-        "player": "Cole Caufield",
-        "team": "MTL",
-        "opponent": "TBL",
+        "player": "Alex Bump",
+        "team": "PHI",
+        "opponent": "CAR",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Kirby Dach",
-        "team": "MTL",
-        "opponent": "TBL",
+        "player": "Garnet Hathaway",
+        "team": "PHI",
+        "opponent": "CAR",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Alex Newhook",
-        "team": "MTL",
-        "opponent": "TBL",
+        "player": "Porter Martone",
+        "team": "PHI",
+        "opponent": "CAR",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Alexandre Texier",
-        "team": "MTL",
-        "opponent": "TBL",
+        "player": "Trevor Zegras",
+        "team": "PHI",
+        "opponent": "CAR",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Lane Hutson",
-        "team": "MTL",
-        "opponent": "TBL",
+        "player": "Jamie Drysdale",
+        "team": "PHI",
+        "opponent": "CAR",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Anthony Cirelli",
-        "team": "TBL",
-        "opponent": "MTL",
+        "player": "Noah Juulsen",
+        "team": "PHI",
+        "opponent": "CAR",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Nick Paul",
-        "team": "TBL",
-        "opponent": "MTL",
+        "player": "William Carrier",
+        "team": "CAR",
+        "opponent": "PHI",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Victor Hedman",
-        "team": "TBL",
-        "opponent": "MTL",
+        "player": "Mark Jankowski",
+        "team": "CAR",
+        "opponent": "PHI",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "J.J. Moser",
-        "team": "TBL",
-        "opponent": "MTL",
+        "player": "Jordan Martinook",
+        "team": "CAR",
+        "opponent": "PHI",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Darren Raddysh",
-        "team": "TBL",
-        "opponent": "MTL",
+        "player": "Jordan Staal",
+        "team": "CAR",
+        "opponent": "PHI",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Nick Foligno",
-        "team": "MIN",
-        "opponent": "COL",
+        "player": "Andrei Svechnikov",
+        "team": "CAR",
+        "opponent": "PHI",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Nazem Kadri",
-        "team": "COL",
-        "opponent": "MIN",
+        "player": "Shayne Gostisbehere",
+        "team": "CAR",
+        "opponent": "PHI",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Gabriel Landeskog",
-        "team": "COL",
-        "opponent": "MIN",
+        "player": "Charles Alexis Legault",
+        "team": "CAR",
+        "opponent": "PHI",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Artturi Lehkonen",
-        "team": "COL",
-        "opponent": "MIN",
+        "player": "K'Andre Miller",
+        "team": "CAR",
+        "opponent": "PHI",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Martin Necas",
-        "team": "COL",
-        "opponent": "MIN",
+        "player": "Mike Reilly",
+        "team": "CAR",
+        "opponent": "PHI",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Zachary Bolduc",
-        "team": "MTL",
-        "opponent": "TBL",
+        "player": "Sean Walker",
+        "team": "CAR",
+        "opponent": "PHI",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Alex Killorn",
+        "team": "ANA",
+        "opponent": "VGK",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Mason McTavish",
+        "team": "ANA",
+        "opponent": "VGK",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Ryan Poehling",
+        "team": "ANA",
+        "opponent": "VGK",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Beckett Sennecke",
+        "team": "ANA",
+        "opponent": "VGK",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Pavel Mintyukov",
+        "team": "ANA",
+        "opponent": "VGK",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Ivan Barbashev",
+        "team": "VGK",
+        "opponent": "ANA",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Braeden Bowman",
+        "team": "VGK",
+        "opponent": "ANA",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Pavel Dorofeyev",
+        "team": "VGK",
+        "opponent": "ANA",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Brett Howden",
+        "team": "VGK",
+        "opponent": "ANA",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "William Karlsson",
+        "team": "VGK",
+        "opponent": "ANA",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Mitch Marner",
+        "team": "VGK",
+        "opponent": "ANA",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Colton Sissons",
+        "team": "VGK",
+        "opponent": "ANA",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Reilly Smith",
+        "team": "VGK",
+        "opponent": "ANA",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Rasmus Andersson",
+        "team": "VGK",
+        "opponent": "ANA",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Shea Theodore",
+        "team": "VGK",
+        "opponent": "ANA",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Noah Cates",
+        "team": "PHI",
+        "opponent": "CAR",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Juraj Slafkovsk\u00fd",
-        "team": "MTL",
-        "opponent": "TBL",
+        "player": "Sean Couturier",
+        "team": "PHI",
+        "opponent": "CAR",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Jake Guentzel",
-        "team": "TBL",
-        "opponent": "MTL",
+        "player": "Matvei Michkov",
+        "team": "PHI",
+        "opponent": "CAR",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Joel Eriksson Ek",
-        "team": "MIN",
-        "opponent": "COL",
+        "player": "Sebastian Aho",
+        "team": "CAR",
+        "opponent": "PHI",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Ryan Hartman",
-        "team": "MIN",
-        "opponent": "COL",
+        "player": "Nikolaj Ehlers",
+        "team": "CAR",
+        "opponent": "PHI",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Brock Faber",
-        "team": "MIN",
-        "opponent": "COL",
+        "player": "Seth Jarvis",
+        "team": "CAR",
+        "opponent": "PHI",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Nathan MacKinnon",
-        "team": "COL",
-        "opponent": "MIN",
+        "player": "Chris Kreider",
+        "team": "ANA",
+        "opponent": "VGK",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Valeri Nichushkin",
-        "team": "COL",
-        "opponent": "MIN",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Cale Makar",
-        "team": "COL",
-        "opponent": "MIN",
+        "player": "Mark Stone",
+        "team": "VGK",
+        "opponent": "ANA",
         "hit_rate": 80,
         "last_10": 8
     }
