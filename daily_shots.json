@@ -1,50 +1,57 @@
 [
     {
-        "player": "Matt Boldy",
-        "team": "MIN",
-        "opponent": "COL",
+        "player": "Leo Carlsson",
+        "team": "ANA",
+        "opponent": "VGK",
+        "hit_rate": 100,
+        "last_10": 10
+    },
+    {
+        "player": "Tage Thompson",
+        "team": "BUF",
+        "opponent": "MTL",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Joel Eriksson Ek",
-        "team": "MIN",
-        "opponent": "COL",
+        "player": "Cutter Gauthier",
+        "team": "ANA",
+        "opponent": "VGK",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Martin Necas",
-        "team": "COL",
-        "opponent": "MIN",
+        "player": "Jackson LaCombe",
+        "team": "ANA",
+        "opponent": "VGK",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Nathan MacKinnon",
-        "team": "COL",
-        "opponent": "MIN",
+        "player": "Alex Tuch",
+        "team": "BUF",
+        "opponent": "MTL",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Cale Makar",
-        "team": "COL",
-        "opponent": "MIN",
+        "player": "Rasmus Dahlin",
+        "team": "BUF",
+        "opponent": "MTL",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Sam Malinski",
-        "team": "COL",
-        "opponent": "MIN",
+        "player": "Pavel Dorofeyev",
+        "team": "VGK",
+        "opponent": "ANA",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Josh Manson",
-        "team": "COL",
-        "opponent": "MIN",
+        "player": "Mark Stone",
+        "team": "VGK",
+        "opponent": "ANA",
         "hit_rate": 80,
         "last_10": 8
     }
