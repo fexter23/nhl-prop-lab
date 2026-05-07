@@ -1,43 +1,22 @@
 [
     {
-        "player": "Jackson LaCombe",
-        "team": "ANA",
-        "opponent": "VGK",
+        "player": "Taylor Hall",
+        "team": "CAR",
+        "opponent": "PHI",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Ivan Barbashev",
-        "team": "VGK",
-        "opponent": "ANA",
+        "player": "Logan Stankoven",
+        "team": "CAR",
+        "opponent": "PHI",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Lane Hutson",
-        "team": "MTL",
-        "opponent": "BUF",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Alex Tuch",
-        "team": "BUF",
-        "opponent": "MTL",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Jack Eichel",
-        "team": "VGK",
-        "opponent": "ANA",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Mitch Marner",
-        "team": "VGK",
-        "opponent": "ANA",
+        "player": "Jackson Blake",
+        "team": "CAR",
+        "opponent": "PHI",
         "hit_rate": 80,
         "last_10": 8
     }

@@ -1,57 +1,29 @@
 [
     {
-        "player": "Leo Carlsson",
-        "team": "ANA",
-        "opponent": "VGK",
+        "player": "Logan Stankoven",
+        "team": "CAR",
+        "opponent": "PHI",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Tage Thompson",
-        "team": "BUF",
-        "opponent": "MTL",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Cutter Gauthier",
-        "team": "ANA",
-        "opponent": "VGK",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Jackson LaCombe",
-        "team": "ANA",
-        "opponent": "VGK",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Alex Tuch",
-        "team": "BUF",
-        "opponent": "MTL",
+        "player": "Taylor Hall",
+        "team": "CAR",
+        "opponent": "PHI",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Rasmus Dahlin",
-        "team": "BUF",
-        "opponent": "MTL",
+        "player": "Seth Jarvis",
+        "team": "CAR",
+        "opponent": "PHI",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Pavel Dorofeyev",
-        "team": "VGK",
-        "opponent": "ANA",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Mark Stone",
-        "team": "VGK",
-        "opponent": "ANA",
+        "player": "Andrei Svechnikov",
+        "team": "CAR",
+        "opponent": "PHI",
         "hit_rate": 80,
         "last_10": 8
     }
