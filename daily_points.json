@@ -1,22 +1,22 @@
 [
     {
-        "player": "Taylor Hall",
-        "team": "CAR",
-        "opponent": "PHI",
-        "hit_rate": 90,
-        "last_10": 9
+        "player": "Ivan Barbashev",
+        "team": "VGK",
+        "opponent": "ANA",
+        "hit_rate": 80,
+        "last_10": 8
     },
     {
-        "player": "Logan Stankoven",
-        "team": "CAR",
-        "opponent": "PHI",
-        "hit_rate": 90,
-        "last_10": 9
+        "player": "Jack Eichel",
+        "team": "VGK",
+        "opponent": "ANA",
+        "hit_rate": 80,
+        "last_10": 8
     },
     {
-        "player": "Jackson Blake",
-        "team": "CAR",
-        "opponent": "PHI",
+        "player": "Jackson LaCombe",
+        "team": "ANA",
+        "opponent": "VGK",
         "hit_rate": 80,
         "last_10": 8
     }
