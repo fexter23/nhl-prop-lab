@@ -1,22 +1,22 @@
 [
     {
-        "player": "Ivan Barbashev",
-        "team": "VGK",
-        "opponent": "ANA",
+        "player": "Mats Zuccarello",
+        "team": "MIN",
+        "opponent": "COL",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Taylor Hall",
+        "team": "CAR",
+        "opponent": "PHI",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Jack Eichel",
-        "team": "VGK",
-        "opponent": "ANA",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Jackson LaCombe",
-        "team": "ANA",
-        "opponent": "VGK",
+        "player": "Logan Stankoven",
+        "team": "CAR",
+        "opponent": "PHI",
         "hit_rate": 80,
         "last_10": 8
     }
