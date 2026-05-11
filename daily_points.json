@@ -1,23 +1,9 @@
 [
     {
-        "player": "Ivan Barbashev",
-        "team": "VGK",
-        "opponent": "ANA",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Jack Eichel",
-        "team": "VGK",
-        "opponent": "ANA",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Mitch Marner",
-        "team": "VGK",
-        "opponent": "ANA",
-        "hit_rate": 80,
-        "last_10": 8
+        "player": "Mats Zuccarello",
+        "team": "MIN",
+        "opponent": "COL",
+        "hit_rate": 90,
+        "last_10": 9
     }
 ]
