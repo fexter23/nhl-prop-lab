@@ -1,50 +1,43 @@
 [
     {
-        "player": "Nathan MacKinnon",
-        "team": "COL",
-        "opponent": "MIN",
+        "player": "Rasmus Dahlin",
+        "team": "BUF",
+        "opponent": "MTL",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Martin Necas",
-        "team": "COL",
-        "opponent": "MIN",
+        "player": "Leo Carlsson",
+        "team": "ANA",
+        "opponent": "VGK",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Matt Boldy",
-        "team": "MIN",
-        "opponent": "COL",
+        "player": "Cutter Gauthier",
+        "team": "ANA",
+        "opponent": "VGK",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Joel Eriksson Ek",
-        "team": "MIN",
-        "opponent": "COL",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Cale Makar",
-        "team": "COL",
-        "opponent": "MIN",
+        "player": "Tage Thompson",
+        "team": "BUF",
+        "opponent": "MTL",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Sam Malinski",
-        "team": "COL",
-        "opponent": "MIN",
+        "player": "Alex Tuch",
+        "team": "BUF",
+        "opponent": "MTL",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Josh Manson",
-        "team": "COL",
-        "opponent": "MIN",
+        "player": "Mitch Marner",
+        "team": "VGK",
+        "opponent": "ANA",
         "hit_rate": 80,
         "last_10": 8
     }
