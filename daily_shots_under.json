@@ -1,176 +1,106 @@
 [
     {
-        "player": "Josh Dunne",
-        "team": "BUF",
-        "opponent": "MTL",
-        "hit_rate": 100,
-        "last_10": 10
-    },
-    {
-        "player": "Beck Malenstyn",
-        "team": "BUF",
-        "opponent": "MTL",
-        "hit_rate": 100,
-        "last_10": 10
-    },
-    {
-        "player": "Alexandre Carrier",
-        "team": "MTL",
-        "opponent": "BUF",
-        "hit_rate": 100,
-        "last_10": 10
-    },
-    {
-        "player": "Jayden Struble",
-        "team": "MTL",
-        "opponent": "BUF",
-        "hit_rate": 100,
-        "last_10": 10
-    },
-    {
-        "player": "Drew Helleson",
-        "team": "ANA",
-        "opponent": "VGK",
-        "hit_rate": 100,
-        "last_10": 10
-    },
-    {
-        "player": "Tyson Hinds",
-        "team": "ANA",
-        "opponent": "VGK",
-        "hit_rate": 100,
-        "last_10": 10
-    },
-    {
-        "player": "Keegan Kolesar",
-        "team": "VGK",
-        "opponent": "ANA",
-        "hit_rate": 100,
-        "last_10": 10
-    },
-    {
-        "player": "Kaedan Korczak",
-        "team": "VGK",
-        "opponent": "ANA",
-        "hit_rate": 100,
-        "last_10": 10
-    },
-    {
-        "player": "Jordan Greenway",
-        "team": "BUF",
-        "opponent": "MTL",
+        "player": "Yakov Trenin",
+        "team": "MIN",
+        "opponent": "COL",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Zach Metsa",
-        "team": "BUF",
-        "opponent": "MTL",
+        "player": "Zach Bogosian",
+        "team": "MIN",
+        "opponent": "COL",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Luke Schenn",
-        "team": "BUF",
-        "opponent": "MTL",
+        "player": "Daemon Hunt",
+        "team": "MIN",
+        "opponent": "COL",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Oliver Kapanen",
-        "team": "MTL",
-        "opponent": "BUF",
+        "player": "Jake Middleton",
+        "team": "MIN",
+        "opponent": "COL",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Joe Veleno",
-        "team": "MTL",
-        "opponent": "BUF",
+        "player": "Zakhar Bardakov",
+        "team": "COL",
+        "opponent": "MIN",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Ross Johnston",
-        "team": "ANA",
-        "opponent": "VGK",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Tim Washe",
-        "team": "ANA",
-        "opponent": "VGK",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Olen Zellweger",
-        "team": "ANA",
-        "opponent": "VGK",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Tyson Kozak",
-        "team": "BUF",
-        "opponent": "MTL",
+        "player": "Bobby Brink",
+        "team": "MIN",
+        "opponent": "COL",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Owen Power",
-        "team": "BUF",
-        "opponent": "MTL",
+        "player": "Marcus Foligno",
+        "team": "MIN",
+        "opponent": "COL",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Kirby Dach",
-        "team": "MTL",
-        "opponent": "BUF",
+        "player": "Nick Foligno",
+        "team": "MIN",
+        "opponent": "COL",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Adam Engstrom",
-        "team": "MTL",
-        "opponent": "BUF",
+        "player": "Jeff Petry",
+        "team": "MIN",
+        "opponent": "COL",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Kaiden Guhle",
-        "team": "MTL",
-        "opponent": "BUF",
+        "player": "Joel Kiviranta",
+        "team": "COL",
+        "opponent": "MIN",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Frank Vatrano",
-        "team": "ANA",
-        "opponent": "VGK",
+        "player": "Valeri Nichushkin",
+        "team": "COL",
+        "opponent": "MIN",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Colton Sissons",
-        "team": "VGK",
-        "opponent": "ANA",
+        "player": "Logan O'Connor",
+        "team": "COL",
+        "opponent": "MIN",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Cole Smith",
-        "team": "VGK",
-        "opponent": "ANA",
+        "player": "Nicolas Roy",
+        "team": "COL",
+        "opponent": "MIN",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Noah Hanifin",
-        "team": "VGK",
-        "opponent": "ANA",
+        "player": "Jack Ahcan",
+        "team": "COL",
+        "opponent": "MIN",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Brett Kulak",
+        "team": "COL",
+        "opponent": "MIN",
         "hit_rate": 80,
         "last_10": 8
     }
