@@ -1,50 +1,71 @@
 [
     {
-        "player": "Joel Eriksson Ek",
-        "team": "MIN",
-        "opponent": "COL",
+        "player": "Rasmus Dahlin",
+        "team": "BUF",
+        "opponent": "MTL",
+        "hit_rate": 100,
+        "last_10": 10
+    },
+    {
+        "player": "Cutter Gauthier",
+        "team": "ANA",
+        "opponent": "VGK",
+        "hit_rate": 100,
+        "last_10": 10
+    },
+    {
+        "player": "Alex Tuch",
+        "team": "BUF",
+        "opponent": "MTL",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Nathan MacKinnon",
-        "team": "COL",
-        "opponent": "MIN",
+        "player": "Leo Carlsson",
+        "team": "ANA",
+        "opponent": "VGK",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Matt Boldy",
-        "team": "MIN",
-        "opponent": "COL",
+        "player": "Nick Suzuki",
+        "team": "MTL",
+        "opponent": "BUF",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Martin Necas",
-        "team": "COL",
-        "opponent": "MIN",
+        "player": "Tage Thompson",
+        "team": "BUF",
+        "opponent": "MTL",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Cale Makar",
-        "team": "COL",
-        "opponent": "MIN",
+        "player": "Bowen Byram",
+        "team": "BUF",
+        "opponent": "MTL",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Sam Malinski",
-        "team": "COL",
-        "opponent": "MIN",
+        "player": "Mitch Marner",
+        "team": "VGK",
+        "opponent": "ANA",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Josh Manson",
-        "team": "COL",
-        "opponent": "MIN",
+        "player": "Alex Killorn",
+        "team": "ANA",
+        "opponent": "VGK",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "John Carlson",
+        "team": "ANA",
+        "opponent": "VGK",
         "hit_rate": 80,
         "last_10": 8
     }
