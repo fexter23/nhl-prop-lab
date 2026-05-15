@@ -1,16 +1,1 @@
-[
-    {
-        "player": "Jack Eichel",
-        "team": "VGK",
-        "opponent": "ANA",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Lane Hutson",
-        "team": "MTL",
-        "opponent": "BUF",
-        "hit_rate": 80,
-        "last_10": 8
-    }
-]
+[]
