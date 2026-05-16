@@ -1,5 +1,369 @@
 {
-    "matchups": [],
-    "players": [],
+    "last_updated": "2026-05-16 07:55:18",
+    "matchups": [
+        {
+            "label": "BUF @ MTL",
+            "teams": [
+                "BUF",
+                "MTL"
+            ]
+        }
+    ],
+    "players": [
+        {
+            "id": 8484145,
+            "name": "Zach Benson",
+            "team": "BUF",
+            "pos": "L"
+        },
+        {
+            "id": 8475842,
+            "name": "Sam Carrick",
+            "team": "BUF",
+            "pos": "C"
+        },
+        {
+            "id": 8479941,
+            "name": "Justin Danforth",
+            "team": "BUF",
+            "pos": "R"
+        },
+        {
+            "id": 8482659,
+            "name": "Josh Doan",
+            "team": "BUF",
+            "pos": "R"
+        },
+        {
+            "id": 8482623,
+            "name": "Josh Dunne",
+            "team": "BUF",
+            "pos": "C"
+        },
+        {
+            "id": 8483090,
+            "name": "Riley Fiddler-Schultz",
+            "team": "BUF",
+            "pos": "C"
+        },
+        {
+            "id": 8478413,
+            "name": "Jordan Greenway",
+            "team": "BUF",
+            "pos": "L"
+        },
+        {
+            "id": 8484797,
+            "name": "Konsta Helenius",
+            "team": "BUF",
+            "pos": "C"
+        },
+        {
+            "id": 8482896,
+            "name": "Tyson Kozak",
+            "team": "BUF",
+            "pos": "C"
+        },
+        {
+            "id": 8481522,
+            "name": "Peyton Krebs",
+            "team": "BUF",
+            "pos": "C"
+        },
+        {
+            "id": 8483468,
+            "name": "Jiri Kulich",
+            "team": "BUF",
+            "pos": "C"
+        },
+        {
+            "id": 8479359,
+            "name": "Beck Malenstyn",
+            "team": "BUF",
+            "pos": "L"
+        },
+        {
+            "id": 8480802,
+            "name": "Ryan McLeod",
+            "team": "BUF",
+            "pos": "C"
+        },
+        {
+            "id": 8480064,
+            "name": "Josh Norris",
+            "team": "BUF",
+            "pos": "C"
+        },
+        {
+            "id": 8483500,
+            "name": "Noah Ostlund",
+            "team": "BUF",
+            "pos": "C"
+        },
+        {
+            "id": 8476871,
+            "name": "Tanner Pearson",
+            "team": "BUF",
+            "pos": "L"
+        },
+        {
+            "id": 8482097,
+            "name": "Jack Quinn",
+            "team": "BUF",
+            "pos": "R"
+        },
+        {
+            "id": 8479420,
+            "name": "Tage Thompson",
+            "team": "BUF",
+            "pos": "C"
+        },
+        {
+            "id": 8477949,
+            "name": "Alex Tuch",
+            "team": "BUF",
+            "pos": "R"
+        },
+        {
+            "id": 8484238,
+            "name": "Anton Wahlberg",
+            "team": "BUF",
+            "pos": "C"
+        },
+        {
+            "id": 8475722,
+            "name": "Jason Zucker",
+            "team": "BUF",
+            "pos": "L"
+        },
+        {
+            "id": 8481524,
+            "name": "Bowen Byram",
+            "team": "BUF",
+            "pos": "D"
+        },
+        {
+            "id": 8480839,
+            "name": "Rasmus Dahlin",
+            "team": "BUF",
+            "pos": "D"
+        },
+        {
+            "id": 8481564,
+            "name": "Ryan Johnson",
+            "team": "BUF",
+            "pos": "D"
+        },
+        {
+            "id": 8480891,
+            "name": "Michael Kesselring",
+            "team": "BUF",
+            "pos": "D"
+        },
+        {
+            "id": 8483732,
+            "name": "Vsevolod Komarov",
+            "team": "BUF",
+            "pos": "D"
+        },
+        {
+            "id": 8484305,
+            "name": "Zach Metsa",
+            "team": "BUF",
+            "pos": "D"
+        },
+        {
+            "id": 8485404,
+            "name": "Radim Mrtka",
+            "team": "BUF",
+            "pos": "D"
+        },
+        {
+            "id": 8482671,
+            "name": "Owen Power",
+            "team": "BUF",
+            "pos": "D"
+        },
+        {
+            "id": 8480807,
+            "name": "Mattias Samuelsson",
+            "team": "BUF",
+            "pos": "D"
+        },
+        {
+            "id": 8474568,
+            "name": "Luke Schenn",
+            "team": "BUF",
+            "pos": "D"
+        },
+        {
+            "id": 8479378,
+            "name": "Logan Stanley",
+            "team": "BUF",
+            "pos": "D"
+        },
+        {
+            "id": 8479982,
+            "name": "Conor Timmins",
+            "team": "BUF",
+            "pos": "D"
+        },
+        {
+            "id": 8476981,
+            "name": "Josh Anderson",
+            "team": "MTL",
+            "pos": "R"
+        },
+        {
+            "id": 8483424,
+            "name": "Owen Beck",
+            "team": "MTL",
+            "pos": "C"
+        },
+        {
+            "id": 8482737,
+            "name": "Zachary Bolduc",
+            "team": "MTL",
+            "pos": "R"
+        },
+        {
+            "id": 8481540,
+            "name": "Cole Caufield",
+            "team": "MTL",
+            "pos": "R"
+        },
+        {
+            "id": 8481523,
+            "name": "Kirby Dach",
+            "team": "MTL",
+            "pos": "C"
+        },
+        {
+            "id": 8476479,
+            "name": "Phillip Danault",
+            "team": "MTL",
+            "pos": "C"
+        },
+        {
+            "id": 8484984,
+            "name": "Ivan Demidov",
+            "team": "MTL",
+            "pos": "R"
+        },
+        {
+            "id": 8478133,
+            "name": "Jake Evans",
+            "team": "MTL",
+            "pos": "C"
+        },
+        {
+            "id": 8475848,
+            "name": "Brendan Gallagher",
+            "team": "MTL",
+            "pos": "R"
+        },
+        {
+            "id": 8482775,
+            "name": "Oliver Kapanen",
+            "team": "MTL",
+            "pos": "C"
+        },
+        {
+            "id": 8479339,
+            "name": "Patrik Laine",
+            "team": "MTL",
+            "pos": "R"
+        },
+        {
+            "id": 8481618,
+            "name": "Alex Newhook",
+            "team": "MTL",
+            "pos": "C"
+        },
+        {
+            "id": 8483515,
+            "name": "Juraj Slafkovsk\u00fd",
+            "team": "MTL",
+            "pos": "L"
+        },
+        {
+            "id": 8480018,
+            "name": "Nick Suzuki",
+            "team": "MTL",
+            "pos": "C"
+        },
+        {
+            "id": 8480074,
+            "name": "Alexandre Texier",
+            "team": "MTL",
+            "pos": "L"
+        },
+        {
+            "id": 8480813,
+            "name": "Joe Veleno",
+            "team": "MTL",
+            "pos": "C"
+        },
+        {
+            "id": 8484403,
+            "name": "Florian Xhekaj",
+            "team": "MTL",
+            "pos": "L"
+        },
+        {
+            "id": 8478851,
+            "name": "Alexandre Carrier",
+            "team": "MTL",
+            "pos": "D"
+        },
+        {
+            "id": 8480865,
+            "name": "Noah Dobson",
+            "team": "MTL",
+            "pos": "D"
+        },
+        {
+            "id": 8483686,
+            "name": "Adam Engstrom",
+            "team": "MTL",
+            "pos": "D"
+        },
+        {
+            "id": 8482087,
+            "name": "Kaiden Guhle",
+            "team": "MTL",
+            "pos": "D"
+        },
+        {
+            "id": 8483457,
+            "name": "Lane Hutson",
+            "team": "MTL",
+            "pos": "D"
+        },
+        {
+            "id": 8476875,
+            "name": "Mike Matheson",
+            "team": "MTL",
+            "pos": "D"
+        },
+        {
+            "id": 8484220,
+            "name": "David Reinbacher",
+            "team": "MTL",
+            "pos": "D"
+        },
+        {
+            "id": 8481593,
+            "name": "Jayden Struble",
+            "team": "MTL",
+            "pos": "D"
+        },
+        {
+            "id": 8482964,
+            "name": "Arber Xhekaj",
+            "team": "MTL",
+            "pos": "D"
+        }
+    ],
     "season": "20252026"
 }

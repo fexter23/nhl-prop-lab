@@ -1,1 +1,114 @@
-[]
+[
+    {
+        "player": "Josh Dunne",
+        "team": "BUF",
+        "opponent": "MTL",
+        "hit_rate": 100,
+        "last_10": 10
+    },
+    {
+        "player": "Alexandre Carrier",
+        "team": "MTL",
+        "opponent": "BUF",
+        "hit_rate": 100,
+        "last_10": 10
+    },
+    {
+        "player": "Jayden Struble",
+        "team": "MTL",
+        "opponent": "BUF",
+        "hit_rate": 100,
+        "last_10": 10
+    },
+    {
+        "player": "Jordan Greenway",
+        "team": "BUF",
+        "opponent": "MTL",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Beck Malenstyn",
+        "team": "BUF",
+        "opponent": "MTL",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Zach Metsa",
+        "team": "BUF",
+        "opponent": "MTL",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Owen Power",
+        "team": "BUF",
+        "opponent": "MTL",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Luke Schenn",
+        "team": "BUF",
+        "opponent": "MTL",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Conor Timmins",
+        "team": "BUF",
+        "opponent": "MTL",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Oliver Kapanen",
+        "team": "MTL",
+        "opponent": "BUF",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Joe Veleno",
+        "team": "MTL",
+        "opponent": "BUF",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Kaiden Guhle",
+        "team": "MTL",
+        "opponent": "BUF",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Tyson Kozak",
+        "team": "BUF",
+        "opponent": "MTL",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Peyton Krebs",
+        "team": "BUF",
+        "opponent": "MTL",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Adam Engstrom",
+        "team": "MTL",
+        "opponent": "BUF",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Arber Xhekaj",
+        "team": "MTL",
+        "opponent": "BUF",
+        "hit_rate": 80,
+        "last_10": 8
+    }
+]

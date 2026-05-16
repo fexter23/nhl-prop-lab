@@ -1,1 +1,9 @@
-[]
+[
+    {
+        "player": "Lane Hutson",
+        "team": "MTL",
+        "opponent": "BUF",
+        "hit_rate": 80,
+        "last_10": 8
+    }
+]
