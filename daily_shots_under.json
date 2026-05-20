@@ -1,1 +1,79 @@
-[]
+[
+    {
+        "player": "Kaedan Korczak",
+        "team": "VGK",
+        "opponent": "COL",
+        "hit_rate": 100,
+        "last_10": 10
+    },
+    {
+        "player": "Keegan Kolesar",
+        "team": "VGK",
+        "opponent": "COL",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Cole Smith",
+        "team": "VGK",
+        "opponent": "COL",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Zakhar Bardakov",
+        "team": "COL",
+        "opponent": "VGK",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Logan O'Connor",
+        "team": "COL",
+        "opponent": "VGK",
+        "hit_rate": 90,
+        "last_10": 9
+    },
+    {
+        "player": "Colton Sissons",
+        "team": "VGK",
+        "opponent": "COL",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Joel Kiviranta",
+        "team": "COL",
+        "opponent": "VGK",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Nicolas Roy",
+        "team": "COL",
+        "opponent": "VGK",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Jack Ahcan",
+        "team": "COL",
+        "opponent": "VGK",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Brett Kulak",
+        "team": "COL",
+        "opponent": "VGK",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Devon Toews",
+        "team": "COL",
+        "opponent": "VGK",
+        "hit_rate": 80,
+        "last_10": 8
+    }
+]

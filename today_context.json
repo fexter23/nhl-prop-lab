@@ -1,5 +1,339 @@
 {
-    "matchups": [],
-    "players": [],
+    "last_updated": "2026-05-20 08:57:34",
+    "matchups": [
+        {
+            "label": "VGK @ COL",
+            "teams": [
+                "VGK",
+                "COL"
+            ]
+        }
+    ],
+    "players": [
+        {
+            "id": 8477964,
+            "name": "Ivan Barbashev",
+            "team": "VGK",
+            "pos": "L"
+        },
+        {
+            "id": 8483890,
+            "name": "Braeden Bowman",
+            "team": "VGK",
+            "pos": "R"
+        },
+        {
+            "id": 8484803,
+            "name": "Trevor Connelly",
+            "team": "VGK",
+            "pos": "L"
+        },
+        {
+            "id": 8481604,
+            "name": "Pavel Dorofeyev",
+            "team": "VGK",
+            "pos": "R"
+        },
+        {
+            "id": 8475343,
+            "name": "Nic Dowd",
+            "team": "VGK",
+            "pos": "C"
+        },
+        {
+            "id": 8478403,
+            "name": "Jack Eichel",
+            "team": "VGK",
+            "pos": "C"
+        },
+        {
+            "id": 8476881,
+            "name": "Tomas Hertl",
+            "team": "VGK",
+            "pos": "C"
+        },
+        {
+            "id": 8482125,
+            "name": "Alexander Holtz",
+            "team": "VGK",
+            "pos": "R"
+        },
+        {
+            "id": 8479353,
+            "name": "Brett Howden",
+            "team": "VGK",
+            "pos": "C"
+        },
+        {
+            "id": 8476448,
+            "name": "William Karlsson",
+            "team": "VGK",
+            "pos": "C"
+        },
+        {
+            "id": 8478434,
+            "name": "Keegan Kolesar",
+            "team": "VGK",
+            "pos": "R"
+        },
+        {
+            "id": 8479550,
+            "name": "Tanner Laczynski",
+            "team": "VGK",
+            "pos": "C"
+        },
+        {
+            "id": 8481534,
+            "name": "Raphael Lavoie",
+            "team": "VGK",
+            "pos": "C"
+        },
+        {
+            "id": 8478483,
+            "name": "Mitch Marner",
+            "team": "VGK",
+            "pos": "R"
+        },
+        {
+            "id": 8480007,
+            "name": "Jonas Rondbjerg",
+            "team": "VGK",
+            "pos": "R"
+        },
+        {
+            "id": 8476438,
+            "name": "Brandon Saad",
+            "team": "VGK",
+            "pos": "L"
+        },
+        {
+            "id": 8476925,
+            "name": "Colton Sissons",
+            "team": "VGK",
+            "pos": "C"
+        },
+        {
+            "id": 8482062,
+            "name": "Cole Smith",
+            "team": "VGK",
+            "pos": "R"
+        },
+        {
+            "id": 8475191,
+            "name": "Reilly Smith",
+            "team": "VGK",
+            "pos": "R"
+        },
+        {
+            "id": 8475913,
+            "name": "Mark Stone",
+            "team": "VGK",
+            "pos": "R"
+        },
+        {
+            "id": 8485251,
+            "name": "Kai Uchacz",
+            "team": "VGK",
+            "pos": "C"
+        },
+        {
+            "id": 8478397,
+            "name": "Rasmus Andersson",
+            "team": "VGK",
+            "pos": "D"
+        },
+        {
+            "id": 8479639,
+            "name": "Dylan Coghlan",
+            "team": "VGK",
+            "pos": "D"
+        },
+        {
+            "id": 8479602,
+            "name": "Jeremy Davies",
+            "team": "VGK",
+            "pos": "D"
+        },
+        {
+            "id": 8478396,
+            "name": "Noah Hanifin",
+            "team": "VGK",
+            "pos": "D"
+        },
+        {
+            "id": 8477018,
+            "name": "Ben Hutton",
+            "team": "VGK",
+            "pos": "D"
+        },
+        {
+            "id": 8481527,
+            "name": "Kaedan Korczak",
+            "team": "VGK",
+            "pos": "D"
+        },
+        {
+            "id": 8478468,
+            "name": "Jeremy Lauzon",
+            "team": "VGK",
+            "pos": "D"
+        },
+        {
+            "id": 8475188,
+            "name": "Brayden McNabb",
+            "team": "VGK",
+            "pos": "D"
+        },
+        {
+            "id": 8477034,
+            "name": "Jaycob Megna",
+            "team": "VGK",
+            "pos": "D"
+        },
+        {
+            "id": 8477447,
+            "name": "Shea Theodore",
+            "team": "VGK",
+            "pos": "D"
+        },
+        {
+            "id": 8482947,
+            "name": "Zakhar Bardakov",
+            "team": "COL",
+            "pos": "C"
+        },
+        {
+            "id": 8479525,
+            "name": "Ross Colton",
+            "team": "COL",
+            "pos": "C"
+        },
+        {
+            "id": 8480835,
+            "name": "Jack Drury",
+            "team": "COL",
+            "pos": "C"
+        },
+        {
+            "id": 8475172,
+            "name": "Nazem Kadri",
+            "team": "COL",
+            "pos": "C"
+        },
+        {
+            "id": 8480448,
+            "name": "Parker Kelly",
+            "team": "COL",
+            "pos": "C"
+        },
+        {
+            "id": 8481641,
+            "name": "Joel Kiviranta",
+            "team": "COL",
+            "pos": "L"
+        },
+        {
+            "id": 8476455,
+            "name": "Gabriel Landeskog",
+            "team": "COL",
+            "pos": "L"
+        },
+        {
+            "id": 8477476,
+            "name": "Artturi Lehkonen",
+            "team": "COL",
+            "pos": "L"
+        },
+        {
+            "id": 8477492,
+            "name": "Nathan MacKinnon",
+            "team": "COL",
+            "pos": "C"
+        },
+        {
+            "id": 8480039,
+            "name": "Martin Necas",
+            "team": "COL",
+            "pos": "C"
+        },
+        {
+            "id": 8475754,
+            "name": "Brock Nelson",
+            "team": "COL",
+            "pos": "C"
+        },
+        {
+            "id": 8477501,
+            "name": "Valeri Nichushkin",
+            "team": "COL",
+            "pos": "R"
+        },
+        {
+            "id": 8481186,
+            "name": "Logan O'Connor",
+            "team": "COL",
+            "pos": "R"
+        },
+        {
+            "id": 8478462,
+            "name": "Nicolas Roy",
+            "team": "COL",
+            "pos": "C"
+        },
+        {
+            "id": 8482072,
+            "name": "Jack Ahcan",
+            "team": "COL",
+            "pos": "D"
+        },
+        {
+            "id": 8483565,
+            "name": "Nick Blankenburg",
+            "team": "COL",
+            "pos": "D"
+        },
+        {
+            "id": 8470613,
+            "name": "Brent Burns",
+            "team": "COL",
+            "pos": "D"
+        },
+        {
+            "id": 8482942,
+            "name": "Alex Gagne",
+            "team": "COL",
+            "pos": "D"
+        },
+        {
+            "id": 8476967,
+            "name": "Brett Kulak",
+            "team": "COL",
+            "pos": "D"
+        },
+        {
+            "id": 8480069,
+            "name": "Cale Makar",
+            "team": "COL",
+            "pos": "D"
+        },
+        {
+            "id": 8484258,
+            "name": "Sam Malinski",
+            "team": "COL",
+            "pos": "D"
+        },
+        {
+            "id": 8476312,
+            "name": "Josh Manson",
+            "team": "COL",
+            "pos": "D"
+        },
+        {
+            "id": 8478038,
+            "name": "Devon Toews",
+            "team": "COL",
+            "pos": "D"
+        }
+    ],
     "season": "20252026"
 }
