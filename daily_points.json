@@ -1,15 +1,22 @@
 [
     {
-        "player": "Jack Eichel",
-        "team": "VGK",
-        "opponent": "COL",
+        "player": "Lane Hutson",
+        "team": "MTL",
+        "opponent": "CAR",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Nathan MacKinnon",
-        "team": "COL",
-        "opponent": "VGK",
+        "player": "Taylor Hall",
+        "team": "CAR",
+        "opponent": "MTL",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Logan Stankoven",
+        "team": "CAR",
+        "opponent": "MTL",
         "hit_rate": 80,
         "last_10": 8
     }
