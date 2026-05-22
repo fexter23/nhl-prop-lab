@@ -1,22 +1,36 @@
 [
     {
-        "player": "Lane Hutson",
-        "team": "MTL",
-        "opponent": "CAR",
+        "player": "Pavel Dorofeyev",
+        "team": "VGK",
+        "opponent": "COL",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Taylor Hall",
-        "team": "CAR",
-        "opponent": "MTL",
+        "player": "Jack Eichel",
+        "team": "VGK",
+        "opponent": "COL",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Logan Stankoven",
-        "team": "CAR",
-        "opponent": "MTL",
+        "player": "Brett Howden",
+        "team": "VGK",
+        "opponent": "COL",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Mitch Marner",
+        "team": "VGK",
+        "opponent": "COL",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Nathan MacKinnon",
+        "team": "COL",
+        "opponent": "VGK",
         "hit_rate": 80,
         "last_10": 8
     }
