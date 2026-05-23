@@ -1,99 +1,106 @@
 [
     {
-        "player": "Kaedan Korczak",
-        "team": "VGK",
-        "opponent": "COL",
+        "player": "Oliver Kapanen",
+        "team": "MTL",
+        "opponent": "CAR",
         "hit_rate": 100,
         "last_10": 10
     },
     {
-        "player": "Keegan Kolesar",
-        "team": "VGK",
-        "opponent": "COL",
+        "player": "Alexandre Carrier",
+        "team": "MTL",
+        "opponent": "CAR",
+        "hit_rate": 100,
+        "last_10": 10
+    },
+    {
+        "player": "Kaiden Guhle",
+        "team": "MTL",
+        "opponent": "CAR",
+        "hit_rate": 100,
+        "last_10": 10
+    },
+    {
+        "player": "Jayden Struble",
+        "team": "MTL",
+        "opponent": "CAR",
+        "hit_rate": 100,
+        "last_10": 10
+    },
+    {
+        "player": "William Carrier",
+        "team": "CAR",
+        "opponent": "MTL",
+        "hit_rate": 100,
+        "last_10": 10
+    },
+    {
+        "player": "Jesperi Kotkaniemi",
+        "team": "CAR",
+        "opponent": "MTL",
+        "hit_rate": 100,
+        "last_10": 10
+    },
+    {
+        "player": "Alexander Nikishin",
+        "team": "CAR",
+        "opponent": "MTL",
+        "hit_rate": 100,
+        "last_10": 10
+    },
+    {
+        "player": "Joe Veleno",
+        "team": "MTL",
+        "opponent": "CAR",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Colton Sissons",
-        "team": "VGK",
-        "opponent": "COL",
+        "player": "Arber Xhekaj",
+        "team": "MTL",
+        "opponent": "CAR",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Cole Smith",
-        "team": "VGK",
-        "opponent": "COL",
+        "player": "Nicolas Deslauriers",
+        "team": "CAR",
+        "opponent": "MTL",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Zakhar Bardakov",
-        "team": "COL",
-        "opponent": "VGK",
+        "player": "Mark Jankowski",
+        "team": "CAR",
+        "opponent": "MTL",
         "hit_rate": 90,
         "last_10": 9
     },
     {
-        "player": "Brett Kulak",
-        "team": "COL",
-        "opponent": "VGK",
-        "hit_rate": 90,
-        "last_10": 9
-    },
-    {
-        "player": "Nic Dowd",
-        "team": "VGK",
-        "opponent": "COL",
+        "player": "Zachary Bolduc",
+        "team": "MTL",
+        "opponent": "CAR",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Ben Hutton",
-        "team": "VGK",
-        "opponent": "COL",
+        "player": "Adam Engstrom",
+        "team": "MTL",
+        "opponent": "CAR",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Jack Drury",
-        "team": "COL",
-        "opponent": "VGK",
+        "player": "Mike Matheson",
+        "team": "MTL",
+        "opponent": "CAR",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Joel Kiviranta",
-        "team": "COL",
-        "opponent": "VGK",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Logan O'Connor",
-        "team": "COL",
-        "opponent": "VGK",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Nicolas Roy",
-        "team": "COL",
-        "opponent": "VGK",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Jack Ahcan",
-        "team": "COL",
-        "opponent": "VGK",
-        "hit_rate": 80,
-        "last_10": 8
-    },
-    {
-        "player": "Devon Toews",
-        "team": "COL",
-        "opponent": "VGK",
+        "player": "K'Andre Miller",
+        "team": "CAR",
+        "opponent": "MTL",
         "hit_rate": 80,
         "last_10": 8
     }
