@@ -1,1 +1,16 @@
-[]
+[
+    {
+        "player": "Nathan MacKinnon",
+        "team": "COL",
+        "opponent": "VGK",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Mark Stone",
+        "team": "VGK",
+        "opponent": "COL",
+        "hit_rate": 80,
+        "last_10": 8
+    }
+]
