@@ -1,29 +1,36 @@
 [
     {
-        "player": "Nazem Kadri",
-        "team": "COL",
-        "opponent": "VGK",
+        "player": "Seth Jarvis",
+        "team": "CAR",
+        "opponent": "MTL",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Nathan MacKinnon",
-        "team": "COL",
-        "opponent": "VGK",
+        "player": "Logan Stankoven",
+        "team": "CAR",
+        "opponent": "MTL",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Martin Necas",
-        "team": "COL",
-        "opponent": "VGK",
+        "player": "Andrei Svechnikov",
+        "team": "CAR",
+        "opponent": "MTL",
         "hit_rate": 80,
         "last_10": 8
     },
     {
-        "player": "Mitch Marner",
-        "team": "VGK",
-        "opponent": "COL",
+        "player": "Cole Caufield",
+        "team": "MTL",
+        "opponent": "CAR",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Juraj Slafkovsk\u00fd",
+        "team": "MTL",
+        "opponent": "CAR",
         "hit_rate": 80,
         "last_10": 8
     }
