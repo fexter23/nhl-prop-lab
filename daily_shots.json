@@ -1,1 +1,23 @@
-[]
+[
+    {
+        "player": "Mitch Marner",
+        "team": "VGK",
+        "opponent": "CAR",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Seth Jarvis",
+        "team": "CAR",
+        "opponent": "VGK",
+        "hit_rate": 80,
+        "last_10": 8
+    },
+    {
+        "player": "Logan Stankoven",
+        "team": "CAR",
+        "opponent": "VGK",
+        "hit_rate": 80,
+        "last_10": 8
+    }
+]
